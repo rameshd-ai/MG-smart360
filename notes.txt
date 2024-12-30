@@ -1,0 +1,13 @@
+WIndows+r
+CMD
+
+cd C:\Users\User\Downloads\suresh\suresh
+pip install -r requirements.txt
+
+
+
+
+https://wkhtmltopdf.org/downloads.html
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+PS D:\GItHIbProjects\smart360ps> myenv\Scripts\activate

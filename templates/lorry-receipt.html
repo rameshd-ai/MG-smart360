@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lorry Receipt</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+        body {
+          color: #152f90 !important;
+          font-family: "Times New Roman", Times, serif;
+        }
+        [contenteditable="true"] {
+          background-color: yellow;
+        }
+        [contenteditable="true"].edited {
+          background-color: rgb(137, 223, 137);
+        }
+
+        .w-20 {
+          width: 20%;
+        }
+        .w-40 {
+          width: 40%;
+        }
+      
+        .w-50 {
+          width: 50%;
+        }
+      
+        .w-60 {
+          width: 60%;
+        }
+      
+        .head {
+          justify-content: space-between;
+        }
+      
+        .logo-container img {
+          height: 86px;
+        }
+      
+        .right {
+          font-size: 18px;
+        }
+      
+      
+        .border-1px-solid-blue,
+        .box-border {
+          border: 1px solid #152f90;
+        }
+      
+        .no-bl {
+          border-left: none !important;
+        }
+      
+        .no-br {
+          border-right: none !important;
+        }
+      
+        .no-bb {
+          border-bottom: none !important;
+        }
+      
+        .no-bt {
+          border-top: none !important;
+        }
+      
+        .box {
+          border-top: 1px solid #152f90;
+        }
+      
+        .mr-10px {
+          margin-right: 10px;
+        }
+      
+        .mr-1px {
+          margin-right: 1px;
+        }
+      
+        .mr-3px {
+          margin-right: -1px;
+        }
+      
+        .w-32 {
+          width: 40%;
+        }
+      
+        .w-40 {
+          width: 40%;
+        }
+      
+        .fz-8 {
+          font-size: 8px;
+        }
+      
+        .checkbox {
+          height: 20px;
+          width: 20px;
+          border: 1px solid #152f90;
+          margin-bottom: 6px;
+        }
+      
+        .w-80 {
+          width: 85%;
+        }
+      
+        .lh-10 {
+          line-height: 25px;
+        }
+      
+        .fz-16 {
+          font-size: 16px;
+        }
+        .fz-15{
+          font-size: 15px;
+        }
+      
+        .fz-12 {
+          font-size: 12px;
+        }
+      
+        .w-20 {
+          width: 20%;
+        }
+      
+        .w-30 {
+          width: 30%;
+        }
+      
+        .fz-20 {
+          font-size: 20px !important;
+        }
+      
+        .p-relative {
+          position: relative;
+        }
+      
+        .sign {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+        }
+      
+        .h-fill {
+          height: -webkit-fill-available;
+        }
+      
+        td {
+          padding: 0.244rem;
+        }
+      
+        .fz-11 {
+          font-size: 11px;
+        }
+      
+        .name-address {
+          display: flex;
+        }
+      
+        .consigner {
+          border: 1px solid #152f90;
+        }
+      
+        .consigner.left {
+          border-right: none;
+        }
+      
+        .mrb-10 {
+          margin-bottom: 10px;
+        }
+      
+        .m-10 {
+          margin: 10px;
+        }
+      
+        .br-1 {
+          border-right: 1px solid #152f90;
+        }
+      
+        .pl-6 {
+          padding-left: 6px;
+        }
+      
+        td {
+          padding-bottom: 13px;
+        }
+        
+        
+
+        .two-columns {
+            display: flex;
+            gap: 30px; /* Reduced spacing between columns */
+            margin-top: 10px;
+        }
+
+        .column {
+            flex: 0 0 40%; /* Each column takes up 45% of the width */
+            min-width: 150px; /* Minimum width to prevent collapsing */
+        }
+
+        .dotted-line {
+            border-bottom: 1px dotted #152f90;
+            display: inline-block;
+            vertical-align: middle;
+            padding: 0 5px;
+            width: 100%; /* Ensure the dotted line spans the available space */
+            margin-bottom: 5px; /* Reduced spacing between rows */
+        }
+
+        .watermark {
+            display: none;
+        }
+
+        /* Print-specific adjustments */
+        @media print {
+          @page {
+            margin-top: 0.5%;
+            margin-bottom: 3%;
+            margin-left: 2%;
+            margin-right: 2%;
+          }
+          body {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 10px; /* Reduce overall font size */
+            margin: 0; /* Remove body margin if necessary */
+              padding: 0; /* Remove padding */
+          }
+          
+      
+          .two-columns {
+              display: flex;
+              gap: 30px; /* Reduced spacing between columns */
+              margin-top: 10px;
+          }
+
+          .column {
+              flex: 0 0 44%; /* Each column takes up 45% of the width */
+              min-width: 40px; /* Minimum width to prevent collapsing */
+          }
+
+          .dotted-line {
+              border-bottom: 1px dotted #152f90;
+              display: inline-block;
+              vertical-align: middle;
+              padding: 0 5px;
+              width: 100%; /* Ensure the dotted line spans the available space */
+              margin-bottom: 5px; /* Reduced spacing between rows */
+          }
+
+          .head,
+          .boxes-container,
+          .name-address,
+          .details-box,
+          .last-container {
+            margin: 0;
+            padding: 0;
+          }
+      
+          .logo-container img {
+            height: 66px; /* Adjust logo size */
+          }
+      
+          .fz-16 {
+            font-size: 13px !important;
+          }
+          .fz-15{
+          font-size: 11px !important;
+        }
+      
+          .fz-12 {
+            font-size: 10px !important;
+          }
+      
+          .fz-8 {
+            font-size: 7px !important;
+          }
+      
+          .fz-11 {
+            font-size: 9px !important;
+          }
+      
+          .checkbox {
+            height: 20px;
+            width: 20px;
+            border: 1px solid #152f90;
+            margin-bottom: 6px;
+          }
+      
+          td,
+          th {
+            padding: 0.2rem; /* Reduce table padding */
+          }
+          .w-30
+          .w-50,
+          .w-40,
+          .w-60,
+          .w-32,
+          .w-80 {
+            width: 100% !important; /* Adjust width to fit content */
+          }
+      
+          .box-border,
+          .border-1px-solid-blue {
+            border-width: 0.5px; /* Reduce border width */
+          }
+      
+          .dotted-line {
+            border-bottom: 1px dotted #152f90;
+          }
+          .w-100 {
+            width: 100% !important;
+             }
+             .mrb-10 {
+            margin-bottom: 10px;
+          }
+          .watermark {
+                  position: fixed;
+                  top: 62%;
+                  left: 67%;
+                  transform: translate(-50%, -50%); /* Center and rotate the watermark */
+                  font-size: 10rem;
+                  color: rgba(0, 0, 0, 0.1); /* Light color for watermark */
+                  pointer-events: none;
+                  white-space: nowrap;
+                  text-align: center;
+                  z-index: 9999; /* Ensures the watermark stays on top */
+              }
+             /* Ensure the image fits within the watermark container */
+             .watermark img {
+                width: 220%; /* Scale the image */
+                height: 220%; /* Scale the image */
+                object-fit: contain; /* Ensures the image maintains its aspect ratio */
+            
+                transform: translate(-50%, -50%); 
+            }
+            /* Hide watermark on screen */
+            .watermark {
+                display: block;
+            }
+            .company-name {
+                color: #eb6b34 !important; /* Ensure the correct color */
+                font-weight: normal !important; /* Override bold if necessary */
+            }
+        }
+        
+      </style>
+      
+  </head>
+  <body>
+    <div class="watermark">
+      <img src="static/images/smart360logo2.png" alt="Watermark Logo"> <!-- Replace with your logo's path -->
+  </div>
+    <div class="mx-auto border-1px-solid-blue mt-3" style="margin-bottom: 1px;">
+      <div class=" head  d-flex" style="padding: 1px !important;">
+        <div class="left d-flex flex-column" style="padding-top: 20px;width: 20%;">
+          <div class="px-3" style="font-size: 12px; font-weight: 450;"><b>CIN:</b> U63030AN2022PTC005604</div>
+          <div class="px-3" style="font-size: 12px; font-weight: 450;"><b>PAN: </b>ABICS7871H</div>
+          <div class="px-3" style="font-size: 12px; font-weight: 450;"><b>GSTIN: </b>35ABICS7817H1ZO</div>
+          
+        </div>
+        <div class="center d-flex flex-column" style="width: 60%; margin-top: 4px;">
+          <h2 class="text-center company-name" style="color: #F3653A; font-weight: bold;">
+            SMART360 PACKERS AND <br />SHIPPING PVT LTD
+        </h2>
+        
+          <div class="address text-center" style="font-size: 12px; font-weight: 450;">
+            Office Address: Near ICGS Office, Panipath Road, Haddo, Sri Vijaya<br /> Puram,  South Andaman - 744 102, Email: smart360ps@gmail.com,<br />
+            www.smart360packersshipping.com
+          </div>
+        </div>
+        <div class="right" style="width: 20%;">
+          <div class="logo-container my-2">
+            <img src="static/images/smart360logo.png" />
+
+          </div>
+          <div class="d-flex">
+            
+            
+            <div class="" style="font-size: 12px; font-weight: 450;"><b>Cell:</b></div>
+            <div class="flex-column" style="font-size: 12px; font-weight: 450;">7063924804<br />8900943403</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEXT CONTAINER BOXES -->
+      <div class="box-border w-100 no-bl no-br no-bb" style="margin-top: 4px;">
+        <div class="text-left px-1 py-1" style="font-size: 11px;"> <b>NOTICE: </b> The consignment by this lorry receipt shall be stored at the
+          destination under the control of the transport operator and shall be
+          delivered to the order of the consignee bank whose name is mentioned
+          in the lorry receipt. It will under no circumstances be delivered to
+          any one without written authority from the consignee bank on it's
+          order endorsed in the consignee copy or on a seperate letter of
+          authority.</div>
+      </div>
+      <div class="boxes-container d-flex" style="font-size: 12px; font-weight: 450;">
+        <!-- Left Section -->
+        <div class="notice-box border-1px-solid-blue no-bl no-br mr-1px p-1" style="width: 50%; box-sizing: border-box;height: 159px;">
+          <p class="text-center mb-0"><b>AT OWNER'S RISK</b></p>
+          <hr class="p-0 m-1" />
+          <!-- Risk Details Section -->
+          <div class="risk-details" style="padding-top: 2px; padding-bottom: 5px; display: flex; align-items: center;">
+            <input type="checkbox" class="checkbox" {% if not data.riskDetails.insured %}checked{% endif %} style="width: 16px; height: 16px; margin-right: 8px;" />
+            <span>The consignor has stated that he has not insured the consignment.</span>
+          </div>
+          <div class="d-flex align-items-center mb-2">
+            <input type="checkbox" class="checkbox" {% if data.riskDetails.insured %}checked{% endif %} style="width: 16px; height: 16px; margin-right: 8px;" />
+            <span>He has insured the consignment.</span>
+          </div>
+          <!-- Insured Details Section -->
+          <div class="insured-details">
+            <div class="d-flex justify-content-between" style="gap: 20px; padding-bottom: 5px;">
+              <!-- Company and Policy -->
+              <div class="column" style="flex: 1;">
+                <b style="display: inline;">Company:</b>
+                <span class="border-line"  style="display: inline;">{{ data.riskDetails.insuredDetails.company }}</span>
+              </div>
+              <div class="column" style="flex: 1;">
+                <b style="display: inline;">Policy:</b>
+                <span class="border-line"  style="display: inline;">{{ data.riskDetails.insuredDetails.policy }}</span>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between" style="gap: 20px;">
+              <!-- Risk, Date, and Amount -->
+              <div class="column" style="flex: 1;">
+                <b style="display: inline;">Risk:</b>
+                <span class="border-line"  style="display: inline;">{{ data.riskDetails.insuredDetails.risk }}</span>
+              </div>
+              <div class="column" style="flex: 1;">
+                <b style="display: inline;">Date:</b>
+                <span class="border-line"  style="display: inline; width: 100%;">{{ data.riskDetails.insuredDetails.date }}</span>
+              </div>
+              <div class="column" style="flex: 1;">
+                <b style="display: inline;">Amount:</b>
+                <span class="border-line"  style="display: inline;width: 100%;">{{ data.riskDetails.insuredDetails.amount }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Right Section -->
+        <div class="notice-box no-br border-1px-solid-blue p-1" style="width: 50%; box-sizing: border-box;">
+          <p class="text-center mb-0" style="text-align: left;"><b>GOODS CONSIGNMENT NOTE</b></p>
+          <hr class="p-0 m-1" />
+          <div class="boxes d-flex flex-column" style="padding-top: 10px; text-align: left;">
+            <!-- First Row: GC No. and Date -->
+            <div class="d-flex" style="padding: 5px; border-top: none;">
+              <div style="flex: 1;"><b>GC No.:</b> <span  style="color: #F3653A; font-size: 18px;"><b>{{ data.goodsDetails.gcNumber }}   </b></span></div>
+              <div style="flex: 1;"><b>Date:</b> <span >{{ data.goodsDetails.gcDate }}</span></div>
+            </div>
+            <!-- Second Row: Origin and Contact -->
+            <div class="d-flex" style="padding: 5px;">
+              <div style="flex: 1;"><b>Origin:</b> <span >{{ data.goodsDetails.origin }}</span></div>
+              <div style="flex: 1;"><b>Contact No.:</b> <span >{{ data.goodsDetails.contact }}</span></div>
+            </div>
+            <!-- Third Row: Destination -->
+            <div class="d-flex" style="padding: 5px;">
+              <div style="flex: 1;"><b>Destination:</b> <span >{{ data.goodsDetails.destination }}</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="name-address d-flex" style="font-size: 12px; font-weight: 450; border-top: none">
+        <!-- Consignor Section -->
+        <div class="consigner w-50 mr-1px no-bl no-bt box-border p-1 left" style="line-height: 2; font-size: 12px; box-sizing: border-box;">
+          <span><b>Consignor's Name & Address: </b></span><br>
+          <span id="consigner-name" class="dotted-line" ><i>{{ data.consignor.name }}</i></span><br />
+          <span id="consigner-name-address" class="dotted-line" >{{ data.consignor.address }}</span><br />
+          <span class="dotted-line" >{{ data.consignor.address2 }}</span><br />
+          <span style="margin-bottom: 0; margin-left: 5px;" >{{ data.consignor.address3 }}</span>
+        </div>
+        <!-- Consignee Section -->
+        <div class="consignee w-50 box-border no-br no-bt p-1 right" style="line-height: 2; font-size: 12px; box-sizing: border-box;">
+          <span><b>Consignee's Name & Address: </b></span><br>
+          <span id="consignee-name" class="dotted-line" ><i>{{ data.consignee.name }}</i></span><br />
+          <span id="consignee-name-address" class="dotted-line" >{{ data.consignee.address }}</span><br />
+          <span class="dotted-line" >{{ data.consignee.address2 }}</span><br />
+          <span style="margin-bottom: 0;margin-left: 5px;" >{{ data.consignee.address3 }}</span>
+        </div>
+      </div>
+      
+      
+      
+
+      <div class="details-box d-flex">
+        <div class="d-flex flex-column" style="width: 40%;">
+
+
+          <div class="descriptions" style="font-size: 12px; font-weight: 450;">
+            <div class="box-border no-bl no-bt no-br px-3 py-1  text-center">
+              <p class="text-center " style="margin-bottom: 0rem !important;">
+                <b>DESCRIPTIONS (said to contain)</b>
+              </p>
+            </div>
+            <div class="d-flex flex-column">
+              <div class="py-1 px-2 ">
+                <b>Old and Used Household Goods/ Car/ Two Wheeler For Personal Usage Only Not For Sale</b>
+              </div>
+              <!-- Flex container for the first two elements -->
+              <div class="d-flex justify-content-start py-0 px-1 align-items-center">
+                <div class="px-1"><b>No. Of Packages:</b> <span >{{ data.description.noOfPackages }}   pkgs. (H.H./Comm. Goods)</span></div>
+                <!-- <div class="" style="padding-left: 5rem !important;"><b>Two Wheeler No.:</b> <span >{{ data.description.twoWheelerNo }}</span></div> -->
+              </div>
+              <!-- Separate line for the third element -->
+              <div class="py-1 px-2">
+                <b>Two Wheeler No.:</b><span  style="padding-right: 2rem !important;"> {{ data.description.twoWheelerNo }}</span>
+               
+              </div>
+              <div class="py-0 px-2">
+              
+                <b>Car No.:</b><span > &nbsp{{ data.description.carNo }}</span>
+              </div>
+            </div>
+          </div>
+          
+          
+  
+          <div class="d-flex flex-column w-100 " style="font-size: 12px; font-weight: 450;">
+            <table border="0" style="width: 100%; border-collapse: collapse;" >
+              <tr>
+                <td class="px-2 py-1 box-border no-bl no-br" style="text-align: left;"><b>Actual Weight</b></td>
+                <td class="px-3 py-1 box-border  no-br" style="text-align: left;" >{{ data.description.actualWeight }} kg</td>
+              </tr>
+              <tr>
+                <td class="px-2 py-1 box-border no-bl no-br" style="text-align: left;"><b>Charged Weight</b></td>
+                <td class="px-3 py-1 box-border no-br" style="text-align: left;" >{{ data.description.chargedWeight }} kg</td>
+              </tr>
+              <tr>
+                <td class="px-2 py-1 box-border no-bl no-br" style="text-align: left;"><b>CBM</b></td>
+                <td class="px-3 py-1 box-border no-br" style="text-align: left;" >{{ data.description.cbm }} kg</td>
+              </tr>
+              <tr>
+                <td class="px-2 py-1 box-border no-bl no-br" style="text-align: left;"><b>Goods Value</b></td>
+                <td class="px-3 py-1 box-border no-br" style="text-align: left;" ><b>₹</b>{{ data.description.goodsValue }}</td>
+              </tr>
+              <tr>
+                <td class="px-2 py-1 box-border no-bl no-br no-bb" style="text-align: left;"><b>Truck No.</b></td>
+                <td class="px-3 py-1 box-border  no-bb" style="text-align: left;" >{{ data.description.truckNo }}</td>
+              </tr>
+            </table>
+          </div>
+        
+          
+        </div>
+        
+        <div class="d-flex flex-column" style="font-size: 12px; font-weight: 450; width: 60%; position: relative; border: none;">
+          <!-- Simulated top border with gradient -->
+          <div style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(to right, transparent 10%, black 10%);
+            pointer-events: none;
+          "></div>
+        
+          <table>
+            <tr>
+              <th class="px-5 py-1 text-center box-border">FREIGHT DETAILS</th>
+              <th class="px-4 box-border no-br" style="width: 20%; text-align: center;">AMOUNT</th>
+            </tr>
+            <tr>
+              <td class="px-3 py-1 box-border text-center">
+                <div style="display: flex; align-items: center; justify-content: center;">
+                  <span  style="flex: 1; text-align: left; margin-right: 5px;">{{data.freightDetails.locations[0].from}}</span>
+                  <b style="flex-shrink: 0; margin: 0 10px;">To</b>
+                  <span  style="flex: 1; text-align: left; margin-left: 5px;">{{data.freightDetails.locations[0].to}}</span>
+                </div>
+              </td>
+              <td class="px-3 box-border no-br text-center" >
+                <b>₹</b>{{data.freightDetails.locations[0].amount}}
+              </td>
+            </tr>
+            <tr>
+              <td class="px-3 py-1 box-border text-center">
+                <div style="display: flex; align-items: center; justify-content: center;">
+                  <span  style="flex: 1; text-align: left; margin-right: 5px;">{{data.freightDetails.locations[1].from}}</span>
+                  <b style="flex-shrink: 0; margin: 0 10px;">To</b>
+                  <span  style="flex: 1; text-align: left; margin-left: 5px;">{{data.freightDetails.locations[1].to}}</span>
+                </div>
+              </td>
+              <td class="px-3 box-border no-br text-center" >
+                <b>₹</b>{{data.freightDetails.locations[1].amount}}
+              </td>
+            </tr>
+            <tr>
+              <td class="px-3 py-1 box-border text-center">
+                <div style="display: flex; align-items: center; justify-content: center;">
+                  <span  style="flex: 1; text-align: left; margin-right: 5px;">{{data.freightDetails.locations[2].from}}</span>
+                  <b style="flex-shrink: 0; margin: 0 10px;">To</b>
+                  <span  style="flex: 1; text-align: left; margin-left: 5px;">{{data.freightDetails.locations[2].to}}</span>
+                </div>
+              </td>
+              <td class="px-3 box-border no-br text-center" >
+                <b>₹</b>{{data.freightDetails.locations[2].amount}}
+              </td>
+            </tr>
+            <tr>
+              <td class="px-3 py-1 box-border">Loading and Unloading Charges</td>
+              <td class="px-3 box-border no-br text-center" >{{data.additionalCharges.loadingCharges}}</td>
+            </tr>
+            <tr>
+              <td class="px-3 py-1 box-border">Insurance By Party</td>
+              <td class="px-3 box-border no-br text-center" >{{data.additionalCharges.insuranceCharges}}</td>
+            </tr>
+            <tr>
+              <td class="px-3 py-1 box-border">GST Charges ({{data.additionalCharges.gstPercentage}}%)</td>
+              <td class="px-3 box-border no-br text-center" ><b>₹</b>{{data.additionalCharges.gstCharges}}</td>
+            </tr>
+            <tr>
+              <td class="px-3 py-1 box-border">GC Charges</td>  
+              <td class="px-3 py-1 box-border no-br text-center">
+                <span  id="gcCharges">{{ data.additionalCharges.gcCharges | default('NONE', true) }}</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="px-3 py-1 box-border">Total</td>
+              <td class="px-3 box-border no-br text-center" ><b>₹</b>{{data.grandTotal}}</td>
+            </tr>
+          </table>
+          <div class="py-0 text-center no-bt no-br no-bb box-border no-bl" style="font-size: 12px; font-weight: 450;">
+            <b>SAC/HNS CODE - 996511</b>
+          </div>
+        </div>
+        
+
+      </div>
+
+
+      <div class="box-border w-100 no-bl no-br no-bb">
+        <div class="text-left px-1 py-1" style="font-size: 11px;"> <b>CAUTION: </b> The consignment will not be detained, delivered, rerouted or booked without Consignee bank's written permission and will be delivered at the destination.</div>
+      </div>
+      
+      <div class="last-container d-flex" style='border-top: 1px solid #152f90;    height: 195px;'>
+
+
+        <div class="d-flex flex-column no-bt no-bb no-bl no-br box-border p-2" style="width:40%;font-size: 12px; font-weight: 450;">
+          <div class=" pb-2"><b>Goods And Service Tax Paid By:</b></div>
+          <div class="d-flex justify-content-between">
+            <div class="  pr-2">
+              Consignor
+            </div>
+            <input type="checkbox" class="checkbox" {% if data.gstPaidBy.consignor %}checked{% endif %}/> 
+          </div>
+          <div class="d-flex justify-content-between">
+            <div class="  pr-2">
+              Consignee
+            </div>
+            <input type="checkbox" class="checkbox"{% if data.gstPaidBy.consignee %}checked{% endif %}  /> 
+          </div>
+          <div class="d-flex justify-content-between">
+            <div class="  pr-2">
+              Exempted
+            </div>
+            <input type="checkbox" class="checkbox" {% if data.gstPaidBy.exempted %}checked{% endif %} /> 
+          </div>
+          <div class="d-flex justify-content-between">
+            <div class="  pr-2">
+              Transporter
+            </div>
+            <input type="checkbox" class="checkbox" {% if data.gstPaidBy.transporter %}checked{% endif %} /> 
+          </div>
+        </div>
+
+
+            <div class="d-flex box-border no-br no-bt no-bb  flex-column  " style="width:35%;font-size: 11px; font-weight: 450;">
+              <div class="  px-2 ">
+                I/ WE CAREFULLY CHECKED AND VERIFIED THE CONTENT FILLED IN THIS CONSIGNMENT NOTE AND AGREE TO THE TERMS AND CONDITIONS PRINTED OVERLEAF ESPECIALLY THE CLAUSE OF JURISDICTION ALL CHARGES AS PER AGREEMENT
+              </div><br><br>   <br>
+              <div class="text-center  p-0"><b>Consigner's Signature</b></div>
+            </div>
+        
+   
+        <div class="box-border no-bt  p-2 no-bb no-br" style="width:35%;font-size: 12px; font-weight: 450;">
+          <b>SMART360 PACKERS AND SHIPPING PVT LIMITED</b>
+        </div>
+      </div>
+        <div class="box-border w-100 no-bl no-br no-bb">
+          <div class="text-center py-2" style="font-size: 10px;"><b>"PAYMENT TERMS: 100% PAYMENT TO BE MADE VIA CHEQUE, NEFT, RTGS, ONLINE TRANSFER, CREDIT CARD, DEBIT CARD, OR DEMAND DRAFT."</b></div>
+        </div>
+      <div class="box-border w-100 no-bl no-br no-bb">
+        <div class="text-center py-2" style="font-size: 10px;"><b>CHENNA | GOA | CHANDIGARH | AHMEDABAD | BANGALORE | COCHIN | DELHI | HYDERABAD | KOLKATA | MUMBAI | PUNE | VIZAG</b></div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    document.querySelectorAll('[contenteditable="true"]').forEach((el) => {
+      el.addEventListener("input", () => {
+        el.classList.add("edited");
+      });
+    });
+    </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const gcChargesElement = document.getElementById('gcCharges');
+
+      // Check if the element content is empty when user leaves the field
+      gcChargesElement.addEventListener('blur', function() {
+        if (gcChargesElement.innerText.trim() === '') {
+          gcChargesElement.innerText = 'None';
+        }
+      });
+
+      // In case the page is loaded with an empty value, check it and update it
+      if (gcChargesElement.innerText.trim() === '') {
+        gcChargesElement.innerText = 'None';
+      }
+    });
+
+</script>
+</html>

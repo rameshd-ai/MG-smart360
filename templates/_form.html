@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart360 Packers & Movers Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.4;
+      margin: 20px;
+    }
+    .form-box {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    .form-group {
+      margin-bottom: 8px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 0.9em;
+    }
+    .form-group input, .form-group textarea {
+      width: 100%;
+      padding: 4px;
+      box-sizing: border-box;
+      font-size: 0.9em;
+    }
+    .form-group input[type="checkbox"] {
+      width: auto;
+    }
+    .button {
+      padding: 6px 12px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 0.9em;
+    }
+    .button:disabled {
+      background-color: #cccccc;
+    }
+    .row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .col {
+      width: 48%;
+    }
+    .col-half {
+      width: 48%;
+      margin-bottom: 10px;
+    }
+    .form-box h3 {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    .form-group input[type="text"], .form-group input[type="number"], .form-group input[type="date"] {
+      height: 28px;
+      font-size: 0.9em;
+    }
+    .form-group textarea {
+      height: 60px;
+      font-size: 0.9em;
+    }
+    .freight-column {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .freight-column .col {
+      width: 48%;
+    }
+  </style>
+</head>
+<body>
+  <h2>Smart360 Packers & Movers Consignment Form</h2>
+
+<form id="consignmentForm">
+
+  <!-- Consignor's & Consignee's Details -->
+  <div class="row">
+    <div class="col-half">
+      <div class="form-box">
+        <h3>Consignor's Details</h3>
+        <div class="form-group">
+          <label for="consignorName">Name</label>
+          <input type="text" id="consignorName" placeholder="Consignor's name">
+        </div>
+        <div class="form-group">
+          <label for="consignorAddress">Address</label>
+          <textarea id="consignorAddress" placeholder="Consignor's address"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-half">
+      <div class="form-box">
+        <h3>Consignee's Details</h3>
+        <div class="form-group">
+          <label for="consigneeName">Name</label>
+          <input type="text" id="consigneeName" placeholder="Consignee's name">
+        </div>
+        <div class="form-group">
+          <label for="consigneeAddress">Address</label>
+          <textarea id="consigneeAddress" placeholder="Consignee's address"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Risk Options & Goods Details -->
+  <div class="row">
+    <div class="col-half">
+      <div class="form-box">
+        <h3>Risk Options</h3>
+        <div class="form-group">
+          <label><input type="checkbox" id="notInsured"> Not Insured</label><br>
+          <label><input type="checkbox" id="insured"> Insured</label>
+        </div>
+        <div id="insuredDetails" >
+          <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" placeholder="Company name">
+          </div>
+          <div class="form-group">
+            <label for="policy">Policy</label>
+            <input type="text" id="policy" placeholder="Policy details">
+          </div>
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" id="date">
+          </div>
+          <div class="form-group">
+            <label for="amount">Amount</label>
+            <input type="number" id="amount" placeholder="Amount">
+          </div>
+          <div class="form-group">
+            <label for="risk">Risk</label>
+            <input type="text" id="risk" placeholder="Risk details">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-half">
+      <div class="form-box">
+        <h3>Goods Details</h3>
+        <div class="form-group">
+          <label for="gcNumber">GC No.</label>
+          <input type="text" id="gcNumber" placeholder="GC number">
+        </div>
+        <div class="form-group">
+          <label for="gcDate">Date</label>
+          <input type="date" id="gcDate">
+        </div>
+        <div class="form-group">
+          <label for="origin">Origin</label>
+          <input type="text" id="origin" placeholder="Origin">
+        </div>
+        <div class="form-group">
+          <label for="destination">Destination</label>
+          <input type="text" id="destination" placeholder="Destination">
+        </div>
+        <div class="form-group">
+          <label for="contact">Contact No.</label>
+          <input type="text" id="contact" placeholder="Contact number">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Freight Details & Amount (Split into two columns) -->
+  <div class="form-box">
+    <h3>Freight Details & Amount</h3>
+    <div class="freight-column">
+      <div class="col">
+        <div class="form-group">
+          <label for="location1To2">From Location 1 To Location 2</label>
+          <input type="text" id="location1To2" placeholder="Enter locations">
+        </div>
+        <div class="form-group">
+          <label for="amount1To2">Amount</label>
+          <input type="number" id="amount1To2" placeholder="Amount" oninput="calculateTotal()">
+        </div>
+        <div class="form-group">
+          <label for="location2To3">From Location 2 To Location 3</label>
+          <input type="text" id="location2To3" placeholder="Enter locations">
+        </div>
+        <div class="form-group">
+          <label for="amount2To3">Amount</label>
+          <input type="number" id="amount2To3" placeholder="Amount" oninput="calculateTotal()">
+        </div>
+        <div class="form-group">
+          <label for="location3To4">From Location 3 To Location 4</label>
+          <input type="text" id="location3To4" placeholder="Enter locations">
+        </div>
+        <div class="form-group">
+          <label for="amount3To4">Amount</label>
+          <input type="number" id="amount3To4" placeholder="Amount" oninput="calculateTotal()">
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="form-group">
+          <label for="loadingCharges">Loading Charges</label>
+          <input type="number" id="loadingCharges" placeholder="Charges" oninput="calculateTotal()">
+        </div>
+        <div class="form-group">
+          <label for="insuranceByParty">Insurance By Party</label>
+          <input type="number" id="insuranceByParty" placeholder="Insurance charges" oninput="calculateTotal()">
+        </div>
+        <div class="form-group">
+          <label for="gstCharges">GST Charges</label>
+          <input type="number" id="gstCharges" placeholder="GST charges" oninput="calculateTotal()">
+        </div>
+        <div class="form-group">
+          <label for="totalAmount">Total Amount</label>
+          <input type="number" id="totalAmount" readonly>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GST Paid By Section with Checkboxes -->
+  <div class="form-box">
+    <h3>Goods and Service Tax Paid By</h3>
+    <div class="form-group">
+      <label><input type="checkbox" id="gstConsignor"> Consignor</label><br>
+      <label><input type="checkbox" id="gstConsignee"> Consignee</label><br>
+      <label><input type="checkbox" id="gstExempted"> Exempted</label><br>
+      <label><input type="checkbox" id="gstTransporter"> Transporter</label>
+    </div>
+  </div>
+
+  <!-- Submit Button -->
+  <button type="submit" id="submitBtn" class="button">Submit</button>
+</form>
+
+<script>
+  // Function to format the date to dd-mm-yyyy
+  function formatDate(date) {
+    alert(1)
+  if (!date) return ''; // If no date, return an empty string
+  var parts = date.split("-");
+  alert(parts);
+  return `${parts[0]}-${parts[1]}-${parts[2]}`; // Return date in dd-mm-yyyy format
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  console.log("DOMContentLoaded event triggered");
+  console.log(formatDate("2024-12-27")); // Test formatDate
+});
+
+  // Calculate total function
+  function calculateTotal() {
+    var amount1To2 = parseFloat(document.getElementById("amount1To2").value) || 0;
+    var amount2To3 = parseFloat(document.getElementById("amount2To3").value) || 0;
+    var amount3To4 = parseFloat(document.getElementById("amount3To4").value) || 0;
+    var loadingCharges = parseFloat(document.getElementById("loadingCharges").value) || 0;
+    var insuranceByParty = parseFloat(document.getElementById("insuranceByParty").value) || 0;
+    var gstCharges = parseFloat(document.getElementById("gstCharges").value) || 0;
+
+    var totalAmount = amount1To2 + amount2To3 + amount3To4 + loadingCharges + insuranceByParty + gstCharges;
+
+    document.getElementById("totalAmount").value = totalAmount.toFixed(2);
+  }
+
+  // Toggle Insurance Details based on checkbox
+  document.getElementById("insured").addEventListener("change", function() {
+    document.getElementById("insuredDetails").style.display = this.checked ? "block" : "none";
+  });
+
+  // Disable the button after form submission
+  document.getElementById("consignmentForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    document.getElementById("submitBtn").disabled = true;
+
+    // Collect form data into a JSON object
+    var formData = {
+      consignorDetails: {
+        name: document.getElementById("consignorName").value,
+        address: document.getElementById("consignorAddress").value
+      },
+      consigneeDetails: {
+        name: document.getElementById("consigneeName").value,
+        address: document.getElementById("consigneeAddress").value
+      },
+      riskOptions: {
+        notInsured: document.getElementById("notInsured").checked,
+        insured: document.getElementById("insured").checked,
+        company: document.getElementById("company").value,
+        policy: document.getElementById("policy").value,
+        date: formatDate(document.getElementById("date").value), // Format date
+        amount: document.getElementById("amount").value,
+        risk: document.getElementById("risk").value
+      },
+      goodsDetails: {
+        gcNumber: document.getElementById("gcNumber").value,
+        gcDate: formatDate(document.getElementById("gcDate").value), // Format date
+        origin: document.getElementById("origin").value,
+        destination: document.getElementById("destination").value,
+        contact: document.getElementById("contact").value
+      },
+      freightDetails: {
+        location1To2: document.getElementById("location1To2").value,
+        amount1To2: document.getElementById("amount1To2").value,
+        location2To3: document.getElementById("location2To3").value,
+        amount2To3: document.getElementById("amount2To3").value,
+        location3To4: document.getElementById("location3To4").value,
+        amount3To4: document.getElementById("amount3To4").value,
+        loadingCharges: document.getElementById("loadingCharges").value,
+        insuranceByParty: document.getElementById("insuranceByParty").value,
+        gstCharges: document.getElementById("gstCharges").value,
+        totalAmount: document.getElementById("totalAmount").value
+      },
+      gstPaidBy: {
+        consignor: document.getElementById("gstConsignor").checked,
+        consignee: document.getElementById("gstConsignee").checked,
+        exempted: document.getElementById("gstExempted").checked,
+        transporter: document.getElementById("gstTransporter").checked
+      }
+    };
+
+    // Convert form data to JSON
+    var jsonData = JSON.stringify(formData, null, 2);
+
+    // Create a Blob with the JSON data
+    var blob = new Blob([jsonData], { type: "application/json" });
+
+    // Create a download link for the file
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "consignment_form_data.json";
+    a.click();
+  });
+</script>
+</body>
+</html>

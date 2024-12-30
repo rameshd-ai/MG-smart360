@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "MR. Ramesh Dummu",
+    "address": "Ramesh ramesh Ramesh rameshRamesh ramesh Ramesh ",
+    "address2": "Ramesh ramesh Ramesh rameshRamesh ramesh Ramesh ",
+    "address3": "Ramesh ramesh Ramesh rameshRamesh ramesh Ramesh "
+  },
+  "consignee": {
+    "name": "MR. Ramesh Dummu",
+    "address": "Ramesh ramesh Ramesh rameshRamesh ramesh Ramesh ",
+    "address2": "Ramesh ramesh Ramesh rameshRamesh ramesh Ramesh ",
+    "address3": "Ramesh ramesh Ramesh rameshRamesh ramesh Ramesh "
+  },
+  "riskDetails": {
+    "notInsured": false,
+    "insured": true,
+    "insuredDetails": {
+      "company": "Ramesh ramesh ",
+      "policy": "Ramesh ramesh ",
+      "date": "30-12-2024",
+      "insuredAmount": "12222",
+      "risk": "Damage protection"
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "12345678",
+    "gcDate": "30-12-2024",
+    "origin": "Ramesh ramesh Ramesh",
+    "destination": "Ramesh ramesh Ramesh",
+    "contact": "12121212"
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "Ramesh ramesh Ramesh ",
+        "to": "Ramesh ramesh Ramesh ",
+        "amount": "100"
+      },
+      {
+        "from": "Ramesh ramesh Ramesh ",
+        "to": "Ramesh ramesh Ramesh ",
+        "amount": "200"
+      },
+      {
+        "from": "Ramesh ramesh Ramesh ",
+        "to": "Ramesh ramesh Ramesh ",
+        "amount": "300"
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "30.00",
+    "gcCharges": "",
+    "gstPercentage": "5"
+  },
+  "grandTotal": "630.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": true,
+    "transporter": true
+  },
+  "description": {
+    "noOfPackages": "999",
+    "twoWheelerNo": "123456789aaaa",
+    "carNo": "123456789bbbbb",
+    "actualWeight": "121212",
+    "chargedWeight": "121212",
+    "cbm": "1122",
+    "goodsValue": "21212",
+    "truckNo": "123456789ccccc"
+  },
+  "created_at": "2024-12-29T13:35:33.025Z"
+}

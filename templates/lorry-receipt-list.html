@@ -1,0 +1,49 @@
+{% extends 'base-template.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+
+<div class="row">
+    <div class="row">
+        <div class="ms-3">
+            <h3 class="mb-0 h4 font-weight-bolder">Lorry Receipt List</h3>
+        </div>
+
+
+            <div class="card mt-4" id="basic-info">
+                <div class="card-header">
+                    <div class="icon icon-lg icon-shape bg-gradient-dark shadow text-center border-radius-xl mt-n4 me-3 float-start">
+                        <i class="material-symbols-rounded opacity-10">table_view</i>
+                      </div>
+                    <h5>Lorry Receipt List</h5>
+                </div>
+                <div class="card-body pt-0">
+                    <div class="row">
+                        <table id="lr-table" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>GC Number</th>
+                                    <th>Date and Time</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="lr-body">
+                                <!-- Data will be dynamically populated here -->
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+{% endblock %}
+
