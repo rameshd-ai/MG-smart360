@@ -11,3 +11,15 @@ https://wkhtmltopdf.org/downloads.html
 
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 PS D:\GItHIbProjects\smart360ps> myenv\Scripts\activate
+
+
+
+gcp:
+https://www.youtube.com/watch?v=7-s5ugThckY
+https://www.youtube.com/watch?v=tPsHyiGQuqQ
+
+
+date in mr
+red color no
+water mark
+highliter

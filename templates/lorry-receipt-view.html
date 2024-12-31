@@ -405,7 +405,7 @@
           <hr class="p-0 m-1" />
           <!-- Risk Details Section -->
           <div class="risk-details" style="padding-top: 2px; padding-bottom: 5px; display: flex; align-items: center;">
-            <input type="checkbox" class="checkbox" {% if not data.riskDetails.insured %}checked{% endif %} style="width: 16px; height: 16px; margin-right: 8px;" />
+            <input type="checkbox" class="checkbox" {% if not data.riskDetails.notInsured %}checked{% endif %} style="width: 16px; height: 16px; margin-right: 8px;" />
             <span>The consignor has stated that he has not insured the consignment.</span>
           </div>
           <div class="d-flex align-items-center mb-2">

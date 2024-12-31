@@ -1,0 +1,15 @@
+{
+  "gcNumber": "23232 ",
+  "invoiceNumber": "sdsdsd",
+  "customerName": "sdsd",
+  "amountNumber": "12222",
+  "amountText": "Twelve Thousand Two Hundred Twenty Two Only",
+  "vehicleRegNumber": "sadw",
+  "fromAddress": "sd",
+  "toAddress": "122121dfdfdfdfedf",
+  "goodsTypes": [
+    "Household Goods",
+    "Car"
+  ],
+  "created_at": "31T10:13:20.335Z-12-2024"
+}

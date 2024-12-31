@@ -1,528 +1,594 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Money Receipt</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <style>
-        body {
-          color: #152f90 !important;
-        }
-        [contenteditable="true"] {
-          background-color: yellow;
-        }
-        [contenteditable="true"].edited {
-          background-color: rgb(137, 223, 137);
-        }
 
-        .w-20 {
-          width: 20%;
-        }
-        .w-40 {
-          width: 40%;
-        }
-      
-        .w-50 {
-          width: 50%;
-        }
-      
-        .w-60 {
-          width: 60%;
-        }
-      
-        .head {
-          justify-content: space-between;
-        }
-      
-        .logo-container img {
-          height: 86px;
-        }
-      
-        .right {
-          font-size: 18px;
-        }
-      
-      
-        .border-1px-solid-blue,
-        .box-border {
-          border: 1px solid #152f90;
-        }
-      
-        .no-bl {
-          border-left: none !important;
-        }
-      
-        .no-br {
-          border-right: none !important;
-        }
-      
-        .no-bb {
-          border-bottom: none !important;
-        }
-      
-        .no-bt {
-          border-top: none !important;
-        }
-      
-        .box {
-          border-top: 1px solid #152f90;
-        }
-      
-        .mr-10px {
-          margin-right: 10px;
-        }
-      
-        .mr-1px {
-          margin-right: 1px;
-        }
-      
-        .mr-3px {
-          margin-right: -1px;
-        }
-      
-        .w-32 {
-          width: 40%;
-        }
-      
-        .w-40 {
-          width: 40%;
-        }
-      
-        .fz-8 {
-          font-size: 8px;
-        }
-      
-        .checkbox {
-          height: 20px;
-          width: 20px;
-          border: 1px solid #152f90;
-          margin-bottom: 6px;
-        }
-      
-        .w-80 {
-          width: 85%;
-        }
-      
-        .lh-10 {
-          line-height: 25px;
-        }
-      
-        .fz-16 {
-          font-size: 16px;
-        }
-        .fz-15{
-          font-size: 15px;
-        }
-      
-        .fz-12 {
-          font-size: 12px;
-        }
-      
-        .w-20 {
-          width: 20%;
-        }
-      
-        .w-30 {
-          width: 30%;
-        }
-      
-        .fz-20 {
-          font-size: 20px !important;
-        }
-      
-        .p-relative {
-          position: relative;
-        }
-      
-        .sign {
-          position: absolute;
-          right: 0;
-          bottom: 0;
-        }
-      
-        .h-fill {
-          height: -webkit-fill-available;
-        }
-      
-        td {
-          padding: 0.244rem;
-        }
-      
-        .fz-11 {
-          font-size: 11px;
-        }
-      
-        .name-address {
-          display: flex;
-        }
-      
-        .consigner {
-          border: 1px solid #152f90;
-        }
-      
-        .consigner.left {
-          border-right: none;
-        }
-      
-        .mrb-10 {
-          margin-bottom: 10px;
-        }
-      
-        .m-10 {
-          margin: 10px;
-        }
-      
-        .br-1 {
-          border-right: 1px solid #152f90;
-        }
-      
-        .pl-6 {
-          padding-left: 6px;
-        }
-      
-        td {
-          padding-bottom: 13px;
-        }
-        
-        
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Money Receipt</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <style>
+    body {
+      color: #152f90 !important;
+    }
 
-        .two-columns {
-            display: flex;
-            gap: 30px; /* Reduced spacing between columns */
-            margin-top: 10px;
-        }
+    [] {
+      background-color: yellow;
+    }
 
-        .column {
-            flex: 0 0 40%; /* Each column takes up 45% of the width */
-            min-width: 150px; /* Minimum width to prevent collapsing */
-        }
+    [].edited {
+      background-color: rgb(137, 223, 137);
+    }
 
-        .content-row {
-  display: flex;
-  flex-wrap: nowrap; /* Ensure no wrapping occurs */
-  align-items: center;
-  justify-content: flex-start;
-  margin-bottom: 5px;
-}
+    .w-20 {
+      width: 20%;
+    }
 
-.content-row span {
-  margin-right: 5px; /* Space between text elements */
-}
+    .w-40 {
+      width: 40%;
+    }
 
-.dotted-line {
-  border-bottom: 1px dotted #152f90;
-  padding: 0 5px;
-  margin: 0 5px;
-  flex-grow: 1; /* Allow dotted line to fill space */
-  display: inline; /* Ensure it's aligned properly */
-}
+    .w-50 {
+      width: 50%;
+    }
 
-/* Special case for the "amount in words" to make it wider */
-.dotted-line.wider {
-  flex-grow: 10; /* Increase space for this specific dotted line */
-}
+    .w-60 {
+      width: 60%;
+    }
 
-        
-        
-        .amount-box {
-    display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 11px 42px;
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.4); /* Darker and stronger shadow */
-  }
+    .head {
+      justify-content: space-between;
+    }
 
-  .rupee-symbol {
-    font-size: 16px;
-    margin-right: 5px;
-  }
+    .logo-container img {
+      height: 86px;
+    }
 
-  .amount-text {
-    font-size: 16px;
-    color: #555;
-  }        
-  .watermark {
-                display: none;
-            }
+    .right {
+      font-size: 18px;
+    }
 
-        /* Print-specific adjustments */
-        @media print {
-          @page {
-            margin: 5mm; /* Adjust to your preferred value (can use px, mm, cm, etc.) */
-          }
-          body {
-            font-size: 10px; /* Reduce overall font size */
-            margin: 0; /* Remove body margin if necessary */
-              padding: 0; /* Remove padding */
-          }
-          
-      
-          .two-columns {
-              display: flex;
-              gap: 30px; /* Reduced spacing between columns */
-              margin-top: 10px;
-          }
 
-          .column {
-              flex: 0 0 44%; /* Each column takes up 45% of the width */
-              min-width: 40px; /* Minimum width to prevent collapsing */
-          }
+    .border-1px-solid-blue,
+    .box-border {
+      border: 1px solid #152f90;
+    }
 
-          
-.content-row {
-  display: flex;
-  flex-wrap: nowrap; /* Ensure no wrapping occurs */
-  align-items: center;
-  justify-content: flex-start;
-  margin-bottom: 5px;
-}
+    .no-bl {
+      border-left: none !important;
+    }
 
-.content-row span {
-  margin-right: 5px; /* Space between text elements */
-}
+    .no-br {
+      border-right: none !important;
+    }
 
-.dotted-line {
-  border-bottom: 1px dotted #152f90;
-  padding: 0 5px;
-  margin: 0 5px;
-  flex-grow: 1; /* Allow dotted line to fill space */
-  display: inline; /* Ensure it's aligned properly */
-}
+    .no-bb {
+      border-bottom: none !important;
+    }
 
-/* Special case for the "amount in words" to make it wider */
-.dotted-line.wider {
-  flex-grow: 10; /* Increase space for this specific dotted line */
-}
+    .no-bt {
+      border-top: none !important;
+    }
 
-          .head,
-          .boxes-container,
-          .name-address,
-          .details-box,
-          .last-container {
-            margin: 0;
-            padding: 0;
-          }
-      
-          .logo-container img {
-            height: 66px; /* Adjust logo size */
-          }
-      
-          .fz-16 {
-            font-size: 13px !important;
-          }
-          .fz-15{
-          font-size: 11px !important;
-        }
-      
-          .fz-12 {
-            font-size: 10px !important;
-          }
-      
-          .fz-8 {
-            font-size: 7px !important;
-          }
-      
-          .fz-11 {
-            font-size: 9px !important;
-          }
-      
-          .checkbox {
-            height: 20px;
-            width: 20px;
-            border: 1px solid #152f90;
-            margin-bottom: 6px;
-          }
-      
-          td,
-          th {
-            padding: 0.2rem; /* Reduce table padding */
-          }
-          .w-30
-          .w-50,
-          .w-40,
-          .w-60,
-          .w-32,
-          .w-80 {
-            width: 100% !important; /* Adjust width to fit content */
-          }
-      
-          .box-border,
-          .border-1px-solid-blue {
-            border-width: 0.5px; /* Reduce border width */
-          }
-      
-          .dotted-line {
-            border-bottom: 1px dotted #152f90;
-          }
-          .w-100 {
-            width: 100% !important;
-             }
-             .mrb-10 {
-            margin-bottom: 10px;
-          }
-        /* Ensure watermark appears during print */
-        .watermark {
-            position: fixed; /* Keeps watermark fixed during print as well */
-            top: 25%;
-            right: 15%;
-            left: 40%;
-            transform: translate(-50%, -50%);
-            pointer-events: none; /* Ensure it doesn't block clicks in print */
-            white-space: nowrap;
-            text-align: center;
-            z-index: 9999; /* Set z-index for print */
-        }
+    .box {
+      border-top: 1px solid #152f90;
+    }
 
-        .watermark img {
-            width: 160%; /* Scale the image */
-            height: 160%; /* Scale the image */
-            object-fit: contain; /* Ensure the image maintains its aspect ratio */
-        }
+    .mr-10px {
+      margin-right: 10px;
+    }
 
-        /* Optional: Adjust the watermark size for printing */
-        .watermark img {
-            opacity: 0.5; /* Make the watermark slightly transparent in print */
-        }
+    .mr-1px {
+      margin-right: 1px;
+    }
 
-            /* Hide watermark on screen */
-            .watermark {
-                display: block;
-            }
+    .mr-3px {
+      margin-right: -1px;
+    }
 
-        }
-        
-      </style>
-      
-  </head>
-  <body>
-    <div class="watermark">
-      <img src="/static/images/smart360logo2.png" alt="Watermark Logo"> <!-- Replace with your logo's path -->
+    .w-32 {
+      width: 40%;
+    }
+
+    .w-40 {
+      width: 40%;
+    }
+
+    .fz-8 {
+      font-size: 8px;
+    }
+
+    .checkbox {
+      height: 20px;
+      width: 20px;
+      border: 1px solid #152f90;
+      margin-bottom: 6px;
+    }
+
+    .w-80 {
+      width: 85%;
+    }
+
+    .lh-10 {
+      line-height: 25px;
+    }
+
+    .fz-16 {
+      font-size: 16px;
+    }
+
+    .fz-15 {
+      font-size: 15px;
+    }
+
+    .fz-12 {
+      font-size: 12px;
+    }
+
+    .w-20 {
+      width: 20%;
+    }
+
+    .w-30 {
+      width: 30%;
+    }
+
+    .fz-20 {
+      font-size: 20px !important;
+    }
+
+    .p-relative {
+      position: relative;
+    }
+
+    .sign {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+
+    .h-fill {
+      height: -webkit-fill-available;
+    }
+
+    td {
+      padding: 0.244rem;
+    }
+
+    .fz-11 {
+      font-size: 11px;
+    }
+
+    .name-address {
+      display: flex;
+    }
+
+    .consigner {
+      border: 1px solid #152f90;
+    }
+
+    .consigner.left {
+      border-right: none;
+    }
+
+    .mrb-10 {
+      margin-bottom: 10px;
+    }
+
+    .m-10 {
+      margin: 10px;
+    }
+
+    .br-1 {
+      border-right: 1px solid #152f90;
+    }
+
+    .pl-6 {
+      padding-left: 6px;
+    }
+
+    td {
+      padding-bottom: 13px;
+    }
+
+
+
+    .two-columns {
+      display: flex;
+      gap: 30px;
+      /* Reduced spacing between columns */
+      margin-top: 10px;
+    }
+
+    .column {
+      flex: 0 0 40%;
+      /* Each column takes up 45% of the width */
+      min-width: 150px;
+      /* Minimum width to prevent collapsing */
+    }
+
+    .content-row {
+      display: flex;
+      flex-wrap: nowrap;
+      /* Ensure no wrapping occurs */
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 5px;
+    }
+
+    .content-row span {
+      margin-right: 5px;
+      /* Space between text elements */
+    }
+
+    .dotted-line {
+      border-bottom: 1px dotted #152f90;
+      padding: 0 5px;
+      margin: 0 5px;
+      flex-grow: 1;
+      /* Allow dotted line to fill space */
+      display: inline;
+      /* Ensure it's aligned properly */
+    }
+
+    /* Special case for the "amount in words" to make it wider */
+    .dotted-line.wider {
+      flex-grow: 10;
+      /* Increase space for this specific dotted line */
+    }
+
+
+
+    .amount-box {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 11px 42px;
+      box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.4);
+      /* Darker and stronger shadow */
+    }
+
+    .rupee-symbol {
+      font-size: 16px;
+      margin-right: 5px;
+    }
+
+    .amount-text {
+      font-size: 16px;
+      color: #555;
+    }
+
+    .watermark {
+      display: none;
+    }
+
+    .highlighted {
+      background-color: rgba(128, 128, 128, 0.5);
+      color: white;
+      padding: 2px;
+      border-radius: 3px;
+    }
+
+    /* Print-specific adjustments */
+    @media print {
+      @page {
+        margin: 5mm;
+        /* Adjust to your preferred value (can use px, mm, cm, etc.) */
+      }
+
+      body {
+        font-size: 10px;
+        /* Reduce overall font size */
+        margin: 0;
+        /* Remove body margin if necessary */
+        padding: 0;
+        /* Remove padding */
+      }
+
+
+      .two-columns {
+        display: flex;
+        gap: 30px;
+        /* Reduced spacing between columns */
+        margin-top: 10px;
+      }
+
+      .column {
+        flex: 0 0 44%;
+        /* Each column takes up 45% of the width */
+        min-width: 40px;
+        /* Minimum width to prevent collapsing */
+      }
+
+
+      .content-row {
+        display: flex;
+        flex-wrap: nowrap;
+        /* Ensure no wrapping occurs */
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 5px;
+      }
+
+      .content-row span {
+        margin-right: 5px;
+        /* Space between text elements */
+      }
+
+      .dotted-line {
+        border-bottom: 1px dotted #152f90;
+        padding: 0 5px;
+        margin: 0 5px;
+        flex-grow: 1;
+        /* Allow dotted line to fill space */
+        display: inline;
+        /* Ensure it's aligned properly */
+      }
+
+      /* Special case for the "amount in words" to make it wider */
+      .dotted-line.wider {
+        flex-grow: 10;
+        /* Increase space for this specific dotted line */
+      }
+
+      .head,
+      .boxes-container,
+      .name-address,
+      .details-box,
+      .last-container {
+        margin: 0;
+        padding: 0;
+      }
+
+      .logo-container img {
+        height: 66px;
+        /* Adjust logo size */
+      }
+
+      .fz-16 {
+        font-size: 13px !important;
+      }
+
+      .fz-15 {
+        font-size: 11px !important;
+      }
+
+      .fz-12 {
+        font-size: 10px !important;
+      }
+
+      .fz-8 {
+        font-size: 7px !important;
+      }
+
+      .fz-11 {
+        font-size: 9px !important;
+      }
+
+      .checkbox {
+        height: 20px;
+        width: 20px;
+        border: 1px solid #152f90;
+        margin-bottom: 6px;
+      }
+
+      td,
+      th {
+        padding: 0.2rem;
+        /* Reduce table padding */
+      }
+
+      .w-30 .w-50,
+      .w-40,
+      .w-60,
+      .w-32,
+      .w-80 {
+        width: 100% !important;
+        /* Adjust width to fit content */
+      }
+
+      .box-border,
+      .border-1px-solid-blue {
+        border-width: 0.5px;
+        /* Reduce border width */
+      }
+
+      .dotted-line {
+        border-bottom: 1px dotted #152f90;
+      }
+
+      .w-100 {
+        width: 100% !important;
+      }
+
+      .mrb-10 {
+        margin-bottom: 10px;
+      }
+
+      /* Ensure watermark appears during print */
+      .watermark {
+        position: fixed;
+        /* Keeps watermark fixed during print as well */
+        top: 25%;
+        right: 15%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        /* Ensure it doesn't block clicks in print */
+        white-space: nowrap;
+        text-align: center;
+        z-index: 9999;
+        /* Set z-index for print */
+      }
+
+      .watermark img {
+        width: 160%;
+        /* Scale the image */
+        height: 160%;
+        /* Scale the image */
+        object-fit: contain;
+        /* Ensure the image maintains its aspect ratio */
+      }
+
+      /* Optional: Adjust the watermark size for printing */
+      .watermark img {
+        opacity: 0.5;
+        /* Make the watermark slightly transparent in print */
+      }
+
+      /* Hide watermark on screen */
+      .watermark {
+        display: block;
+      }
+
+      .highlighted {
+        -webkit-print-color-adjust: exact;
+        /* For Webkit browsers like Chrome */
+        print-color-adjust: exact;
+        /* For other modern browsers */
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="watermark">
+    <img src="/static/images/smart360logo2.png" alt="Watermark Logo"> <!-- Replace with your logo's path -->
   </div>
-    <div class="mx-auto border-1px-solid-blue mt-3">
-      <div class="p-3 head  d-flex" >
-        <div class="left d-flex flex-column" style="padding-top: 20px;width: 20%; ">
-          <div class="fz-15"><b>CIN:</b> U63030AN2022PTC005604</div>
-          <div class="fz-15"><b>PAN: </b>ABICS7871H</div>
-          <div class="fz-15"><b>GSTIN: </b>35ABICS7817H1ZO</div>
-          
-        </div>
-        <div class="center d-flex flex-column" style="width: 60%;">
-          <h2 class="text-center company-name" style="color: #F3653A; font-weight: bold;">
-            SMART360 PACKERS AND <br />SHIPPING PVT LTD
+  <div class="mx-auto border-1px-solid-blue mt-3">
+    <div class="p-3 head  d-flex">
+      <div class="left d-flex flex-column" style="padding-top: 20px;width: 20%; ">
+        <div class="fz-15"><b>CIN:</b> U63030AN2022PTC005604</div>
+        <div class="fz-15"><b>PAN: </b>ABICS7871H</div>
+        <div class="fz-15"><b>GSTIN: </b>35ABICS7817H1ZO</div>
+
+      </div>
+      <div class="center d-flex flex-column" style="width: 60%;">
+        <h2 class="text-center company-name" style="color: #F3653A; font-weight: bold;">
+          SMART360 PACKERS AND <br />SHIPPING PVT LTD
         </h2>
-          <div class="address text-center fz-15">
-            Office Address: Near ICGS Office, Panipath Road, Haddo, Sri Vijaya<br /> Puram,  South Andaman - 744 102, Email: smart360ps@gmail.com,<br />
-            www.smart360packersshipping.com
-          </div>
-        </div>
-        <div class="right" style="width: 20%;">
-          <div class="logo-container my-2">
-            <img src="/static/images/smart360logo.png" />
-
-          </div>
-          <div class="d-flex">
-            
-            
-            <div class=" fz-16"><b>Cell:</b></div>
-            <div class="flex-column fz-16">7063924804<br />8900943403</div>
-          </div>
+        <div class="address text-center fz-15">
+          Office Address: Near ICGS Office, Panipath Road, Haddo, Sri Vijaya<br /> Puram, South Andaman - 744 102,
+          Email: smart360ps@gmail.com,<br />
+          www.smart360packersshipping.com
         </div>
       </div>
+      <div class="right" style="width: 20%;">
+        <div class="logo-container my-2">
+          <img src="/static/images/smart360logo.png" />
 
-      <!-- TEXT CONTAINER BOXES -->
-
-
-      <div class="box-border w-100 no-bl no-br no-bb"  style="font-size: 17px; font-weight: 450;">
-
-        <div class=" px-3 py-1 d-flex justify-between" style="margin-bottom: 20px;">
-          <div style="margin-right: auto;"><b>No: {{ data.invoiceNumber }}</b></div>
-          <div><b>Date:</b> {{ data.transactionDate }}</div>
         </div>
+        <div class="d-flex">
 
-       
-        
-        <div style="padding: 0.5rem 1rem;">
-          <div style="display: flex; align-items: center; margin-bottom: 20px; text-align: center;">
-            <span style="font-style: italic;">Received with thanks from</span>
-            <span style="border-bottom: 1px dotted #152f90; margin: 0 5px; flex-grow: 1; display: inline-block;font-size: 15px; font-weight: 450;" contenteditable="true">{{ data.customerName }}</span>
-            <span style="font-style: italic;">the sum of</span>
-          </div>
-          
-          <!-- First Line: Move "the sum of Rupees" to this line -->
-          <div style="display: flex; align-items: center; margin-bottom: 20px; text-align: center;">
-            <span style="font-style: italic;">Rupees</span>
-            <div style="flex-grow: 1; margin: 0 5px; display: block;">
-              <span style="border-bottom: 1px dotted #152f90; display: inline-block; width: 100%; padding: 0 5px;font-size: 15px; font-weight: 450;" contenteditable="true">
-                {{ data.amountText }}
-              </span>
-            </div>
-          </div>
-          
-          <!-- Break line before the Cash/Cheque section -->
-          <div style="margin-top: 30px; margin-bottom: 20px;">
-            <span style="font-style: italic;">by Cash/Cheque/NEFT/RTGS Freight for household goods/Bike/Car/Scooter Regd No</span>
-            <!-- Dotted line after "Regd No" -->
-            <span style="border-bottom: 1px dotted #152f90; display: inline-block; width: 90px; margin-left: 5px;"></span>
-          </div>
-          
-          <!-- Following content stays the same -->
-          <div style="display: flex; align-items: center; margin-bottom: 20px; text-align: center;">
-            <span style="border-bottom: 1px dotted #152f90; margin: 0 5px; flex-grow: 1; display: inline-block;font-size: 15px; font-weight: 450;" contenteditable="true">{{ data.vehicleRegNumber }}</span>
-            <span style="font-style: italic;">from</span>
-            <span style="border-bottom: 1px dotted #152f90; margin: 0 5px; flex-grow: 1; display: inline-block;font-size: 15px; font-weight: 450;" contenteditable="true">{{ data.fromAddress }}</span>
-            <span style="font-style: italic;">to</span>
-            <span style="border-bottom: 1px dotted #152f90; margin: 0 5px; flex-grow: 1; display: inline-block;font-size: 15px; font-weight: 450;" contenteditable="true">{{ data.toAddress }}</span>
-          </div>
+          <div class=" fz-16"><b>Cell:</b></div>
+          <div class="flex-column fz-16">7063924804<br />8900943403</div>
         </div>
-        
-        
-        
-
-
-        <div class=" px-3 d-flex justify-between" style="height: 130px; padding-top: 4rem!important;">
-          <!-- Amount box with rupee symbol and shadow -->
-          <div style="margin-right: auto;">
-            <div class="amount-box">
-              <span class="rupee-symbol">₹</span>
-              <span class="amount-text" style="font-size: 20px; font-weight: 450;" contenteditable="true"><b>{{ data.amountNumber }}/-</b></span>
-            </div>
-          </div>
-          <!-- Shipping Text with Center Alignment -->
-          <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
-            FOR SMART360 PACKERS AND <br>SHIPPING PVT LIMITED
-          </div>
-        </div>
-
-
       </div>
-      
-      
-
-
-
- 
-      
-      
-  
     </div>
-  </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
-  ></script>
-  <script>
-    document.querySelectorAll('[contenteditable="true"]').forEach((el) => {
-      el.addEventListener("input", () => {
-        el.classList.add("edited");
-      });
+
+    <!-- TEXT CONTAINER BOXES -->
+
+    <div class="box-border w-100 no-bl no-br no-bb" style="font-size: 17px; font-weight: 450;">
+
+      <div class=" px-3 py-1 d-flex justify-between" style="margin-bottom: 20px;">
+        <div style="margin-right: auto;"><b>No: <font style="color: #F3653A; font-size: 20px;">{{ data.invoiceNumber }}
+            </font></b></div>
+        <div><b>Date:</b> {{ data.receiptDate }}</div>
+      </div>
+
+      <div style="padding: 0.5rem 1rem;">
+        <div style="display: flex; align-items: center; margin-bottom: 20px; text-align: center;">
+          <span style="font-style: italic;">Received with thanks from</span>
+          <span
+            style="border-bottom: 1px dotted #152f90; margin: 0 5px; flex-grow: 1; display: inline-block;font-size: 15px; font-weight: 450;"
+            >{{ data.customerName }}</span>
+          <span style="font-style: italic;">the sum of</span>
+        </div>
+
+        <!-- First Line: Move "the sum of Rupees" to this line -->
+        <div style="display: flex; align-items: center; margin-bottom: 20px; text-align: center;">
+          <span style="font-style: italic;">Rupees</span>
+          <div style="flex-grow: 1; margin: 0 5px; display: block;">
+            <span
+              style="border-bottom: 1px dotted #152f90; display: inline-block; width: 100%; padding: 0 5px;font-size: 15px; font-weight: 450;text-transform: uppercase;""
+              >
+              {{ data.amountText }}
+            </span>
+          </div>
+        </div>
+
+        <!-- Break line before the Cash/Cheque section -->
+        <div style="margin-top: 30px; margin-bottom: 20px;">
+          <!-- <span style="font-style: italic;">by Cash/Cheque/NEFT/RTGS Freight for household goods/Bike/Car/Scooter Regd No</span> -->
+          <span id="byCash" style="font-style: italic;">by Cash</span> /
+          <span id="byCheque" style="font-style: italic;">Cheque</span> /
+          <span id="byNEFT" style="font-style: italic;">NEFT</span> /
+          <span id="byRTGS" style="font-style: italic;">RTGS</span>
+          Freight for
+          <span class="{% if 'Household Goods' in data.goodsTypes %}highlighted{% endif %}" style="font-style: italic;">
+            household goods
+          </span> /
+          <span class="{% if 'Bike' in data.goodsTypes %}highlighted{% endif %}" style="font-style: italic;">
+            Bike
+          </span> /
+          <span class="{% if 'Car' in data.goodsTypes %}highlighted{% endif %}" style="font-style: italic;">
+            Car
+          </span> /
+          <span class="{% if 'Scooter' in data.goodsTypes %}highlighted{% endif %}" style="font-style: italic;">
+            Scooter
+          </span>
+          Regd No
+
+          <!-- Dotted line after "Regd No" -->
+          <span style="border-bottom: 1px dotted #152f90; display: inline-block; width: 20px; margin-left: 5px;"></span>
+        </div>
+
+        <!-- Following content stays the same -->
+        <div style="display: flex; align-items: center; margin-bottom: 20px; text-align: center;">
+          <span
+            style="border-bottom: 1px dotted #152f90; margin: 0 5px; flex-grow: 1; display: inline-block;font-size: 15px; font-weight: 450;"
+            >{{ data.vehicleRegNumber }}</span>
+          <span style="font-style: italic;">from</span>
+          <span
+            style="border-bottom: 1px dotted #152f90; margin: 0 5px; flex-grow: 1; display: inline-block;font-size: 15px; font-weight: 450;"
+            >{{ data.fromAddress }}</span>
+          <span style="font-style: italic;">to</span>
+          <span
+            style="border-bottom: 1px dotted #152f90; margin: 0 5px; flex-grow: 1; display: inline-block;font-size: 15px; font-weight: 450;"
+            >{{ data.toAddress }}</span>
+        </div>
+      </div>
+
+      <div class=" px-3 d-flex justify-between" style="height: 130px; padding-top: 4rem!important;">
+        <!-- Amount box with rupee symbol and shadow -->
+        <div style="margin-right: auto;">
+          <div class="amount-box">
+            <span class="rupee-symbol">₹</span>
+            <span class="amount-text" style="font-size: 20px; font-weight: 450;"
+              ><b>{{ data.amountNumber }}/-</b></span>
+          </div>
+        </div>
+        <!-- Shipping Text with Center Alignment -->
+        <div
+          style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+          FOR SMART360 PACKERS AND <br>SHIPPING PVT LIMITED
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+  document.querySelectorAll('[]').forEach((el) => {
+    el.addEventListener("input", () => {
+      el.classList.add("edited");
     });
-    </script>
+  });
+</script>
+
 </html>

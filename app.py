@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, jsonify, url_for
 import os
 import json
-import pdfkit
+# import pdfkit
 from datetime import datetime
 
 app = Flask(__name__, static_folder='static')  # Initialize Flask with the static folder
@@ -12,18 +12,18 @@ pdf_data_folder = os.path.join(static_folder_path, 'pdf_data')
 json_data_folder = os.path.join(static_folder_path, 'json_data_storage')
 
 # Configure pdfkit (if needed for future functionality)
-pdfkit_config = pdfkit.configuration(wkhtmltopdf=r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe')
-pdfkit_options = {
-    'page-size': 'A4',
-    'margin-top': '1mm',
-    'margin-right': '1mm',
-    'margin-bottom': '1mm',
-    'margin-left': '1mm',
-    'encoding': "UTF-8",
-    'no-outline': None,
-    'disable-smart-shrinking': True, 
-    'enable-local-file-access': True  # Allows wkhtmltopdf to access local files like images or CSS
-}
+# pdfkit_config = pdfkit.configuration(wkhtmltopdf=r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe')
+# pdfkit_options = {
+#     'page-size': 'A4',
+#     'margin-top': '1mm',
+#     'margin-right': '1mm',
+#     'margin-bottom': '1mm',
+#     'margin-left': '1mm',
+#     'encoding': "UTF-8",
+#     'no-outline': None,
+#     'disable-smart-shrinking': True, 
+#     'enable-local-file-access': True  # Allows wkhtmltopdf to access local files like images or CSS
+# }
 
 # Ensure the folder for static files exists
 if not os.path.exists(static_folder_path):
@@ -321,6 +321,8 @@ def edit_money_receipt_json():
     try:
         # Get form data
         form_data = request.get_json()
+        print(f"Received data: {form_data}")
+
 
         if not form_data:
             return jsonify({'success': False, 'error': 'No data received'}), 400
