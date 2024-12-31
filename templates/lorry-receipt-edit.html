@@ -28,24 +28,24 @@
                                 <div class="input-group input-group-static">
                                     <label for="consignorName">Name</label>
                                     <input type="text" class="form-control" id="consignorName"
-                                        placeholder="" onfocus="focused(this)"
+                                        value="{{ data.consignor.name }}" onfocus="focused(this)"
                                         onfocusout="defocused(this)">
                                 </div>
                                 <div class="input-group input-group-static">
                                     <label for="consignorAddress">Address</label>
                                     <input type="text" class="form-control" id="consignorAddress"
-                                        placeholder="" maxlength="48" onfocus="focused(this)"
+                                        value="{{ data.consignor.address }}" maxlength="48" onfocus="focused(this)"
                                         onfocusout="defocused(this)">
                                 </div>
                                 <div class="input-group input-group-static">
                                     <label for="consignorAddress2">Address</label>
                                     <input type="text" class="form-control" id="consignorAddress2"
-                                        placeholder="" maxlength="48" onfocus="focused(this)"
+                                        value="{{ data.consignor.address2 }}" maxlength="48" onfocus="focused(this)"
                                         onfocusout="defocused(this)">
                                 </div>
                                 <div class="input-group input-group-static">
                                     <label for="consignorAddress3">Pincode</label>
-                                    <input type="text" class="form-control" id="consignorAddress3" placeholder=""
+                                    <input type="text" class="form-control" id="consignorAddress3" value="{{ data.consignor.address3 }}"
                                         maxlength="48" onfocus="focused(this)" onfocusout="defocused(this)">
                                 </div>
                             </div>
@@ -56,24 +56,24 @@
                                 <div class="input-group input-group-static">
                                     <label for="consigneeName">Name</label>
                                     <input type="text" class="form-control" id="consigneeName"
-                                        placeholder="" onfocus="focused(this)"
+                                        value="{{ data.consignee.name }}" onfocus="focused(this)"
                                         onfocusout="defocused(this)">
                                 </div>
                                 <div class="input-group input-group-static">
                                     <label for="consigneeAddress">Address</label>
                                     <input type="text" class="form-control" id="consigneeAddress"
-                                        placeholder="" maxlength="48" onfocus="focused(this)"
+                                        value="{{ data.consignee.address }}" maxlength="48" onfocus="focused(this)"
                                         onfocusout="defocused(this)">
                                 </div>
                                 <div class="input-group input-group-static">
                                     <label for="consigneeAddress2">Address</label>
                                     <input type="text" class="form-control" id="consigneeAddress2"
-                                        placeholder="" maxlength="48" onfocus="focused(this)"
+                                        value="{{ data.consignee.address2 }}" maxlength="48" onfocus="focused(this)"
                                         onfocusout="defocused(this)">
                                 </div>
                                 <div class="input-group input-group-static">
                                     <label for="consigneeAddress3">Pincode</label>
-                                    <input type="text" class="form-control" id="consigneeAddress3" placeholder=""
+                                    <input type="text" class="form-control" id="consigneeAddress3" value="{{ data.consignee.address3 }}"
                                         maxlength="48" onfocus="focused(this)" onfocusout="defocused(this)">
                                 </div>
                             </div>
@@ -92,33 +92,33 @@
                     <div class="form-box">
     
                         <div class="form-group">
-                            <label><input type="checkbox" id="notInsured"> Not Insured</label><br>
-                            <label><input type="checkbox" id="insured"> Insured</label>
+                            <label><input type="checkbox" id="notInsured"  {% if data.riskDetails.insured %}checked{% endif %}> Not Insured</label><br>
+                            <label><input type="checkbox" id="insured" {% if data.riskDetails.insured %}checked{% endif %}> Insured</label>
                         </div>
                         <div id="insuredDetails" style="display:none;">
                             <div class="input-group input-group-static">
                                 <label for="company">Company</label>
-                                <input type="text" class="form-control" id="company" placeholder=""
-                                    onfocus="focused(this)" onfocusout="defocused(this)">
+                                <input type="text" class="form-control" id="company" value="{{ data.riskDetails.insuredDetails.company }}"
+                                    onfocus="focused(this)" onfocusout="defocused(this)" >
                             </div>
                             <div class="input-group input-group-static">
                                 <label for="policy">Policy</label>
-                                <input type="text" class="form-control" id="policy" placeholder=""
+                                <input type="text" class="form-control" id="policy" value="{{ data.riskDetails.insuredDetails.policy }}"
                                     onfocus="focused(this)" onfocusout="defocused(this)">
                             </div>
                             <div class="input-group input-group-static">
                                 <label for="date">Date</label>
-                                <input type="date" class="form-control" id="date" onfocus="focused(this)"
+                                <input type="text" class="form-control" id="date" placeholder= "31-12-2024" value="{{ data.riskDetails.insuredDetails.date }}" onfocus="focused(this)"
                                     onfocusout="defocused(this)">
                             </div>
                             <div class="input-group input-group-static">
                                 <label for="insuredAmount">Amount</label>
-                                <input type="number" class="form-control" id="insuredAmount" placeholder=""
+                                <input type="number" class="form-control" id="insuredAmount" value="{{ data.riskDetails.insuredDetails.insuredAmount }}"
                                     step="any" onfocus="focused(this)" onfocusout="defocused(this)">
                             </div>
                             <div class="input-group input-group-static">
                                 <label for="risk">Risk</label>
-                                <input type="text" class="form-control" id="risk" placeholder=""
+                                <input type="text" class="form-control" id="risk" value="{{ data.riskDetails.insuredDetails.risk }}"
                                     onfocus="focused(this)" onfocusout="defocused(this)">
                             </div>
                         </div>
@@ -135,27 +135,27 @@
         
                         <div class="input-group input-group-static">
                             <label for="gcNumber">GC No.</label>
-                            <input type="text" class="form-control" id="gcNumber" placeholder=""
+                            <input type="text" class="form-control" id="gcNumber" readonly value="{{ data.goodsDetails.gcNumber }} "
                                 onfocus="focused(this)" onfocusout="defocused(this)">
                         </div>
                         <div class="input-group input-group-static">
                             <label for="gcDate">Date</label>
-                            <input type="date" class="form-control" id="gcDate" onfocus="focused(this)"
+                            <input type="text" class="form-control" id="gcDate" onfocus="focused(this)" placeholder= "31-12-2024" value="{{ data.goodsDetails.gcDate }}"
                                 onfocusout="defocused(this)">
                         </div>
                         <div class="input-group input-group-static">
                             <label for="origin">Origin</label>
-                            <input type="text" class="form-control" id="origin" placeholder="" maxlength="21"
+                            <input type="text" class="form-control" id="origin" value="{{ data.goodsDetails.origin }}" maxlength="21"
                                 onfocus="focused(this)" onfocusout="defocused(this)">
                         </div>
                         <div class="input-group input-group-static">
                             <label for="destination">Destination</label>
-                            <input type="text" class="form-control" id="destination" placeholder="" maxlength="21"
+                            <input type="text" class="form-control" id="destination" value="{{ data.goodsDetails.destination }}" maxlength="21"
                                 onfocus="focused(this)" onfocusout="defocused(this)">
                         </div>
                         <div class="input-group input-group-static">
                             <label for="contact">Contact No.</label>
-                            <input type="number" class="form-control" id="contact" placeholder=""
+                            <input type="number" class="form-control" id="contact" value="{{ data.goodsDetails.contact }}"
                                 onfocus="focused(this)" onfocusout="defocused(this)">
                         </div>
                     </div>
@@ -176,7 +176,7 @@
                                 <div class="input-group input-group-static">
                                     <label for="location1">From Location 1</label>
                                     <input type="text" class="form-control" id="location1"
-                                        placeholder="" maxlength="21" onfocus="focused(this)"
+                                        value="{{data.freightDetails.locations[0].from}}" maxlength="21" onfocus="focused(this)"
                                         onfocusout="defocused(this)">
                                 </div>
                             </div>
@@ -185,7 +185,7 @@
                                 <div class="input-group input-group-static">
                                     <label for="location2">To Location 2</label>
                                     <input type="text" class="form-control" id="location2"
-                                        placeholder="" maxlength="21" onfocus="focused(this)"
+                                        value="{{data.freightDetails.locations[0].to}}" maxlength="21" onfocus="focused(this)"
                                         onfocusout="defocused(this)">
                                 </div>
                             </div>
@@ -193,7 +193,7 @@
                             <div class="col-md-4">
                                 <div class="input-group input-group-static">
                                     <label for="amount1">Amount for Location 1 to 2</label>
-                                    <input type="number" class="form-control" id="amount1" placeholder=""
+                                    <input type="number" class="form-control" id="amount1" value="{{data.freightDetails.locations[0].amount}}"
                                         step="any" onfocus="focused(this)" onfocusout="defocused(this)">
                                 </div>
                             </div>
@@ -205,7 +205,7 @@
                                 <div class="input-group input-group-static">
                                     <label for="location3">From Location 3</label>
                                     <input type="text" class="form-control" id="location3"
-                                        placeholder="" maxlength="21" onfocus="focused(this)"
+                                        value="{{data.freightDetails.locations[1].from}}" maxlength="21" onfocus="focused(this)"
                                         onfocusout="defocused(this)">
                                 </div>
                             </div>
@@ -214,7 +214,7 @@
                                 <div class="input-group input-group-static">
                                     <label for="location4">To Location 4</label>
                                     <input type="text" class="form-control" id="location4"
-                                        placeholder="" maxlength="21" onfocus="focused(this)"
+                                        value="{{data.freightDetails.locations[1].to}}" maxlength="21" onfocus="focused(this)"
                                         onfocusout="defocused(this)">
                                 </div>
                             </div>
@@ -222,7 +222,7 @@
                             <div class="col-md-4">
                                 <div class="input-group input-group-static">
                                     <label for="amount2">Amount for Location 3 to 4</label>
-                                    <input type="number" class="form-control" id="amount2" placeholder=""
+                                    <input type="number" class="form-control" id="amount2" value="{{data.freightDetails.locations[1].amount}}"
                                         step="any" onfocus="focused(this)" onfocusout="defocused(this)">
                                 </div>
                             </div>
@@ -234,7 +234,7 @@
                                 <div class="input-group input-group-static">
                                     <label for="location5">From Location 5</label>
                                     <input type="text" class="form-control" id="location5"
-                                        placeholder="" maxlength="21" onfocus="focused(this)"
+                                        value="{{data.freightDetails.locations[2].from}}" maxlength="21" onfocus="focused(this)"
                                         onfocusout="defocused(this)">
                                 </div>
                             </div>
@@ -243,7 +243,7 @@
                                 <div class="input-group input-group-static">
                                     <label for="location6">To Location 6</label>
                                     <input type="text" class="form-control" id="location6"
-                                        placeholder="" maxlength="21" onfocus="focused(this)"
+                                        value="{{data.freightDetails.locations[2].to}}" maxlength="21" onfocus="focused(this)"
                                         onfocusout="defocused(this)">
                                 </div>
                             </div>
@@ -251,7 +251,7 @@
                             <div class="col-md-4">
                                 <div class="input-group input-group-static">
                                     <label for="amount3">Amount for Location 5 to 6</label>
-                                    <input type="number" class="form-control" id="amount3" placeholder=""
+                                    <input type="number" class="form-control" id="amount3" value="{{data.freightDetails.locations[2].amount}}"
                                         step="any" onfocus="focused(this)" onfocusout="defocused(this)">
                                 </div>
                             </div>
@@ -273,7 +273,7 @@
                                 <div class="input-group input-group-static">
                                     <label for="loadingCharges">Loading and Unloading Charges</label>
                                     <input type="text" class="form-control" id="loadingCharges"
-                                        placeholder="" value="INCLUDED" onfocus="focused(this)"
+                                        placeholder="" value="{{data.additionalCharges.loadingCharges}}" onfocus="focused(this)"
                                         onfocusout="defocused(this)">
                                 </div>
                             </div>
@@ -282,7 +282,7 @@
                                 <div class="input-group input-group-static">
                                     <label for="insuranceCharges">Insurance By Party</label>
                                     <input type="text" class="form-control" id="insuranceCharges"
-                                        placeholder="" value="NO" onfocus="focused(this)"
+                                        placeholder="" value="{{data.additionalCharges.insuranceCharges}}" onfocus="focused(this)"
                                         onfocusout="defocused(this)">
                                 </div>
                             </div>
@@ -297,14 +297,14 @@
                                 <div class="input-group input-group-static">
                                     <label for="gstCharges">GST Charges</label>
                                     <input type="text" class="form-control-plaintext" id="gstCharges"
-                                        placeholder="" value="" disabled>
+                                        placeholder="" value="{{data.additionalCharges.gstCharges}}" disabled>
                                 </div>
                             </div>
                             <!-- GC Charges -->
                             <div class="col-md-6">
                                 <div class="input-group input-group-static">
                                     <label for="gcCharges">GC Charges</label>
-                                    <input type="text" class="form-control" id="gcCharges" placeholder="NONE"
+                                    <input type="text" class="form-control" id="gcCharges" value="{{ data.additionalCharges.gcCharges | default('NONE', true) }}"
                                         step="any" onfocus="focused(this)" onfocusout="defocused(this)">
                                 </div>
                             </div>
@@ -319,7 +319,7 @@
                                 <div class="input-group input-group-static">
                                     <label for="gstPercentage">GST %</label>
                                     <input type="number" class="form-control" id="gstPercentage" placeholder=""
-                                        step="any" value="5" onfocus="focused(this)" onfocusout="defocused(this)">
+                                        step="any" value="{{data.additionalCharges.gstPercentage}}" onfocus="focused(this)" onfocusout="defocused(this)">
                                 </div>
                             </div>
 
@@ -327,7 +327,7 @@
                             <div class="col-md-6">
                                 <div class="input-group input-group-static">
                                     <label for="grandTotal">Grand Total</label>
-                                    <input type="number" class="form-control" id="grandTotal" placeholder=""
+                                    <input type="number" class="form-control" id="grandTotal" value="{{data.grandTotal}}"
                                         readonly step="any">
                                 </div>
                             </div>
@@ -346,10 +346,10 @@
                     <div class="form-box">
                      
                         <div class="form-group">
-                            <label><input type="checkbox" id="gstConsignor"> Consignor</label><br>
-                            <label><input type="checkbox" id="gstConsignee"> Consignee</label><br>
-                            <label><input type="checkbox" id="gstExempted"> Exempted</label><br>
-                            <label><input type="checkbox" id="gstTransporter"> Transporter</label>
+                            <label><input type="checkbox" id="gstConsignor" {% if data.gstPaidBy.consignor %}checked{% endif %}> Consignor</label><br>
+                            <label><input type="checkbox" id="gstConsignee" {% if data.gstPaidBy.consignee %}checked{% endif %}> Consignee</label><br>
+                            <label><input type="checkbox" id="gstExempted" {% if data.gstPaidBy.exempted %}checked{% endif %}> Exempted</label><br>
+                            <label><input type="checkbox" id="gstTransporter" {% if data.gstPaidBy.transporter %}checked{% endif %}> Transporter</label>
                         </div>
                     </div>
                 </div>
@@ -373,7 +373,7 @@
                                     <div class="input-group input-group-static">
                                         <label for="noOfPackages">No. of Packages</label>
                                         <input type="number" class="form-control" id="noOfPackages"
-                                            placeholder="">
+                                            value="{{ data.description.noOfPackages }}">
                                     </div>
                                 </div>
                                 <!-- Two Wheeler No. -->
@@ -381,14 +381,14 @@
                                     <div class="input-group input-group-static">
                                         <label for="twoWheelerNo">Two Wheeler No.</label>
                                         <input type="text" class="form-control" id="twoWheelerNo"
-                                            placeholder="">
+                                            value="{{ data.description.twoWheelerNo }}">
                                     </div>
                                 </div>
                                 <!-- Car No. -->
                                 <div class="col-md-4">
                                     <div class="input-group input-group-static">
                                         <label for="carNo">Car No.</label>
-                                        <input type="text" class="form-control" id="carNo" placeholder="">
+                                        <input type="text" class="form-control" id="carNo" value="{{ data.description.carNo }}">
                                     </div>
                                 </div>
                             </div>
@@ -402,7 +402,7 @@
                                     <div class="input-group input-group-static">
                                         <label for="actualWeight">Actual Weight</label>
                                         <input type="number" class="form-control" id="actualWeight"
-                                            placeholder="" step="any">
+                                            value="{{ data.description.actualWeight }}" step="any">
                                     </div>
                                 </div>
                                 <!-- Charged Weight -->
@@ -410,14 +410,14 @@
                                     <div class="input-group input-group-static">
                                         <label for="chargedWeight">Charged Weight</label>
                                         <input type="number" class="form-control" id="chargedWeight"
-                                            placeholder="" step="any">
+                                            value="{{ data.description.chargedWeight }}" step="any">
                                     </div>
                                 </div>
                                 <!-- CBM -->
                                 <div class="col-md-4">
                                     <div class="input-group input-group-static">
                                         <label for="cbm">CBM</label>
-                                        <input type="number" class="form-control" id="cbm" placeholder="" step="any">
+                                        <input type="number" class="form-control" id="cbm" value="{{ data.description.cbm }}" step="any">
                                     </div>
                                 </div>
                             </div>
@@ -431,14 +431,14 @@
                                     <div class="input-group input-group-static">
                                         <label for="goodsValue">Goods Value</label>
                                         <input type="number" class="form-control" id="goodsValue"
-                                            placeholder="" step="any">
+                                            placeholder="" step="any" value="{{ data.description.goodsValue }}">
                                     </div>
                                 </div>
                                 <!-- Truck No. -->
                                 <div class="col-md-4">
                                     <div class="input-group input-group-static">
                                         <label for="truckNo">Truck No.</label>
-                                        <input type="text" class="form-control" id="truckNo" placeholder="">
+                                        <input type="text" class="form-control" id="truckNo" value= "{{ data.description.truckNo }}">
                                     </div>
                                 </div>
                             </div>
@@ -576,7 +576,7 @@
                 },
                 created_at: new Date().toISOString()
             };
-            fetch('/save_lrjson', {
+            fetch('/save_lr_edit_json', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

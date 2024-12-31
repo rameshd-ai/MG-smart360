@@ -1,0 +1,193 @@
+{% extends 'base-template.html' %}
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+
+<div class="row">
+    <div class="ms-3">
+        <h3 class="mb-0 h4 font-weight-bolder">Money Receipt Form</h3>
+    </div>
+
+    <form id="consignmentForm" onsubmit="saveFormData(event)">
+
+        <div class="card mt-4" id="basic-info">
+            <div class="card-header">
+                <div class="icon icon-lg icon-shape bg-gradient-dark shadow text-center border-radius-xl mt-n4 me-3 float-start">
+                    <i class="material-symbols-rounded opacity-10">attach_money</i>
+                </div>
+                <h5>Money Receipt Details</h5>
+            </div>
+            <div class="card-body pt-0">
+                <!-- Row for GC Number and Invoice Number -->
+                <div class="row">
+                    <div class="col-6">
+                        <div class="input-group input-group-static">
+                            <label for="gcNumber">GC Number</label>
+                            <input type="text" class="form-control" id="gcNumber" onfocus="focused(this)" onfocusout="defocused(this)" value="{{ data.gcNumber }}" readonly>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input-group input-group-static">
+                            <label for="invoiceNumber">Invoice Number</label>
+                            <input type="text" class="form-control" id="invoiceNumber" onfocus="focused(this)" onfocusout="defocused(this)" value="{{ data.invoiceNumber }}">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-box">
+                            <div class="input-group input-group-static">
+                                <label for="customerName">Customer Name</label>
+                                <input type="text" class="form-control" id="customerName" onfocus="focused(this)" onfocusout="defocused(this)" value="{{ data.customerName }}">
+                            </div>
+                            <div class="input-group input-group-static">
+                                <label for="amountNumber">Amount</label>
+                                <input type="number" class="form-control" id="amountNumber" onfocus="focused(this)" onfocusout="defocused(this)" oninput="convertAmountToWords()" value="{{ data.amountNumber }}">
+                            </div>
+                            <div class="input-group input-group-static">
+                                <label for="amountText">Amount in Words</label>
+                                <input type="text" class="form-control" id="amountText" readonly value="{{ data.amountText }}">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-box">
+                            <div class="input-group input-group-static">
+                                <label for="fromAddress">From Address</label>
+                                <input type="text" class="form-control" id="fromAddress" maxlength="48" onfocus="focused(this)" onfocusout="defocused(this)" value="{{ data.fromAddress }}">
+                            </div>
+                            <div class="input-group input-group-static">
+                                <label for="toAddress">To Address</label>
+                                <input type="text" class="form-control" id="toAddress" maxlength="48" onfocus="focused(this)" onfocusout="defocused(this)" value="{{ data.toAddress }}">
+                            </div>
+                            <div class="input-group input-group-static">
+                                <label for="vehicleRegNumber">Vehicle Registration Number</label>
+                                <input type="text" class="form-control" id="vehicleRegNumber" onfocus="focused(this)" onfocusout="defocused(this)" value="{{ data.vehicleRegNumber }}">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-sm-0 mb-4">
+                  <div class="w-50"></div>
+                  <div class="w-50 text-end">
+                      <button class="btn bg-gradient-danger mb-0 ms-2" type="submit" name="button">Submit</button>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+    </form>
+
+</div>
+
+<script>
+    function convertAmountToWords() {
+          const amount = document.getElementById("amountNumber").value;
+          const words = convertToWordsInLakhs(amount);
+          document.getElementById("amountText").value = words;
+      }
+  
+      function convertToWordsInLakhs(num) {
+          if (!num) return "";
+  
+          const belowTwenty = ["", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", 
+                               "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"];
+          const tens = ["", "", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"];
+  
+          if (num == 0) return "Zero Only";
+  
+          let words = "";
+  
+          const crore = Math.floor(num / 10000000);
+          num %= 10000000;
+          if (crore > 0) {
+              words += `${convertChunk(crore, belowTwenty, tens)} Crore `;
+          }
+  
+          const lakh = Math.floor(num / 100000);
+          num %= 100000;
+          if (lakh > 0) {
+              words += `${convertChunk(lakh, belowTwenty, tens)} Lakh `;
+          }
+  
+          const thousand = Math.floor(num / 1000);
+          num %= 1000;
+          if (thousand > 0) {
+              words += `${convertChunk(thousand, belowTwenty, tens)} Thousand `;
+          }
+  
+          const hundred = Math.floor(num / 100);
+          num %= 100;
+          if (hundred > 0) {
+              words += `${convertChunk(hundred, belowTwenty, tens)} Hundred `;
+          }
+  
+          if (num > 0) {
+              words += `${convertChunk(num, belowTwenty, tens)}`;
+          }
+  
+          return words.trim() + " Only"; // Append "Only" at the end
+      }
+  
+      function convertChunk(num, belowTwenty, tens) {
+          let chunkWords = "";
+  
+          if (num >= 20) {
+              chunkWords += `${tens[Math.floor(num / 10)]} `;
+              num %= 10;
+          }
+  
+          if (num > 0) {
+              chunkWords += `${belowTwenty[num]} `;
+          }
+  
+          return chunkWords.trim();
+      }
+
+    function formatDate(date) {
+        if (!date) return ''; // If no date, return an empty string
+        var parts = date.split("-");  // Split the date into an array [year, month, day]
+        var formattedDate = `${parts[2]}-${parts[1]}-${parts[0]}`;  // Format as DD-MM-YYYY
+        return formattedDate;  // Return the formatted date
+    }
+
+    function saveFormData(event) {
+        event.preventDefault();  // Prevent form submission
+
+        const formData = {
+            gcNumber: document.getElementById('gcNumber').value,
+            invoiceNumber: document.getElementById('invoiceNumber').value,
+            customerName: document.getElementById('customerName').value,
+            amountNumber: document.getElementById('amountNumber').value,
+            amountText: document.getElementById('amountText').value,
+            vehicleRegNumber: document.getElementById('vehicleRegNumber').value,
+            fromAddress: document.getElementById('fromAddress').value,
+            toAddress: document.getElementById('toAddress').value,
+            created_at: formatDate(new Date().toISOString()), // Get current date and format it
+        };
+
+        fetch('/edit_money_receipt_json', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert('Data saved successfully');
+            window.location.href = '/money-receipt';
+        })
+        .catch(error => {
+            console.error('Error saving form data:', error);
+        });
+    }
+</script>
+
+{% endblock %}

@@ -67,6 +67,84 @@ def invoice():
     
     return render_template('lorry-receipt.html', data=data)  # Pass data to the template
 
+# Invoice route
+@app.route('/lorry-receipt-view/<folder>/<json_file>')
+def lorry_receipt_view(folder, json_file):
+    try:
+        # Construct the path to the JSON file
+        json_file_path = os.path.join(json_data_folder, folder, json_file)
+        
+        # Debug: Print the resolved file path
+        print(f"Accessing JSON file: {json_file_path}")
+        
+        # Check if the file exists and read its contents
+        if os.path.exists(json_file_path):
+            with open(json_file_path, 'r') as json_file:
+                data = json.load(json_file)  # Parse the JSON file into a Python dictionary
+        else:
+            # File doesn't exist, return an empty dictionary and log the issue
+            data = {}
+            print(f"File not found: {json_file_path}")
+    except Exception as e:
+        # Print error message if file reading fails
+        print(f"Error reading JSON file: {e}")
+        data = {}  # Return an empty dictionary in case of error
+
+    # Pass the parsed data to the template
+    return render_template('lorry-receipt-view.html', data=data)
+
+@app.route('/lorry-receipt-edit/<folder>/<json_file>')
+def lorry_receipt_edit(folder, json_file):
+    try:
+        # Construct the path to the JSON file
+        json_file_path = os.path.join(json_data_folder, folder, json_file)
+        
+        # Debug: Print the resolved file path
+        print(f"Accessing JSON file: {json_file_path}")
+        
+        # Check if the file exists and read its contents
+        if os.path.exists(json_file_path):
+            with open(json_file_path, 'r') as json_file:
+                data = json.load(json_file)  # Parse the JSON file into a Python dictionary
+        else:
+            # File doesn't exist, return an empty dictionary and log the issue
+            data = {}
+            print(f"File not found: {json_file_path}")
+    except Exception as e:
+        # Print error message if file reading fails
+        print(f"Error reading JSON file: {e}")
+        data = {}  # Return an empty dictionary in case of error
+
+    # Pass the parsed data to the template
+    return render_template('lorry-receipt-edit.html', data=data)
+
+
+
+@app.route('/money-receipt-edit/<folder>/<json_file>')
+def money_receipt_edit(folder, json_file):
+    try:
+        # Construct the path to the JSON file
+        json_file_path = os.path.join(json_data_folder, folder, json_file)
+        
+        # Debug: Print the resolved file path
+        print(f"Accessing JSON file: {json_file_path}")
+        
+        # Check if the file exists and read its contents
+        if os.path.exists(json_file_path):
+            with open(json_file_path, 'r') as json_file:
+                data = json.load(json_file)  # Parse the JSON file into a Python dictionary
+        else:
+            # File doesn't exist, return an empty dictionary and log the issue
+            data = {}
+            print(f"File not found: {json_file_path}")
+    except Exception as e:
+        # Print error message if file reading fails
+        print(f"Error reading JSON file: {e}")
+        data = {}  # Return an empty dictionary in case of error
+
+    # Pass the parsed data to the template
+    return render_template('money-receipt-edit.html', data=data)
+
 
 @app.route('/money-receipt')  
 def moneyReceipt():
@@ -85,9 +163,35 @@ def moneyReceipt():
     return render_template('money-receipt.html', data=data)  # Pass data to the template
 
 
+@app.route('/money-receipt-view/<folder>/<json_file>')
+def money_receipt_view(folder, json_file):
+    try:
+        # Construct the path to the JSON file
+        json_file_path = os.path.join(json_data_folder, folder, json_file)
+        
+        # Debug: Print the resolved file path
+        print(f"Accessing JSON file: {json_file_path}")
+        
+        # Check if the file exists and read its contents
+        if os.path.exists(json_file_path):
+            with open(json_file_path, 'r') as json_file:
+                data = json.load(json_file)  # Parse the JSON file into a Python dictionary
+        else:
+            # File doesn't exist, return an empty dictionary and log the issue
+            data = {}
+            print(f"File not found: {json_file_path}")
+    except Exception as e:
+        # Print error message if file reading fails
+        print(f"Error reading JSON file: {e}")
+        data = {}  # Return an empty dictionary in case of error
 
-@app.route('/save_json', methods=['POST'])
-def save_json():
+    # Pass the parsed data to the template
+    return render_template('money-receipt-view.html', data=data)
+
+
+
+@app.route('/save_lrjson', methods=['POST'])
+def save_lrjson():
     try:
         # Get form data
         form_data = request.get_json()
@@ -96,7 +200,7 @@ def save_json():
             return jsonify({'success': False, 'error': 'No data received'}), 400
 
         # Validate that 'gcNumber' exists in the form data
-        gc_number = form_data.get('goodsDetails', {}).get('gcNumber')
+        gc_number = form_data.get('goodsDetails', {}).get('gcNumber').strip()
         if not gc_number:
             return jsonify({'success': False, 'error': 'gcNumber is missing in the form data'}), 400
 
@@ -126,6 +230,55 @@ def save_json():
 
 
 
+@app.route('/save_lr_edit_json', methods=['POST'])
+def save_lr_edit_json():
+    try:
+        # Get form data
+        form_data = request.get_json()
+
+        if not form_data:
+            return jsonify({'success': False, 'error': 'No data received'}), 400
+
+        # Validate that 'gcNumber' exists in the form data
+        gc_number = form_data.get('goodsDetails', {}).get('gcNumber').strip()
+        if not gc_number:
+            return jsonify({'success': False, 'error': 'gcNumber is missing in the form data'}), 400
+
+        # Save JSON to file
+        json_filename = os.path.join(static_folder_path, 'consignment_form_data.json')
+        with open(json_filename, 'w') as json_file:
+            json.dump(form_data, json_file, indent=2)
+
+        # Create folder using gcNumber if it doesn't exist
+        gc_folder_path = os.path.join(json_data_folder, gc_number)
+        os.makedirs(gc_folder_path, exist_ok=True)
+
+        # Delete any existing files that start with 'consignment_form_data_' in the folder
+        for filename in os.listdir(gc_folder_path):
+            if filename.startswith('consignment_form_data_'):
+                file_path = os.path.join(gc_folder_path, filename)
+                try:
+                    os.remove(file_path)
+                    print(f"Deleted existing file: {file_path}")
+                except Exception as e:
+                    print(f"Error deleting file {file_path}: {e}")
+
+        # Generate a timestamped filename
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        json_storage_filename = os.path.join(gc_folder_path, f'consignment_form_data_{timestamp}.json')
+
+        # Save the JSON data with the timestamped filename
+        with open(json_storage_filename, 'w') as json_storage_file:
+            json.dump(form_data, json_storage_file, indent=2)
+
+        print(f"Data successfully saved in folder: {gc_folder_path}")
+        return jsonify({'success': True}), 200
+    except Exception as e:
+        print(f"Error saving JSON: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+    
+
+
 @app.route('/save_money_receipt_json', methods=['POST'])
 def save_money_receipt_json():
     try:
@@ -136,7 +289,7 @@ def save_money_receipt_json():
             return jsonify({'success': False, 'error': 'No data received'}), 400
 
         # Validate that 'gcNumber' exists in the form data
-        gc_number = form_data.get('gcNumber')
+        gc_number = form_data.get('gcNumber').strip()
         if not gc_number:
             return jsonify({'success': False, 'error': 'gcNumber is missing in the form data'}), 400
 
@@ -148,6 +301,54 @@ def save_money_receipt_json():
         # Create folder using gcNumber if it doesn't exist
         gc_folder_path = os.path.join(json_data_folder, gc_number)
         os.makedirs(gc_folder_path, exist_ok=True)
+
+        # Generate a timestamped filename
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        json_storage_filename = os.path.join(gc_folder_path, f'money_receipt_form_data_{timestamp}.json')
+
+        # Save the JSON data with the timestamped filename
+        with open(json_storage_filename, 'w') as json_storage_file:
+            json.dump(form_data, json_storage_file, indent=2)
+
+        print(f"Data successfully saved in folder: {gc_folder_path}")
+        return jsonify({'success': True}), 200
+    except Exception as e:
+        print(f"Error saving JSON: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+    
+@app.route('/edit_money_receipt_json', methods=['POST'])
+def edit_money_receipt_json():
+    try:
+        # Get form data
+        form_data = request.get_json()
+
+        if not form_data:
+            return jsonify({'success': False, 'error': 'No data received'}), 400
+
+        # Validate that 'gcNumber' exists in the form data
+        gc_number = form_data.get('gcNumber').strip()
+        if not gc_number:
+            return jsonify({'success': False, 'error': 'gcNumber is missing in the form data'}), 400
+
+        # Save JSON to file
+        json_filename = os.path.join(static_folder_path, 'money_receipt.json')
+        with open(json_filename, 'w') as json_file:
+            json.dump(form_data, json_file, indent=2)
+
+        # Create folder using gcNumber if it doesn't exist
+        gc_folder_path = os.path.join(json_data_folder, gc_number)
+        os.makedirs(gc_folder_path, exist_ok=True)
+
+        # Delete any existing files that start with 'consignment_form_data_' in the folder
+        for filename in os.listdir(gc_folder_path):
+            if filename.startswith('money_receipt_form_data_'):
+                file_path = os.path.join(gc_folder_path, filename)
+                try:
+                    os.remove(file_path)
+                    print(f"Deleted existing file: {file_path}")
+                except Exception as e:
+                    print(f"Error deleting file {file_path}: {e}")
+
 
         # Generate a timestamped filename
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')

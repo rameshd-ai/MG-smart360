@@ -31,6 +31,8 @@
         
         <!-- Font Awesome Icons -->
         <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
         
         <!-- Material Icons -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -423,116 +425,11 @@
 
   <script>
     $(document).ready(function () {
-        // Initialize DataTable
-        var table = $('#lr-table').DataTable();
-
-        // Fetch the JSON structure from /json_list route
-        $.getJSON('/lr_list', function (data) {
-            // Debug: Log the structure to the console
-            console.log("Received Folder Data:", data);
-
-            if (Array.isArray(data)) {
-                // Prepare the table rows
-                var rows = [];
-                
-                data.forEach(function(folder) {
-                    // For each JSON file in the folder, create a separate row
-                    folder.json_files.forEach(function(jsonFile) {
-                        // Debug: Log filename before processing
-                        console.log("Processing file:", jsonFile);
-
-                        // Adjusted regex to match the date and time from the filename
-                        var dateTimeMatch = jsonFile.match(/(\d{8})_(\d{6})\.json/); // Match: YYYYMMDD_HHMMSS.json
-
-                        if (dateTimeMatch) {
-                            var date = dateTimeMatch[1];  // Extract date part (e.g., 20241229)
-                            var time = dateTimeMatch[2];  // Extract time part (e.g., 134530)
-
-                            // Format date and time
-                            var formattedDate = date.slice(0, 4) + '-' + date.slice(4, 6) + '-' + date.slice(6, 8);  // YYYY-MM-DD
-                            var formattedTime = time.slice(0, 2) + ':' + time.slice(2, 4) + ':' + time.slice(4, 6);  // HH:MM:SS
-
-                            // Combine them into a single formatted string
-                            var formattedDateTime = formattedDate + ' ' + formattedTime;
-
-                            // Convert to Date object for sorting (YYYY-MM-DD HH:MM:SS format)
-                            var dateObject = new Date(formattedDate + 'T' + formattedTime);
-
-                            // Add the row with folder name, formatted date/time, and Date object
-                            rows.push({
-                                folder: folder.folder_name,
-                                formattedDateTime: formattedDateTime,
-                                dateObject: dateObject
-                            });
-
-                            // Debug: Log formatted date and time
-                            console.log("Formatted Date and Time:", formattedDateTime);
-                        } else {
-                            // If the filename doesn't match the expected format, keep it as is
-                            rows.push({
-                                folder: folder.folder_name,
-                                formattedDateTime: jsonFile,
-                                dateObject: new Date()  // Default to current date if parsing fails
-                            });
-
-                            console.log("Filename format does not match. Using original filename:", jsonFile);
-                        }
-                    });
-                });
-
-                // Sort rows by dateObject in descending order (latest first)
-                rows.sort(function(a, b) {
-                    return b.dateObject - a.dateObject;
-                });
-
-                // Populate the table body with the sorted rows
-                var sortedRows = '';
-                rows.forEach(function(row) {
-                    sortedRows += `
-                        <tr>
-                            <td style="color:red;"><b>${row.folder}</b></td>
-                            <td>${row.formattedDateTime}</td>
-                            <td>
-                                <button class="btn btn-info">
-                                    <i class="fas fa-eye"></i> View
-                                </button>
-                                <button class="btn btn-primary">
-                                    <i class="fas fa-edit"></i> Edit
-                                </button>
-                            </td>
-                        </tr>
-                    `;
-                });
-
-                // Append rows to the table body
-                $('#lr-body').html(sortedRows);
-
-                // Redraw DataTable after populating the rows
-                table.clear();
-                table.rows.add($('#lr-body tr')).draw();
-            } else {
-                console.error("Received data is not an array:", data);
-            }
-        }).fail(function (jqXHR, textStatus, errorThrown) {
-            console.error("Request failed: " + textStatus + ", " + errorThrown);
-        });
-    });
-
-
-
-
-    
-</script>
-
-
-
-<script>  
- $(document).ready(function () {
     // Initialize DataTable
-    var table = $('#mr-table').DataTable();
+    var table = $('#lr-table').DataTable();
 
-    // Fetch the JSON structure from /json_list route
-    $.getJSON('/mr_list', function (data) {
+    // Fetch the JSON structure from /lr_list route
+    $.getJSON('/lr_list', function (data) {
         // Debug: Log the structure to the console
         console.log("Received Folder Data:", data);
 
@@ -563,63 +460,23 @@
                         // Convert to Date object for sorting (YYYY-MM-DD HH:MM:SS format)
                         var dateObject = new Date(formattedDate + 'T' + formattedTime);
 
-                        // Fetch the customer name from the JSON file
-                        $.getJSON('/static/json_data_storage/' + folder.folder_name + '/' + jsonFile, function (fileData) {
-                            var customerName = fileData.customerName || 'Unknown';  // Default if no customer name found
-                            var invoiceNumber = fileData.invoiceNumber || 'N/A';  // Default if no invoice number found
-                            // Add the row with folder name, formatted date/time, and customer name
-                            rows.push({
-                                folder: folder.folder_name,
-                                formattedDateTime: formattedDateTime,
-                                dateObject: dateObject,
-                                customerName: customerName,
-                                invoiceNumber: invoiceNumber
-                            });
-
-                            // Sort rows by dateObject in descending order (latest first)
-                            rows.sort(function(a, b) {
-                                return b.dateObject - a.dateObject;
-                            });
-
-                            // Populate the table body with the sorted rows
-                            var sortedRows = '';
-                            rows.forEach(function(row) {
-                                sortedRows += `
-                                    <tr>
-                                        <td style="color:red;"><b>${row.folder}</b></td>
-                                        <td>${row.invoiceNumber}</td> 
-                                        <td>${row.customerName}</td> <!-- Display customer name -->
-                                        <td>${row.formattedDateTime}</td>
-                                        <td>
-                                            <button class="btn btn-info">
-                                                <i class="fas fa-eye"></i> View
-                                            </button>
-                                            <button class="btn btn-primary">
-                                                <i class="fas fa-edit"></i> Edit
-                                            </button>
-                                        </td>
-                                    </tr>
-                                `;
-                            });
-
-                            // Append rows to the table body
-                            $('#mr-body').html(sortedRows);
-
-                            // Redraw DataTable after populating the rows
-                            table.clear();
-                            table.rows.add($('#mr-body tr')).draw();
-                        }).fail(function (jqXHR, textStatus, errorThrown) {
-                            console.error("Failed to load file:", jsonFile, textStatus, errorThrown);
+                        // Add the row with folder name, formatted date/time, JSON file name, and Date object
+                        rows.push({
+                            folder: folder.folder_name,
+                            formattedDateTime: formattedDateTime,
+                            dateObject: dateObject,
+                            jsonFile: jsonFile
                         });
 
+                        // Debug: Log formatted date and time
+                        console.log("Formatted Date and Time:", formattedDateTime);
                     } else {
                         // If the filename doesn't match the expected format, keep it as is
                         rows.push({
                             folder: folder.folder_name,
                             formattedDateTime: jsonFile,
                             dateObject: new Date(),  // Default to current date if parsing fails
-                            customerName: 'Unknown',  // Default customer name
-                            invoiceNumber: 'N/A' 
+                            jsonFile: jsonFile
                         });
 
                         console.log("Filename format does not match. Using original filename:", jsonFile);
@@ -627,6 +484,36 @@
                 });
             });
 
+            // Sort rows by dateObject in descending order (latest first)
+            rows.sort(function(a, b) {
+                return b.dateObject - a.dateObject;
+            });
+
+            // Populate the table body with the sorted rows
+            var sortedRows = '';
+            rows.forEach(function(row) {
+                sortedRows += `
+                    <tr>
+                        <td style="color:red;"><b>${row.folder}</b></td>
+                        <td>${row.formattedDateTime}</td>
+                        <td>
+                          <a href="lorry-receipt-edit/${row.folder}/${row.jsonFile}" class="btn btn-primary" >
+                              <i class="fas fa-edit"></i>
+                            </a>
+                            <a href="lorry-receipt-view/${row.folder}/${row.jsonFile}" class="btn btn-info" target="_blank">
+                              <i class="fas fa-eye"></i>
+                            </a>
+                        </td>
+                    </tr>
+                `;
+            });
+
+            // Append rows to the table body
+            $('#lr-body').html(sortedRows);
+
+            // Redraw DataTable after populating the rows
+            table.clear();
+            table.rows.add($('#lr-body tr')).draw();
         } else {
             console.error("Received data is not an array:", data);
         }
@@ -635,7 +522,125 @@
     });
 });
 
+
+
+
+    
 </script>
+
+
+<script>
+  $(document).ready(function () {
+      // Initialize DataTable
+      var table = $('#mr-table').DataTable();
+  
+      // Fetch the JSON structure from /json_list route
+      $.getJSON('/mr_list', function (data) {
+          // Debug: Log the structure to the console
+          console.log("Received Folder Data:", data);
+  
+          if (Array.isArray(data)) {
+              // Prepare the table rows
+              var rows = [];
+              
+              data.forEach(function(folder) {
+                  // For each JSON file in the folder, create a separate row
+                  folder.json_files.forEach(function(jsonFile) {
+                      // Debug: Log filename before processing
+                      console.log("Processing file:", jsonFile);
+  
+                      // Adjusted regex to match the date and time from the filename
+                      var dateTimeMatch = jsonFile.match(/(\d{8})_(\d{6})\.json/); // Match: YYYYMMDD_HHMMSS.json
+  
+                      if (dateTimeMatch) {
+                          var date = dateTimeMatch[1];  // Extract date part (e.g., 20241229)
+                          var time = dateTimeMatch[2];  // Extract time part (e.g., 134530)
+  
+                          // Format date and time
+                          var formattedDate = date.slice(0, 4) + '-' + date.slice(4, 6) + '-' + date.slice(6, 8);  // YYYY-MM-DD
+                          var formattedTime = time.slice(0, 2) + ':' + time.slice(2, 4) + ':' + time.slice(4, 6);  // HH:MM:SS
+  
+                          // Combine them into a single formatted string
+                          var formattedDateTime = formattedDate + ' ' + formattedTime;
+  
+                          // Convert to Date object for sorting (YYYY-MM-DD HH:MM:SS format)
+                          var dateObject = new Date(formattedDate + 'T' + formattedTime);
+  
+                          // Fetch the customer name from the JSON file
+                          $.getJSON('/static/json_data_storage/' + folder.folder_name + '/' + jsonFile, function (fileData) {
+                              var customerName = fileData.customerName || 'Unknown';  // Default if no customer name found
+                              var invoiceNumber = fileData.invoiceNumber || 'N/A';  // Default if no invoice number found
+                              // Add the row with folder name, formatted date/time, and customer name
+                              rows.push({
+                                  folder: folder.folder_name,
+                                  formattedDateTime: formattedDateTime,
+                                  dateObject: dateObject,
+                                  customerName: customerName,
+                                  invoiceNumber: invoiceNumber,
+                                  jsonFile: jsonFile
+                              });
+  
+                              // Sort rows by dateObject in descending order (latest first)
+                              rows.sort(function(a, b) {
+                                  return b.dateObject - a.dateObject;
+                              });
+  
+                              // Populate the table body with the sorted rows
+                              var sortedRows = '';
+                              rows.forEach(function(row) {
+                                  sortedRows += `
+                                      <tr>
+                                          <td style="color:red;"><b>${row.folder}</b></td>
+                                          <td>${row.invoiceNumber}</td> 
+                                          <td>${row.customerName}</td> <!-- Display customer name -->
+                                          <td>${row.formattedDateTime}</td>
+                                          <td>
+                                             <a href="money-receipt-edit/${row.folder}/${row.jsonFile}" class="btn btn-primary">
+                                                  <i class="fas fa-edit"></i> 
+                                              </a>
+                                              <a href="money-receipt-view/${row.folder}/${row.jsonFile}" class="btn btn-info" target="_blank">
+                                                  <i class="fas fa-eye"></i> 
+                                              </a>
+                                          </td>
+                                      </tr>
+                                  `;
+                              });
+  
+                              // Append rows to the table body
+                              $('#mr-body').html(sortedRows);
+  
+                              // Redraw DataTable after populating the rows
+                              table.clear();
+                              table.rows.add($('#mr-body tr')).draw();
+                          }).fail(function (jqXHR, textStatus, errorThrown) {
+                              console.error("Failed to load file:", jsonFile, textStatus, errorThrown);
+                          });
+  
+                      } else {
+                          // If the filename doesn't match the expected format, keep it as is
+                          rows.push({
+                              folder: folder.folder_name,
+                              formattedDateTime: jsonFile,
+                              dateObject: new Date(),  // Default to current date if parsing fails
+                              customerName: 'Unknown',  // Default customer name
+                              invoiceNumber: 'N/A',
+                              jsonFile: jsonFile
+                          });
+  
+                          console.log("Filename format does not match. Using original filename:", jsonFile);
+                      }
+                  });
+              });
+  
+          } else {
+              console.error("Received data is not an array:", data);
+          }
+      }).fail(function (jqXHR, textStatus, errorThrown) {
+          console.error("Request failed: " + textStatus + ", " + errorThrown);
+      });
+  });
+  </script>
+  
 </body>
 
 </html>
