@@ -504,7 +504,8 @@
               </div>
               <!-- Flex container for the first two elements -->
               <div class="d-flex justify-content-start py-0 px-1 align-items-center">
-                <div class="px-1"><b>No. Of Packages:</b> <span >{{ data.description.noOfPackages }}   pkgs. (H.H./Comm. Goods)</span></div>
+                <div class="px-1"><b>No. Of Packages:</b> <span contenteditable="true">{{ data.description.noOfPackages if data.description.noOfPackages else '' }}{{ ' pkgs. (H.H./Comm. Goods)' if data.description.noOfPackages else '' }}
+                </span></div>
                 <!-- <div class="" style="padding-left: 5rem !important;"><b>Two Wheeler No.:</b> <span >{{ data.description.twoWheelerNo }}</span></div> -->
               </div>
               <!-- Separate line for the third element -->
@@ -525,19 +526,24 @@
             <table border="0" style="width: 100%; border-collapse: collapse;" >
               <tr>
                 <td class="px-2 py-1 box-border no-bl no-br" style="text-align: left;"><b>Actual Weight</b></td>
-                <td class="px-3 py-1 box-border  no-br" style="text-align: left;" >{{ data.description.actualWeight }} kg</td>
+                <td class="px-3 py-1 box-border  no-br" style="text-align: left;" >{{ data.description.actualWeight if data.description.actualWeight else 'FIXED' }}{{ ' kg' if data.description.actualWeight else '' }}
+                </td>
               </tr>
               <tr>
                 <td class="px-2 py-1 box-border no-bl no-br" style="text-align: left;"><b>Charged Weight</b></td>
-                <td class="px-3 py-1 box-border no-br" style="text-align: left;" >{{ data.description.chargedWeight }} kg</td>
+                <td class="px-3 py-1 box-border no-br" style="text-align: left;" >{{ data.description.chargedWeight if data.description.chargedWeight else 'FIXED' }}{{ ' kg' if data.description.chargedWeight else '' }}
+
+                </td>
               </tr>
               <tr>
                 <td class="px-2 py-1 box-border no-bl no-br" style="text-align: left;"><b>CBM</b></td>
-                <td class="px-3 py-1 box-border no-br" style="text-align: left;" >{{ data.description.cbm }} kg</td>
+                <td class="px-3 py-1 box-border no-br" style="text-align: left;" >{{ data.description.cbm if data.description.cbm else '' }}{{ ' kg' if data.description.cbm else '' }}</td>
               </tr>
               <tr>
                 <td class="px-2 py-1 box-border no-bl no-br" style="text-align: left;"><b>Goods Value</b></td>
-                <td class="px-3 py-1 box-border no-br" style="text-align: left;" ><b>₹</b>{{ data.description.goodsValue }}</td>
+                <td class="px-3 py-1 box-border no-br" style="text-align: left;" >{{ '<b>₹</b>' if data.description.goodsValue else '' }}{{ data.description.goodsValue if data.description.goodsValue else 'AS PER INSURANCE' }}
+
+                </td>
               </tr>
               <tr>
                 <td class="px-2 py-1 box-border no-bl no-br no-bb" style="text-align: left;"><b>Truck No.</b></td>
