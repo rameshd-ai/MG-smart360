@@ -1,18 +1,18 @@
 {
   "consignor": {
-    "name": "Bashir Khan",
-    "address": "Sri Vijaya Puram",
-    "address2": "744101",
+    "name": "",
+    "address": "",
+    "address2": "",
     "address3": ""
   },
   "consignee": {
-    "name": "Bashir Khan",
-    "address": "Mumbai",
-    "address2": "400001",
+    "name": "",
+    "address": "",
+    "address2": "",
     "address3": ""
   },
   "riskDetails": {
-    "notInsured": true,
+    "notInsured": false,
     "insured": false,
     "insuredDetails": {
       "company": "",
@@ -23,39 +23,39 @@
     }
   },
   "goodsDetails": {
-    "gcNumber": "2025071",
-    "gcDate": "07-01-2025",
-    "origin": "Sri Vijaya Puram",
-    "destination": "Mumbai",
-    "contact": "998269171"
+    "gcNumber": "121212121",
+    "gcDate": "",
+    "origin": "",
+    "destination": "",
+    "contact": ""
   },
   "freightDetails": {
     "locations": [
       {
-        "from": "Sri Vijaya Puram",
-        "to": "Kolkata",
-        "amount": ""
-      },
-      {
-        "from": "Kolkata",
-        "to": "Mumbai",
-        "amount": ""
+        "from": "",
+        "to": "",
+        "amount": "100"
       },
       {
         "from": "",
         "to": "",
-        "amount": ""
+        "amount": "200"
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": "300"
       }
     ]
   },
   "additionalCharges": {
     "loadingCharges": "INCLUDED",
     "insuranceCharges": "NO",
-    "gstCharges": "",
-    "gcCharges": "",
+    "gstCharges": "30.00",
+    "gcCharges": "12.5",
     "gstPercentage": "5"
   },
-  "grandTotal": "",
+  "grandTotal": "642.50",
   "gstPaidBy": {
     "consignor": false,
     "consignee": false,
@@ -65,12 +65,12 @@
   "description": {
     "noOfPackages": "",
     "twoWheelerNo": "",
-    "carNo": "HR26CA6981",
+    "carNo": "",
     "actualWeight": "",
     "chargedWeight": "",
     "cbm": "",
     "goodsValue": "",
     "truckNo": ""
   },
-  "created_at": "2025-01-24T06:30:53.887Z"
+  "created_at": "2025-01-11T04:40:35.099Z"
 }

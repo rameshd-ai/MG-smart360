@@ -471,13 +471,14 @@
             var amount1 = parseFloat(document.getElementById('amount1').value) || 0;
             var amount2 = parseFloat(document.getElementById('amount2').value) || 0;
             var amount3 = parseFloat(document.getElementById('amount3').value) || 0;
+            var gcCharges = parseFloat(document.getElementById('gcCharges').value) || 0;
             var gstPercentage = parseFloat(document.getElementById('gstPercentage').value) || 0;
             // Calculate total amount
             var totalAmount = amount1 + amount2 + amount3;
             // Calculate GST charges
             var gstCharges = (gstPercentage / 100) * totalAmount;
             // Calculate Grand Total (Total amount + GST charges)
-            var grandTotal = totalAmount + gstCharges;
+            var grandTotal = totalAmount + gstCharges+gcCharges;
             // Update the GST Charges field
             document.getElementById('gstCharges').value = gstCharges.toFixed(2);
             // Update the Grand Total field
@@ -487,6 +488,7 @@
         document.getElementById('amount1').addEventListener('input', calculateGST);
         document.getElementById('amount2').addEventListener('input', calculateGST);
         document.getElementById('amount3').addEventListener('input', calculateGST);
+        document.getElementById('gcCharges').addEventListener('input', calculateGST);
         document.getElementById('gstPercentage').addEventListener('input', calculateGST);
         // Function to format the date to dd-mm-yyyy
         function formatDate(date) {

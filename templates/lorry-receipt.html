@@ -536,11 +536,11 @@
               </tr>
               <tr>
                 <td class="px-2 py-1 box-border no-bl no-br" style="text-align: left;"><b>CBM</b></td>
-                <td class="px-3 py-1 box-border no-br" style="text-align: left;" >{{ data.description.cbm if data.description.cbm else '' }}{{ ' kg' if data.description.cbm else '' }}</td>
+                <td class="px-3 py-1 box-border no-br" style="text-align: left;" >{{ data.description.cbm if data.description.cbm else '' }}{{ ' CBM' if data.description.cbm else '' }}</td>
               </tr>
               <tr>
                 <td class="px-2 py-1 box-border no-bl no-br" style="text-align: left;"><b>Goods Value</b></td>
-                <td class="px-3 py-1 box-border no-br" style="text-align: left;" >{{ '<b>₹</b>' if data.description.goodsValue else '' }}{{ data.description.goodsValue if data.description.goodsValue else 'AS PER INSURANCE' }}
+                <td class="px-3 py-1 box-border no-br" style="text-align: left;" >{{ '₹' if data.description.goodsValue else '' }}{{ data.description.goodsValue if data.description.goodsValue else 'AS PER INSURANCE' }}
 
                 </td>
               </tr>
