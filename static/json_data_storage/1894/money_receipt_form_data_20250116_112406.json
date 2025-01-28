@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1894",
+  "invoiceNumber": "804",
+  "customerName": "M S KANTHAMMA",
+  "amountNumber": "164325",
+  "amountText": "One Lakh Sixty Four Thousand Three Hundred Twenty Five Only",
+  "vehicleRegNumber": "",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "SIRKAKULAM",
+  "receiptDate": "05-12-2024",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "16T05:54:06.050Z-01-2025"
+}

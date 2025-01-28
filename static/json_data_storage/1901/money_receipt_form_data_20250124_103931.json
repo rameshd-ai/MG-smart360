@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1901",
+  "invoiceNumber": "811",
+  "customerName": "B.NAGESWARA RAO",
+  "amountNumber": "35700",
+  "amountText": "Thirty Five Thousand Seven Hundred Only",
+  "vehicleRegNumber": "AN-01-Q-1748",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "BATHUPURAM (SKLM)",
+  "receiptDate": "15-11-2024",
+  "goodsTypes": [
+    "Scooter"
+  ],
+  "created_at": "24T05:09:31.278Z-01-2025"
+}

@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1900",
+  "invoiceNumber": "810",
+  "customerName": "B.NAGESWARA RAO",
+  "amountNumber": "176400",
+  "amountText": "One Lakh Seventy Six Thousand Four Hundred Only",
+  "vehicleRegNumber": "105 PKGS HOUSE HOLD GOODS ",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "BATHUPURAM (SKLM)",
+  "receiptDate": "15-11-2024",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "24T05:07:23.796Z-01-2025"
+}

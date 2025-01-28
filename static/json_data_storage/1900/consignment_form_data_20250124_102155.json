@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "B.NAGESWARA RAO (GTT)",
+    "address": "SUNDER COLONY ,NEAR AGRICULTURE ",
+    "address2": "OFFICE, HADDO SRI VIJAYA PURAM  A&N ISLANDS ",
+    "address3": "744102"
+  },
+  "consignee": {
+    "name": "B.NAGESWARA RAO (GTT)",
+    "address": "BATHUPURAM (VILL), AKKUPALLI (VIA), PALASA (RS)",
+    "address2": "SRIKAKULAM (DIST), ANDHRA PRADESH ",
+    "address3": "532219"
+  },
+  "riskDetails": {
+    "notInsured": false,
+    "insured": false,
+    "insuredDetails": {
+      "company": "",
+      "policy": "",
+      "date": "",
+      "insuredAmount": "",
+      "risk": ""
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "1900 ",
+    "gcDate": "15-11-2024",
+    "origin": "SRI VIJAYA PURAM ",
+    "destination": "BATHUPURAM (SKLM)",
+    "contact": "9531806381"
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "SRI VAJAYA PURAM ",
+        "to": "CHENNAI ",
+        "amount": "105000"
+      },
+      {
+        "from": "CHENNAI ",
+        "to": "BATHUPURAM (SKLM)",
+        "amount": "63000"
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "8400.00",
+    "gcCharges": "NONE",
+    "gstPercentage": "5"
+  },
+  "grandTotal": "176400.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": false,
+    "transporter": true
+  },
+  "description": {
+    "noOfPackages": "105",
+    "twoWheelerNo": "NO ",
+    "carNo": "NO ",
+    "actualWeight": "6000",
+    "chargedWeight": "6000",
+    "cbm": "26.6",
+    "goodsValue": "320000",
+    "truckNo": "DD01U9794"
+  },
+  "created_at": "2025-01-24T04:51:55.402Z"
+}
