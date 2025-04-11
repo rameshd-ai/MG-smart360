@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1918",
+  "invoiceNumber": "828",
+  "customerName": "LT CDR SHIVANG YAMDAGNI",
+  "amountNumber": "314580",
+  "amountText": "Three Lakh Fourteen Thousand Five Hundred Eighty Only",
+  "vehicleRegNumber": "AN01U2410",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "MUMBAI",
+  "receiptDate": "15-01-2025",
+  "goodsTypes": [
+    "Car"
+  ],
+  "created_at": "11T05:49:49.060Z-02-2025"
+}

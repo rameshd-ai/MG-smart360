@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "DY COMMANDANT ROHIT SHARMA",
+    "address": "CC II/4, SAPNA GARDEN, CHOGAM ROAD, PORVORIM",
+    "address2": "BARDEZ, GOA",
+    "address3": "403521"
+  },
+  "consignee": {
+    "name": "DY COMMANDANT ROHIT SHARMA",
+    "address": "COAST GUARD OFFICERS MESS, CORA POWAI, BUILDING ",
+    "address2": "MAHADA FLATS, S ROAD , POWAI, MUMBAI",
+    "address3": "400076"
+  },
+  "riskDetails": {
+    "notInsured": true,
+    "insured": false,
+    "insuredDetails": {
+      "company": "",
+      "policy": "",
+      "date": "",
+      "insuredAmount": "",
+      "risk": ""
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "1932  ",
+    "gcDate": "10-03-2025",
+    "origin": "GOA",
+    "destination": "MUMBAI",
+    "contact": "9535788568"
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "GOA",
+        "to": "MUMBAI",
+        "amount": "39800"
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "1990.00",
+    "gcCharges": "NONE",
+    "gstPercentage": "5"
+  },
+  "grandTotal": "41790.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": false,
+    "transporter": true
+  },
+  "description": {
+    "noOfPackages": "82",
+    "twoWheelerNo": "NO ",
+    "carNo": "NO ",
+    "actualWeight": "6000",
+    "chargedWeight": "",
+    "cbm": "26.66",
+    "goodsValue": "",
+    "truckNo": "HR61E9575"
+  },
+  "created_at": "2025-03-13T08:21:34.067Z"
+}

@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1970",
+  "invoiceNumber": "880",
+  "customerName": "CDR G V SINGH",
+  "amountNumber": "261030",
+  "amountText": "Two Lakh Sixty One Thousand Thirty Only",
+  "vehicleRegNumber": "75 PKGS HOUSEHOLD GOODS",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "PORBANDAR (GUJARAT)",
+  "receiptDate": "15-03-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "11T11:18:08.031Z-04-2025"
+}

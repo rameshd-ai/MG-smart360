@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "NC UJJWAL KUMAR",
+    "address": "153 SQN PARTEMOAT ",
+    "address2": "SRI VIJIYA PURAM ",
+    "address3": "744102"
+  },
+  "consignee": {
+    "name": "NC UJJWAL KUMAR",
+    "address": "S/O RAMVHANDRA JHA, WARD 09 SAGAON SUGAULI",
+    "address2": "EAST CHAMPARAN SUGAULI",
+    "address3": "845456"
+  },
+  "riskDetails": {
+    "notInsured": true,
+    "insured": false,
+    "insuredDetails": {
+      "company": "",
+      "policy": "",
+      "date": "",
+      "insuredAmount": "",
+      "risk": ""
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "1824",
+    "gcDate": "30-10-2024",
+    "origin": "SRI VIJAYA PURAM ",
+    "destination": "SUGAULI",
+    "contact": ""
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "SRI VAJAYA PURAM ",
+        "to": "CHENNAI ",
+        "amount": "27000"
+      },
+      {
+        "from": "CHENNAI ",
+        "to": "SUGAULI",
+        "amount": "74400"
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "0.00",
+    "gcCharges": "",
+    "gstPercentage": ""
+  },
+  "grandTotal": "101400.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": false,
+    "transporter": true
+  },
+  "description": {
+    "noOfPackages": "18",
+    "twoWheelerNo": "",
+    "carNo": "",
+    "actualWeight": "1500",
+    "chargedWeight": "1500",
+    "cbm": "8",
+    "goodsValue": "135000",
+    "truckNo": "NL01AH3135"
+  },
+  "created_at": "2025-02-11T07:06:13.851Z"
+}

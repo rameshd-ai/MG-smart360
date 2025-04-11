@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1893",
+  "invoiceNumber": "803",
+  "customerName": "SLT SACHIN B THAPA",
+  "amountNumber": "308490",
+  "amountText": "Three Lakh Eight Thousand Four Hundred Ninety Only",
+  "vehicleRegNumber": "MH04EF0387",
+  "fromAddress": "GOA",
+  "toAddress": "DIGLIPUR N&M ANDAMAN",
+  "receiptDate": "02-01-2025",
+  "goodsTypes": [
+    "Car"
+  ],
+  "created_at": "03T10:40:05.146Z-02-2025"
+}

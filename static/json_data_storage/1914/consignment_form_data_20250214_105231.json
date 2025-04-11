@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "PRINCE KUMAR",
+    "address": "WAEDROOM INS SARVERKSHAK C/O FLEET MAIL OFFICE ",
+    "address2": "NAVAL BASE KOCHI KERALA",
+    "address3": "682004"
+  },
+  "consignee": {
+    "name": "PRINCE KUMAR",
+    "address": "CABINPORTHA 4 AMC (O) MESS HADDO ",
+    "address2": "SRI VIJAYA PURAM",
+    "address3": "744102"
+  },
+  "riskDetails": {
+    "notInsured": true,
+    "insured": false,
+    "insuredDetails": {
+      "company": "",
+      "policy": "",
+      "date": "",
+      "insuredAmount": "",
+      "risk": ""
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "1914 ",
+    "gcDate": "25-12-2024",
+    "origin": "KOCHI",
+    "destination": "SRI VIJAYA PURAM",
+    "contact": "7357868535"
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "KOCHI",
+        "to": "CHENNAI",
+        "amount": "14700"
+      },
+      {
+        "from": "CHENNAI ",
+        "to": "SRI VIJAYA PURAM",
+        "amount": "35000"
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "2485.00",
+    "gcCharges": "NONE",
+    "gstPercentage": "5"
+  },
+  "grandTotal": "52185.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": false,
+    "transporter": true
+  },
+  "description": {
+    "noOfPackages": "35",
+    "twoWheelerNo": "NO ",
+    "carNo": "NO ",
+    "actualWeight": "20000",
+    "chargedWeight": "2000",
+    "cbm": "9",
+    "goodsValue": "120000",
+    "truckNo": "DD01U9496"
+  },
+  "created_at": "2025-02-14T10:52:31.940Z"
+}

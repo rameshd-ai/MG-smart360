@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1913",
+  "invoiceNumber": "823",
+  "customerName": "LT COL TRIPTI SINGH",
+  "amountNumber": "262500",
+  "amountText": "Two Lakh Sixty Two Thousand Five Hundred Only",
+  "vehicleRegNumber": "22BH8193B",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "AMBALA",
+  "receiptDate": "02-01-2025",
+  "goodsTypes": [
+    "Car"
+  ],
+  "created_at": "05T12:26:56.895Z-02-2025"
+}

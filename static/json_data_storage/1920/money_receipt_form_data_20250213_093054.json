@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1920",
+  "invoiceNumber": "830",
+  "customerName": "LT COL Y T MINI MOLE",
+  "amountNumber": "250425",
+  "amountText": "Two Lakh Fifty Thousand Four Hundred Twenty Five Only",
+  "vehicleRegNumber": "JH01AF1066",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "BIHAR",
+  "receiptDate": "04-02-2025",
+  "goodsTypes": [
+    "Car"
+  ],
+  "created_at": "13T09:30:54.440Z-02-2025"
+}

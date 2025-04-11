@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1902",
+  "invoiceNumber": "812",
+  "customerName": "LT SHARAD BHARADWAJ",
+  "amountNumber": "37275",
+  "amountText": "Thirty Seven Thousand Two Hundred Seventy Five Only",
+  "vehicleRegNumber": " 32 PKGS HOUSE HOLD GOODS ",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "CHENNAI",
+  "receiptDate": "25-12-2024",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "25T04:59:59.238Z-01-2025"
+}

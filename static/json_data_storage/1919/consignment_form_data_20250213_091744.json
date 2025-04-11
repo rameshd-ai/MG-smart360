@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "LT COL Y T MINI MOLE",
+    "address": "MNS NURSING OFFICERS MESS INHS DHANVANTARI",
+    "address2": "SRI VIJAYA PURAM",
+    "address3": "744103"
+  },
+  "consignee": {
+    "name": "LT COL Y T MINI MOLE",
+    "address": "MNS OFFICERS MESS NEAR MILITARY HOSPITAL GATE ",
+    "address2": "OTA GAYA CHANDAUTI MODE BIHAR",
+    "address3": "823005"
+  },
+  "riskDetails": {
+    "notInsured": true,
+    "insured": false,
+    "insuredDetails": {
+      "company": "",
+      "policy": "",
+      "date": "",
+      "insuredAmount": "",
+      "risk": ""
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "1919",
+    "gcDate": "04-02-2025",
+    "origin": "SRI VIJAYA PURAM ",
+    "destination": "BIHAR",
+    "contact": "9400817200"
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "SRI VAJAYA PURAM ",
+        "to": "KOLKATA",
+        "amount": "106000"
+      },
+      {
+        "from": "KOLKATA",
+        "to": "BIHAR",
+        "amount": "44500"
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "7525.00",
+    "gcCharges": "",
+    "gstPercentage": "5"
+  },
+  "grandTotal": "158025.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": false,
+    "transporter": true
+  },
+  "description": {
+    "noOfPackages": "107",
+    "twoWheelerNo": "",
+    "carNo": "",
+    "actualWeight": "6000",
+    "chargedWeight": "6000",
+    "cbm": "26.6",
+    "goodsValue": "210000",
+    "truckNo": "DD01U9496"
+  },
+  "created_at": "2025-02-13T09:17:35.005Z"
+}

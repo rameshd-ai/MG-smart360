@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "GANAPATHI RAO ",
+    "address": "SMART360 PACKERS AND SHIPPING PVT LTD ",
+    "address2": "NO:25/7 THIRUVERKADU ROAD, POONAMALLEE, CHENNAI ",
+    "address3": "600056"
+  },
+  "consignee": {
+    "name": "GANAPATHI RAO ",
+    "address": "MT POOL 1325 DSC PL COAST GUARD HADDO ",
+    "address2": "SRI VIJAYA PURAM, ANDAMAN AND NICOBAR ISLANDS ",
+    "address3": "744102"
+  },
+  "riskDetails": {
+    "notInsured": true,
+    "insured": false,
+    "insuredDetails": {
+      "company": "",
+      "policy": "",
+      "date": "",
+      "insuredAmount": "",
+      "risk": ""
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "1928  ",
+    "gcDate": "20-01-2025",
+    "origin": "CHENNAI",
+    "destination": "SRI VIJAYA PURAM",
+    "contact": "8310996800"
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "CHENNAI ",
+        "to": "SRI VIJAYA PURAM ",
+        "amount": "32200"
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "1610.00",
+    "gcCharges": "NONE",
+    "gstPercentage": "5"
+  },
+  "grandTotal": "33810.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": false,
+    "transporter": true
+  },
+  "description": {
+    "noOfPackages": "",
+    "twoWheelerNo": "AP27BG8854",
+    "carNo": "NO ",
+    "actualWeight": "",
+    "chargedWeight": "",
+    "cbm": "",
+    "goodsValue": "",
+    "truckNo": "BY SHIP TCI LAKSHMI "
+  },
+  "created_at": "2025-02-25T15:28:31.466Z"
+}

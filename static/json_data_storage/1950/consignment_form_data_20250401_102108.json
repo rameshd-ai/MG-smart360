@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "PARVEEN KUMAR",
+    "address": "588A DSC PL 54 ASP ",
+    "address2": "GURGOAN",
+    "address3": "936854"
+  },
+  "consignee": {
+    "name": "PARVEEN KUMAR",
+    "address": "NEAR ICGS OFFICE PANIPATH ROAD HADDO",
+    "address2": "SRI VIJAYA PURAM",
+    "address3": "744102"
+  },
+  "riskDetails": {
+    "notInsured": false,
+    "insured": false,
+    "insuredDetails": {
+      "company": "",
+      "policy": "",
+      "date": "",
+      "insuredAmount": "",
+      "risk": ""
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "1950 ",
+    "gcDate": "05-03-2025",
+    "origin": "CHENNAI",
+    "destination": "SRI VIJAYA PURAM",
+    "contact": ""
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "CHENNAI",
+        "to": "SRI VIJAYA PURAM ",
+        "amount": "9000"
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "450.00",
+    "gcCharges": "NONE",
+    "gstPercentage": "5"
+  },
+  "grandTotal": "9450.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": false,
+    "transporter": true
+  },
+  "description": {
+    "noOfPackages": "9",
+    "twoWheelerNo": "NO",
+    "carNo": "NO",
+    "actualWeight": "500",
+    "chargedWeight": "500",
+    "cbm": "03",
+    "goodsValue": "20000",
+    "truckNo": ""
+  },
+  "created_at": "2025-04-01T10:21:05.688Z"
+}

@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1948",
+  "invoiceNumber": "858",
+  "customerName": "M. JOHNSON",
+  "amountNumber": "38850",
+  "amountText": "Thirty Eight Thousand Eight Hundred Fifty Only",
+  "vehicleRegNumber": "KA53HC9860",
+  "fromAddress": "MAHARASTRA",
+  "toAddress": "SRI VIJAYA PURAM",
+  "receiptDate": "08-03-2025",
+  "goodsTypes": [
+    "Bike"
+  ],
+  "created_at": "26T12:19:23.591Z-03-2025"
+}

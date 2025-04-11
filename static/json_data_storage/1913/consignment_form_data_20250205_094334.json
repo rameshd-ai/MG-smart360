@@ -1,15 +1,15 @@
 {
   "consignor": {
-    "name": "CDR G V SINGH",
-    "address": "345/1 RANJIT VIHAR MILITARY STATION BRICHGUNJ",
+    "name": "LT COL TRIPTI SINGH",
+    "address": "P 406/1, PERIERA ENCLOVE MINNIE BAY",
     "address2": "SRI VIJAYA PURAM",
     "address3": "744103"
   },
   "consignee": {
-    "name": "CDR G V SINGH",
-    "address": "AMBA 123/D NOFRA PORBANDAR",
-    "address2": "GUJARAT",
-    "address3": "360579"
+    "name": "LT COL TRIPTI SINGH",
+    "address": "NURSING OFFICERS MESS MILITARY HOSPITAL AMBALA ",
+    "address2": "CANTONMENT AMBALA",
+    "address3": "133001"
   },
   "riskDetails": {
     "notInsured": true,
@@ -23,23 +23,23 @@
     }
   },
   "goodsDetails": {
-    "gcNumber": "1971",
-    "gcDate": "15-03-2025",
+    "gcNumber": "1913",
+    "gcDate": "02-01-2025",
     "origin": "SRI VIJAYA PURAM ",
-    "destination": "PORBANDAR (GUJARAT)",
-    "contact": "8008452285"
+    "destination": "AMBALA",
+    "contact": "7407652725"
   },
   "freightDetails": {
     "locations": [
       {
-        "from": "SRI VIJAYA PURAM ",
-        "to": "CHENNAI",
-        "amount": "242000"
+        "from": "SRI VAJAYA PURAM ",
+        "to": "KOLKATA",
+        "amount": "230000"
       },
       {
-        "from": "CHENNAI",
-        "to": "PORBANDAR (GUJARAT)",
-        "amount": "37400"
+        "from": "KOLKATA",
+        "to": "AMBALA",
+        "amount": "20000"
       },
       {
         "from": "",
@@ -51,11 +51,11 @@
   "additionalCharges": {
     "loadingCharges": "INCLUDED",
     "insuranceCharges": "NO",
-    "gstCharges": "13970.00",
+    "gstCharges": "12500.00",
     "gcCharges": "",
     "gstPercentage": "5"
   },
-  "grandTotal": "293370.00",
+  "grandTotal": "262500.00",
   "gstPaidBy": {
     "consignor": false,
     "consignee": false,
@@ -64,13 +64,13 @@
   },
   "description": {
     "noOfPackages": "",
-    "twoWheelerNo": "NO",
-    "carNo": "HP638785",
+    "twoWheelerNo": "",
+    "carNo": "22BH8193B",
     "actualWeight": "",
     "chargedWeight": "",
     "cbm": "",
-    "goodsValue": "",
-    "truckNo": "DD01U9794"
+    "goodsValue": "325000",
+    "truckNo": "DD01U9496"
   },
-  "created_at": "2025-04-11T11:21:09.356Z"
+  "created_at": "2025-02-05T09:43:31.513Z"
 }

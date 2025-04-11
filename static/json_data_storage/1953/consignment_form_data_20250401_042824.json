@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "BOTSA MURALIKRISHNA L COM(TEL)",
+    "address": "HOUSE NUMBER-24 SUNDAR COLONY ",
+    "address2": "HADDO, SRI VIJAYA PURAM",
+    "address3": "744101"
+  },
+  "consignee": {
+    "name": "BOTSA MURALIKRISHNA L COM(TEL)",
+    "address": "A-4, 63-4-50, PAVANPUTHRANAGAR",
+    "address2": "SRIHARIPURAM, MALKAPURAM, VISAKHAPATNAM",
+    "address3": "530011"
+  },
+  "riskDetails": {
+    "notInsured": true,
+    "insured": false,
+    "insuredDetails": {
+      "company": "",
+      "policy": "",
+      "date": "",
+      "insuredAmount": "",
+      "risk": ""
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "1953",
+    "gcDate": "15-03-2025",
+    "origin": "SRI VIJAYA PURAM",
+    "destination": "VISAKHAPATNAM",
+    "contact": "9542984489"
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "SRI VIJAYA PURAM ",
+        "to": "CHENNAI",
+        "amount": "26000"
+      },
+      {
+        "from": "CHENNAI",
+        "to": "VISAKHAPATNAM",
+        "amount": "15300"
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "2065.00",
+    "gcCharges": "",
+    "gstPercentage": "5"
+  },
+  "grandTotal": "43365.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": false,
+    "transporter": true
+  },
+  "description": {
+    "noOfPackages": "22",
+    "twoWheelerNo": "NO ",
+    "carNo": "NO ",
+    "actualWeight": "1500",
+    "chargedWeight": "1500",
+    "cbm": "7",
+    "goodsValue": "65000",
+    "truckNo": "HR61E9575"
+  },
+  "created_at": "2025-04-01T04:28:24.741Z"
+}

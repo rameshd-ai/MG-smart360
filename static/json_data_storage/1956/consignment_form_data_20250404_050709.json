@@ -1,15 +1,15 @@
 {
   "consignor": {
-    "name": "CDR G V SINGH",
-    "address": "345/1 RANJIT VIHAR MILITARY STATION BRICHGUNJ",
+    "name": "AJAY KUMAR ",
+    "address": "QRT NO 93/07 VIJAY BAUGH, JUNGLIGHAT",
     "address2": "SRI VIJAYA PURAM",
-    "address3": "744103"
+    "address3": "744102"
   },
   "consignee": {
-    "name": "CDR G V SINGH",
-    "address": "AMBA 123/D NOFRA PORBANDAR",
-    "address2": "GUJARAT",
-    "address3": "360579"
+    "name": "AJAY KUMAR",
+    "address": "C/O M B SINGHA QRT NO 4535/01 INS SHIVAJI ",
+    "address2": "LONAVALA, NEAR BY KURVANBDE VILL PUNE, ",
+    "address3": "MAHARASHTRA, PIN: 410402"
   },
   "riskDetails": {
     "notInsured": true,
@@ -23,23 +23,23 @@
     }
   },
   "goodsDetails": {
-    "gcNumber": "1971",
-    "gcDate": "15-03-2025",
+    "gcNumber": "1956",
+    "gcDate": "20-03-2025",
     "origin": "SRI VIJAYA PURAM ",
-    "destination": "PORBANDAR (GUJARAT)",
-    "contact": "8008452285"
+    "destination": "MAHARASHTRA",
+    "contact": "9716930977"
   },
   "freightDetails": {
     "locations": [
       {
         "from": "SRI VIJAYA PURAM ",
         "to": "CHENNAI",
-        "amount": "242000"
+        "amount": "32000"
       },
       {
         "from": "CHENNAI",
-        "to": "PORBANDAR (GUJARAT)",
-        "amount": "37400"
+        "to": "MAHARASHTRA",
+        "amount": "5000"
       },
       {
         "from": "",
@@ -51,11 +51,11 @@
   "additionalCharges": {
     "loadingCharges": "INCLUDED",
     "insuranceCharges": "NO",
-    "gstCharges": "13970.00",
+    "gstCharges": "1850.00",
     "gcCharges": "",
     "gstPercentage": "5"
   },
-  "grandTotal": "293370.00",
+  "grandTotal": "38850.00",
   "gstPaidBy": {
     "consignor": false,
     "consignee": false,
@@ -64,13 +64,13 @@
   },
   "description": {
     "noOfPackages": "",
-    "twoWheelerNo": "NO",
-    "carNo": "HP638785",
+    "twoWheelerNo": "KL43D8113",
+    "carNo": "NO ",
     "actualWeight": "",
     "chargedWeight": "",
     "cbm": "",
     "goodsValue": "",
-    "truckNo": "DD01U9794"
+    "truckNo": "HR61E9575"
   },
-  "created_at": "2025-04-11T11:21:09.356Z"
+  "created_at": "2025-04-04T05:07:08.994Z"
 }

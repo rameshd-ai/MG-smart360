@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "SHAIK MOHIDDEEN ",
+    "address": "NO: 25/7, THIRUVERKADU ROAD, SENNEERKUPPAM,",
+    "address2": "POONAMALLEE, CHENNAI ",
+    "address3": "600056"
+  },
+  "consignee": {
+    "name": "SHAIK MOHIDDEEN",
+    "address": "14809134X  581/DSC PL ,PANIPAT ROAD ",
+    "address2": "INS JARAWA, SRI VIJAYA PURAM ",
+    "address3": "744102"
+  },
+  "riskDetails": {
+    "notInsured": true,
+    "insured": false,
+    "insuredDetails": {
+      "company": "",
+      "policy": "",
+      "date": "",
+      "insuredAmount": "",
+      "risk": ""
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "1905",
+    "gcDate": "16-01-2025",
+    "origin": "CHENNAI",
+    "destination": "SRI VIJAYA PURAM",
+    "contact": "9032395407"
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "CHENNAI",
+        "to": "SRI VIJAYA PURAM ",
+        "amount": "9000"
+      },
+      {
+        "from": "XXXXX",
+        "to": "XXXXX",
+        "amount": ""
+      },
+      {
+        "from": "XXXXX",
+        "to": "XXXXX",
+        "amount": ""
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "450.00",
+    "gcCharges": "",
+    "gstPercentage": "5"
+  },
+  "grandTotal": "9450.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": false,
+    "transporter": true
+  },
+  "description": {
+    "noOfPackages": "14",
+    "twoWheelerNo": "",
+    "carNo": "",
+    "actualWeight": "500",
+    "chargedWeight": "500",
+    "cbm": "03",
+    "goodsValue": "25000",
+    "truckNo": "NO"
+  },
+  "created_at": "2025-01-29T06:41:31.902Z"
+}

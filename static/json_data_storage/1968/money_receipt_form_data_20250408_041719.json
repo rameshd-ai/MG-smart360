@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1968",
+  "invoiceNumber": "878",
+  "customerName": "ASST COMDT SHASHI MAULI MISHRA",
+  "amountNumber": "255780",
+  "amountText": "Two Lakh Fifty Five Thousand Seven Hundred Eighty Only",
+  "vehicleRegNumber": "75 PKGS HOUSEHOLD GOODS",
+  "fromAddress": "D-3/4 NEW TRV PANIPANT ROAD HADDO",
+  "toAddress": "SRI VIJAYA PURAM",
+  "receiptDate": "05-03-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "08T04:17:15.746Z-04-2025"
+}

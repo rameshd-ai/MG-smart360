@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1949",
+  "invoiceNumber": "859",
+  "customerName": "DEOKAR VIJAY TULSI RAM",
+  "amountNumber": "18900",
+  "amountText": "Eighteen Thousand Nine Hundred Only",
+  "vehicleRegNumber": "22 PKGS HOUSE HOLD GOODS ",
+  "fromAddress": "CHENNAI",
+  "toAddress": "SRI VIJAYA PURAM",
+  "receiptDate": "08-03-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "01T10:11:57.941Z-04-2025"
+}

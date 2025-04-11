@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "LT CDR SHIVANG YAMDAGNI",
+    "address": "INS SARYU C/O NAVY OFFICE",
+    "address2": "SRI VIJIYA PURAM ",
+    "address3": "744103"
+  },
+  "consignee": {
+    "name": "LT CDR SHIVANG YAMDAGNI",
+    "address": "3008 TRANSIT COMMAND MESS NOFRA NAVY NAGAR ",
+    "address2": "COLABA MUMBAI",
+    "address3": "400005"
+  },
+  "riskDetails": {
+    "notInsured": false,
+    "insured": false,
+    "insuredDetails": {
+      "company": "",
+      "policy": "",
+      "date": "",
+      "insuredAmount": "",
+      "risk": ""
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "1917 ",
+    "gcDate": "15-01-2025",
+    "origin": "SRI VIJAYA PURAM",
+    "destination": "MUMBAI",
+    "contact": "8447391650"
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "SRI VAJAYA PURAM ",
+        "to": "KOLKATA",
+        "amount": "35500"
+      },
+      {
+        "from": "KOLKATA",
+        "to": "MUMBAI",
+        "amount": "45000"
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "4025.00",
+    "gcCharges": "NONE",
+    "gstPercentage": "5"
+  },
+  "grandTotal": "84525.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": false,
+    "transporter": true
+  },
+  "description": {
+    "noOfPackages": "37",
+    "twoWheelerNo": "",
+    "carNo": "",
+    "actualWeight": "2000",
+    "chargedWeight": "2000",
+    "cbm": "9",
+    "goodsValue": "126000",
+    "truckNo": "DD01U9496"
+  },
+  "created_at": "2025-02-11T05:55:18.201Z"
+}

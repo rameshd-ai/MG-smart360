@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1903",
+  "invoiceNumber": "813",
+  "customerName": "SURG LT SHUBHAM GAUR",
+  "amountNumber": "98075",
+  "amountText": "Ninety Eight Thousand Seventy Five Only",
+  "vehicleRegNumber": "28 PKGS HOUSE HOLD GOODS ",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "MUMBAI",
+  "receiptDate": "18-12-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "28T11:16:04.016Z-01-2025"
+}

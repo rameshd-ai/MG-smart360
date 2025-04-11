@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1904",
+  "invoiceNumber": "814",
+  "customerName": "SURG LT SHUBHAM GAUR",
+  "amountNumber": "267687",
+  "amountText": "Two Lakh Sixty Seven Thousand Six Hundred Eighty Seven Only",
+  "vehicleRegNumber": "AN-01-T-7667",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "MUMBAI",
+  "receiptDate": "18-01-2025",
+  "goodsTypes": [
+    "Car"
+  ],
+  "created_at": "28T11:19:08.270Z-01-2025"
+}

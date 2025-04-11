@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "MURALI MOHAN KUNA 14841940-X SEP (GD)",
+    "address": "HEADQUATERS COAST GUARD DIST NO-14",
+    "address2": "POST BOX NO-716, HADDO POST, SRI VIJAYA PURAM",
+    "address3": "744102"
+  },
+  "consignee": {
+    "name": "MURALI MOHAN KUNA 14841940-X SEP (GD)",
+    "address": "1315 DSC PL, SBC VISAKHAPATNAM (DRDO) ATT TO,",
+    "address2": "COMPANY DSC SHIP BUILDING CENTRE, GOSTHANI GATE ",
+    "address3": "NAVAL BASE POST, VISAKHAPATNAM, A.P PIN-530014"
+  },
+  "riskDetails": {
+    "notInsured": true,
+    "insured": false,
+    "insuredDetails": {
+      "company": "",
+      "policy": "",
+      "date": "",
+      "insuredAmount": "",
+      "risk": ""
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "1935",
+    "gcDate": "18-02-2025",
+    "origin": "SRI VIJAYA PURAM ",
+    "destination": "CHENNAI",
+    "contact": "8769733524"
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "SRI VIJAYA PURAM ",
+        "to": "CHENNAI ",
+        "amount": "26500"
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "1325.00",
+    "gcCharges": "",
+    "gstPercentage": "5"
+  },
+  "grandTotal": "27825.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": false,
+    "transporter": true
+  },
+  "description": {
+    "noOfPackages": "25",
+    "twoWheelerNo": "NO ",
+    "carNo": "NO ",
+    "actualWeight": "1500",
+    "chargedWeight": "",
+    "cbm": "8",
+    "goodsValue": "",
+    "truckNo": ""
+  },
+  "created_at": "2025-03-07T05:49:27.771Z"
+}

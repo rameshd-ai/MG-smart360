@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1897",
+  "invoiceNumber": "807",
+  "customerName": "SLT SACHIN B THAPA",
+  "amountNumber": "68502",
+  "amountText": "Sixty Eight Thousand Five Hundred Two Only",
+  "vehicleRegNumber": "33 PKGS HOUSE HOLD GOODS",
+  "fromAddress": "GOA",
+  "toAddress": "DIGLIPUR N&M ANDAMAN",
+  "receiptDate": "21-11-2024",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "03T10:37:09.372Z-02-2025"
+}

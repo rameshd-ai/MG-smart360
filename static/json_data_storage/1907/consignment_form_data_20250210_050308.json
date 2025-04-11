@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "DUNDE DHAMMASHEEL ARMY NO. 16118044X",
+    "address": "INDERVELLY, ADILABAD(DISTRICT),",
+    "address2": "TELANGANA",
+    "address3": "504346"
+  },
+  "consignee": {
+    "name": "DUNDE DHAMMASHEEL ARMY NO. 16118044X",
+    "address": "DIGLIPUR, NORTH AND MIDDLE ANDAMAN, ANDAMAN AND ",
+    "address2": "NICOBAR ISLAND DIGLIPUR",
+    "address3": "744202"
+  },
+  "riskDetails": {
+    "notInsured": false,
+    "insured": false,
+    "insuredDetails": {
+      "company": "",
+      "policy": "",
+      "date": "",
+      "insuredAmount": "",
+      "risk": ""
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "1907   ",
+    "gcDate": "21-12-2024",
+    "origin": "TELANGANA  (ADILABAD)",
+    "destination": "DIGLIPUR",
+    "contact": "9870146011"
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "ADILABAD (TEL)",
+        "to": "CHENNAI",
+        "amount": "3500"
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "175.00",
+    "gcCharges": "NONE",
+    "gstPercentage": "5"
+  },
+  "grandTotal": "3675.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": false,
+    "transporter": true
+  },
+  "description": {
+    "noOfPackages": "",
+    "twoWheelerNo": "DL6SAZ2446",
+    "carNo": "",
+    "actualWeight": "",
+    "chargedWeight": "",
+    "cbm": "",
+    "goodsValue": "",
+    "truckNo": "DD01U9496"
+  },
+  "created_at": "2025-02-10T05:03:07.876Z"
+}

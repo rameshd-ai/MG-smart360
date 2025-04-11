@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "SLT SACHIN B  THAPA",
+    "address": "48 VIRAAT BLOCK, INS GOMANTAKS, VADDEM, VASCO",
+    "address2": "DA GAMA, GOA",
+    "address3": "403802"
+  },
+  "consignee": {
+    "name": "SLT SACHIN B  THAPA",
+    "address": "LOGISTICS OFFICER, INS KOHASSA, SHIBPUR",
+    "address2": "DIGLIPUR, ANDAMAN AND NICOBAR ISLAND",
+    "address3": "744202"
+  },
+  "riskDetails": {
+    "notInsured": true,
+    "insured": false,
+    "insuredDetails": {
+      "company": "",
+      "policy": "",
+      "date": "",
+      "insuredAmount": "",
+      "risk": ""
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "1893 ",
+    "gcDate": "02-01-2025",
+    "origin": "GOA",
+    "destination": "DIGLIPUR",
+    "contact": "7348815863"
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "GOA",
+        "to": "CHENNAI",
+        "amount": "17100"
+      },
+      {
+        "from": "CHENNAI",
+        "to": "SRI VIJAYA PURAM",
+        "amount": "270000"
+      },
+      {
+        "from": "SRI VIJAYA PURAM",
+        "to": "DIGLIPUR",
+        "amount": "6700"
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "14690.00",
+    "gcCharges": "NONE",
+    "gstPercentage": "5"
+  },
+  "grandTotal": "308490.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": false,
+    "transporter": true
+  },
+  "description": {
+    "noOfPackages": "",
+    "twoWheelerNo": "NO ",
+    "carNo": "MH04EF0387",
+    "actualWeight": "",
+    "chargedWeight": "",
+    "cbm": "",
+    "goodsValue": "",
+    "truckNo": "DD01U9496"
+  },
+  "created_at": "2025-02-03T11:08:55.170Z"
+}

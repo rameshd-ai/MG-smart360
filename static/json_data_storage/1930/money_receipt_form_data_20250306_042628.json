@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1930",
+  "invoiceNumber": "840",
+  "customerName": "CDR AYUSH KUMAR",
+  "amountNumber": "292950",
+  "amountText": "Two Lakh Ninety Two Thousand Nine Hundred Fifty Only",
+  "vehicleRegNumber": "KL43J5616",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "KOCHI ",
+  "receiptDate": "18-02-2025",
+  "goodsTypes": [
+    "Car"
+  ],
+  "created_at": "06T04:26:18.227Z-03-2025"
+}

@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1969",
+  "invoiceNumber": "879",
+  "customerName": "ASST COMDT SHASHI MAULI MISHRA",
+  "amountNumber": "276150",
+  "amountText": "Two Lakh Seventy Six Thousand One Hundred Fifty Only",
+  "vehicleRegNumber": "DL3CCC3337",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "NOIDA (U.P)",
+  "receiptDate": "05-03-2025",
+  "goodsTypes": [
+    "Car"
+  ],
+  "created_at": "08T04:22:17.099Z-04-2025"
+}

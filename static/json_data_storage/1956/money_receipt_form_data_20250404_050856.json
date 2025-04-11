@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1956",
+  "invoiceNumber": "866",
+  "customerName": "AJAY KUMAR",
+  "amountNumber": "38850",
+  "amountText": "Thirty Eight Thousand Eight Hundred Fifty Only",
+  "vehicleRegNumber": "KL43D8113",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "MAHARASHTRA",
+  "receiptDate": "20-03-2025",
+  "goodsTypes": [
+    "Bike"
+  ],
+  "created_at": "04T05:08:56.883Z-04-2025"
+}

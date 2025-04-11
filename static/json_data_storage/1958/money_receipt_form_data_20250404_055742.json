@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1958",
+  "invoiceNumber": "868",
+  "customerName": "JITHIN THOMAS",
+  "amountNumber": "39900",
+  "amountText": "Thirty Nine Thousand Nine Hundred Only",
+  "vehicleRegNumber": "KA30R9547",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "MUMBAI",
+  "receiptDate": "20-03-2025",
+  "goodsTypes": [
+    "Bike"
+  ],
+  "created_at": "04T05:57:42.795Z-04-2025"
+}

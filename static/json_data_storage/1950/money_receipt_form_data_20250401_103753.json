@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1950",
+  "invoiceNumber": "860",
+  "customerName": "PARVEEN KUMAR",
+  "amountNumber": "9450",
+  "amountText": "Nine Thousand Four Hundred Fifty Only",
+  "vehicleRegNumber": "09 PKGS HOUSEHOLD GOODS ",
+  "fromAddress": "CHENNAI",
+  "toAddress": "SRI VIJAYA PURAM",
+  "receiptDate": "05-03-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "01T10:37:50.972Z-04-2025"
+}

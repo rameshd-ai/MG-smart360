@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1957",
+  "invoiceNumber": "867",
+  "customerName": "JITHIN THOMAS",
+  "amountNumber": "57330",
+  "amountText": "Fifty Seven Thousand Three Hundred Thirty Only",
+  "vehicleRegNumber": "18 PKGS HOUSE HOLD GOODS",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "MUMBAI",
+  "receiptDate": "20-03-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "04T05:52:32.938Z-04-2025"
+}

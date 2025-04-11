@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1826",
+  "invoiceNumber": "748",
+  "customerName": "NC UJJWAL KUMAR",
+  "amountNumber": "36800",
+  "amountText": "Thirty Six Thousand Eight Hundred Only",
+  "vehicleRegNumber": "AN01G8007",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "SUGAULI",
+  "receiptDate": "30-10-2024",
+  "goodsTypes": [
+    "Scooter"
+  ],
+  "created_at": "11T07:02:56.841Z-02-2025"
+}

@@ -1,18 +1,18 @@
 {
   "consignor": {
-    "name": "CDR G V SINGH",
-    "address": "345/1 RANJIT VIHAR MILITARY STATION BRICHGUNJ",
+    "name": "LT SHARAD BHARADWAJ",
+    "address": "HADDO MILITARY STATION",
     "address2": "SRI VIJAYA PURAM",
-    "address3": "744103"
+    "address3": "744102"
   },
   "consignee": {
-    "name": "CDR G V SINGH",
-    "address": "AMBA 123/D NOFRA PORBANDAR",
-    "address2": "GUJARAT",
-    "address3": "360579"
+    "name": "LT SHARAD BHARADWAJ",
+    "address": "NAVAL OFFICERS MESS RAJAJI SALAI ADYAR  ",
+    "address2": "FORT ST. GEORGE CHENNAI TN",
+    "address3": "600009"
   },
   "riskDetails": {
-    "notInsured": true,
+    "notInsured": false,
     "insured": false,
     "insuredDetails": {
       "company": "",
@@ -23,23 +23,23 @@
     }
   },
   "goodsDetails": {
-    "gcNumber": "1971",
-    "gcDate": "15-03-2025",
+    "gcNumber": "1892 ",
+    "gcDate": "25-12-2024",
     "origin": "SRI VIJAYA PURAM ",
-    "destination": "PORBANDAR (GUJARAT)",
-    "contact": "8008452285"
+    "destination": "CHENNAI",
+    "contact": "9568583850"
   },
   "freightDetails": {
     "locations": [
       {
-        "from": "SRI VIJAYA PURAM ",
-        "to": "CHENNAI",
-        "amount": "242000"
+        "from": "SRI VAJAYA PURAM ",
+        "to": "CHENNAI ",
+        "amount": "231000"
       },
       {
-        "from": "CHENNAI",
-        "to": "PORBANDAR (GUJARAT)",
-        "amount": "37400"
+        "from": "",
+        "to": "",
+        "amount": ""
       },
       {
         "from": "",
@@ -51,11 +51,11 @@
   "additionalCharges": {
     "loadingCharges": "INCLUDED",
     "insuranceCharges": "NO",
-    "gstCharges": "13970.00",
-    "gcCharges": "",
+    "gstCharges": "11550.00",
+    "gcCharges": "NONE",
     "gstPercentage": "5"
   },
-  "grandTotal": "293370.00",
+  "grandTotal": "242550.00",
   "gstPaidBy": {
     "consignor": false,
     "consignee": false,
@@ -64,13 +64,13 @@
   },
   "description": {
     "noOfPackages": "",
-    "twoWheelerNo": "NO",
-    "carNo": "HP638785",
+    "twoWheelerNo": "",
+    "carNo": "DL3CBA9142",
     "actualWeight": "",
     "chargedWeight": "",
     "cbm": "",
     "goodsValue": "",
-    "truckNo": "DD01U9794"
+    "truckNo": ""
   },
-  "created_at": "2025-04-11T11:21:09.356Z"
+  "created_at": "2025-01-10T10:40:38.085Z"
 }

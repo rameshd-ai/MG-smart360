@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1944",
+  "invoiceNumber": "854",
+  "customerName": "NIKESH KUMAR LCOM (TEL)",
+  "amountNumber": "36750",
+  "amountText": "Thirty Six Thousand Seven Hundred Fifty Only",
+  "vehicleRegNumber": "BR01DM6305",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": " VISAKHAPATNAM",
+  "receiptDate": "15-03-2025",
+  "goodsTypes": [
+    "Bike"
+  ],
+  "created_at": "24T07:41:02.331Z-03-2025"
+}

@@ -1,15 +1,15 @@
 {
   "consignor": {
-    "name": "CDR G V SINGH",
-    "address": "345/1 RANJIT VIHAR MILITARY STATION BRICHGUNJ",
-    "address2": "SRI VIJAYA PURAM",
-    "address3": "744103"
+    "name": "B.BHUVANESHWARAN",
+    "address": "INS JARAWA  HADDO",
+    "address2": "SRI VIJIYA PURAM ",
+    "address3": "744102"
   },
   "consignee": {
-    "name": "CDR G V SINGH",
-    "address": "AMBA 123/D NOFRA PORBANDAR",
-    "address2": "GUJARAT",
-    "address3": "360579"
+    "name": "B. BHUVANESHWARAN",
+    "address": "INS SHIVAJI, LONAVALA",
+    "address2": "MUMBAI, MAHARASHTRA",
+    "address3": "410402"
   },
   "riskDetails": {
     "notInsured": true,
@@ -23,23 +23,23 @@
     }
   },
   "goodsDetails": {
-    "gcNumber": "1971",
-    "gcDate": "15-03-2025",
+    "gcNumber": "1942",
+    "gcDate": "17-03-2025",
     "origin": "SRI VIJAYA PURAM ",
-    "destination": "PORBANDAR (GUJARAT)",
-    "contact": "8008452285"
+    "destination": "LONAVALA, MUMBAI",
+    "contact": "9384418430"
   },
   "freightDetails": {
     "locations": [
       {
-        "from": "SRI VIJAYA PURAM ",
+        "from": "SRI VAJAYA PURAM ",
         "to": "CHENNAI",
-        "amount": "242000"
+        "amount": "31000.00"
       },
       {
         "from": "CHENNAI",
-        "to": "PORBANDAR (GUJARAT)",
-        "amount": "37400"
+        "to": "LONAVALA, MUMBAI",
+        "amount": "4000.00"
       },
       {
         "from": "",
@@ -51,11 +51,11 @@
   "additionalCharges": {
     "loadingCharges": "INCLUDED",
     "insuranceCharges": "NO",
-    "gstCharges": "13970.00",
+    "gstCharges": "1750.00",
     "gcCharges": "",
     "gstPercentage": "5"
   },
-  "grandTotal": "293370.00",
+  "grandTotal": "36750.00",
   "gstPaidBy": {
     "consignor": false,
     "consignee": false,
@@ -63,14 +63,14 @@
     "transporter": true
   },
   "description": {
-    "noOfPackages": "",
-    "twoWheelerNo": "NO",
-    "carNo": "HP638785",
+    "noOfPackages": "-1",
+    "twoWheelerNo": "AN01K0155",
+    "carNo": "",
     "actualWeight": "",
     "chargedWeight": "",
     "cbm": "",
     "goodsValue": "",
     "truckNo": "DD01U9794"
   },
-  "created_at": "2025-04-11T11:21:09.356Z"
+  "created_at": "2025-03-23T13:09:12.514Z"
 }

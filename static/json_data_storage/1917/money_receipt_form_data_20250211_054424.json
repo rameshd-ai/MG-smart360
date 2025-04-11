@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1917",
+  "invoiceNumber": "827",
+  "customerName": "LT CDR SHIVANG YAMDAGNI",
+  "amountNumber": "84526",
+  "amountText": "Eighty Four Thousand Five Hundred Twenty Six Only",
+  "vehicleRegNumber": "37 PKGS HOUSE HOLD GOODS",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "MUMBAI",
+  "receiptDate": "15-01-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "11T05:44:24.348Z-02-2025"
+}

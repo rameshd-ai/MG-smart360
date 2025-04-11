@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1939",
+  "invoiceNumber": "849",
+  "customerName": "VIJAY.M",
+  "amountNumber": "33600",
+  "amountText": "Thirty Three Thousand Six Hundred Only",
+  "vehicleRegNumber": "TN20CE1802",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "CHENNAI",
+  "receiptDate": "18-02-2025",
+  "goodsTypes": [
+    "Bike"
+  ],
+  "created_at": "13T09:25:02.227Z-03-2025"
+}

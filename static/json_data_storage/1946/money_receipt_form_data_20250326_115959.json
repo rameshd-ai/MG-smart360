@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1946",
+  "invoiceNumber": "856",
+  "customerName": "P. DEENABANDHU",
+  "amountNumber": "101325",
+  "amountText": "One Lakh One Thousand Three Hundred Twenty Five Only",
+  "vehicleRegNumber": "45 PKGS",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "MANDALAM (ADHRA PRADESH)",
+  "receiptDate": "05-02-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "26T11:59:56.595Z-03-2025"
+}

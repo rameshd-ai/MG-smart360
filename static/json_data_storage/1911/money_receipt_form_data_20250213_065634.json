@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1911",
+  "invoiceNumber": "821",
+  "customerName": "LT CDR ARPIT TRIVEDI",
+  "amountNumber": "164325",
+  "amountText": "One Lakh Sixty Four Thousand Three Hundred Twenty Five Only",
+  "vehicleRegNumber": "85 PKGS HOUSE HOLD GOODS",
+  "fromAddress": "VISAKHAPATNAM",
+  "toAddress": "SRI VIJAYA PURAM",
+  "receiptDate": "09-01-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "13T06:56:31.513Z-02-2025"
+}

@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "GANAPATHI RAO ",
+    "address": "1113 DSC PL NAVAL ACCADAMY PAYYANNUR AZIMULLA ",
+    "address2": "KANNUR KERALA",
+    "address3": "670310"
+  },
+  "consignee": {
+    "name": "GANAPATHI RAO ",
+    "address": "SMART360 PACKERS AND SHIPPING PVT LTD ",
+    "address2": "NO: 25/7 THIRUVERKADU ROAD, POONAMALLEE ,CHENNAI",
+    "address3": "600056"
+  },
+  "riskDetails": {
+    "notInsured": true,
+    "insured": false,
+    "insuredDetails": {
+      "company": "",
+      "policy": "",
+      "date": "",
+      "insuredAmount": "",
+      "risk": ""
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "1927 ",
+    "gcDate": "05-01-2025",
+    "origin": "KANNUR (KERALA)",
+    "destination": "CHENNAI ",
+    "contact": "8310996800"
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "KANNUR (KERALA)",
+        "to": "CHENNAI ",
+        "amount": "2500"
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "125.00",
+    "gcCharges": "NONE",
+    "gstPercentage": "5"
+  },
+  "grandTotal": "2625.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": false,
+    "transporter": true
+  },
+  "description": {
+    "noOfPackages": "",
+    "twoWheelerNo": "AP27BG8854",
+    "carNo": "NO ",
+    "actualWeight": "",
+    "chargedWeight": "",
+    "cbm": "",
+    "goodsValue": "",
+    "truckNo": "DD01U9496"
+  },
+  "created_at": "2025-02-25T14:54:07.995Z"
+}

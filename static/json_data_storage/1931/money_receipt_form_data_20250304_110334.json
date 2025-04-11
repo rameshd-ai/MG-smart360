@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1931",
+  "invoiceNumber": "841",
+  "customerName": "LT COL TRIPTI SINGH",
+  "amountNumber": "222705",
+  "amountText": "Two Lakh Twenty Two Thousand Seven Hundred Five Only",
+  "vehicleRegNumber": "95 PKGS",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "AMBALA",
+  "receiptDate": "05-02-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "04T11:03:25.681Z-03-2025"
+}

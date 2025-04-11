@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1923",
+  "invoiceNumber": "833",
+  "customerName": "P. KESAVA RAO",
+  "amountNumber": "93908",
+  "amountText": "Ninety Three Thousand Nine Hundred Eight Only",
+  "vehicleRegNumber": "43 PKGS HOUSEHOLD GOODS",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "BARUVA(ADHRA PRADESH)",
+  "receiptDate": "03-01-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "17T09:26:42.913Z-02-2025"
+}

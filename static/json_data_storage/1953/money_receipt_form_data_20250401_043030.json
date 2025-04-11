@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1953",
+  "invoiceNumber": "863",
+  "customerName": "BOTSA MURALIKRISHNA L COM(TEL)",
+  "amountNumber": "43365",
+  "amountText": "Forty Three Thousand Three Hundred Sixty Five Only",
+  "vehicleRegNumber": "22 PKGS HOUSE HOLD GOODS ",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "VISAKHAPATNAM",
+  "receiptDate": "15-03-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "01T04:30:30.176Z-04-2025"
+}

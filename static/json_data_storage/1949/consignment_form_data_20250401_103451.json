@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "DEOKAR VIJAY TULSI RAM",
+    "address": "UNIT 106 DSC PL",
+    "address2": "NSD GHATKOPAR MUMBAI",
+    "address3": "400086"
+  },
+  "consignee": {
+    "name": "DEOKAR VIJAY TULSI RAM",
+    "address": "NEAR ICGS OFFICE PANIPATH ROAD HADDO",
+    "address2": "SRI VIJAYA PURAM",
+    "address3": "744102"
+  },
+  "riskDetails": {
+    "notInsured": true,
+    "insured": false,
+    "insuredDetails": {
+      "company": "",
+      "policy": "",
+      "date": "",
+      "insuredAmount": "",
+      "risk": ""
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "1949  ",
+    "gcDate": "08-03-2025",
+    "origin": "CHENNAI",
+    "destination": "SRI VIJAYA PURAM",
+    "contact": "8978651878"
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "CHENNAI",
+        "to": "SRI VIJAYA PURAM",
+        "amount": "18000"
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "900.00",
+    "gcCharges": "NONE",
+    "gstPercentage": "5"
+  },
+  "grandTotal": "18900.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": false,
+    "transporter": true
+  },
+  "description": {
+    "noOfPackages": "22",
+    "twoWheelerNo": "NO",
+    "carNo": "NO",
+    "actualWeight": "1500",
+    "chargedWeight": "1500",
+    "cbm": "09",
+    "goodsValue": "35000",
+    "truckNo": ""
+  },
+  "created_at": "2025-04-01T10:34:48.814Z"
+}

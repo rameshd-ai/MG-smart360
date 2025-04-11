@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1926",
+  "invoiceNumber": "836",
+  "customerName": "MD YEASIN ALI LNK 1325 DSC PLATON",
+  "amountNumber": "7560",
+  "amountText": "Seven Thousand Five Hundred Sixty Only",
+  "vehicleRegNumber": "18 PKGS HOUSE HOLD GOODS",
+  "fromAddress": "KOLKATA",
+  "toAddress": "PRAYAGRAJ",
+  "receiptDate": "15-02-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "18T06:15:06.720Z-02-2025"
+}

@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1943",
+  "invoiceNumber": "853",
+  "customerName": "NIKESH KUMAR LCOM (TEL)",
+  "amountNumber": "44415",
+  "amountText": "Forty Four Thousand Four Hundred Fifteen Only",
+  "vehicleRegNumber": "",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": " VISAKHAPATNAM",
+  "receiptDate": "15-03-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "24T07:35:08.970Z-03-2025"
+}

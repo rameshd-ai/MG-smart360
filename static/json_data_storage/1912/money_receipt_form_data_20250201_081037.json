@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1912",
+  "invoiceNumber": "822",
+  "customerName": "LT CDR ARPIT TRIVEDI",
+  "amountNumber": "295575",
+  "amountText": "Two Lakh Ninety Five Thousand Five Hundred Seventy Five Only",
+  "vehicleRegNumber": "HP63B2708",
+  "fromAddress": "VISAKHAPATNAM",
+  "toAddress": "SRI VIJAYA PURAM",
+  "receiptDate": "09-01-2025",
+  "goodsTypes": [
+    "Car"
+  ],
+  "created_at": "01T08:10:34.819Z-02-2025"
+}

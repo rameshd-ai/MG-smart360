@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1933",
+  "invoiceNumber": "843",
+  "customerName": "MURALI MOHAN KUNA 14841940-X SEP (GD)",
+  "amountNumber": "33075",
+  "amountText": "Thirty Three Thousand Seventy Five Only",
+  "vehicleRegNumber": "AP30AC0965",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "CHENNAI",
+  "receiptDate": "18-02-2025",
+  "goodsTypes": [
+    "Bike"
+  ],
+  "created_at": "06T08:55:11.523Z-03-2025"
+}

@@ -1,15 +1,15 @@
 {
   "consignor": {
-    "name": "CDR G V SINGH",
-    "address": "345/1 RANJIT VIHAR MILITARY STATION BRICHGUNJ",
-    "address2": "SRI VIJAYA PURAM",
-    "address3": "744103"
+    "name": "NIKESH KUMAR LCOM (TEL)",
+    "address": "C/O AJAY SINGH HOUSE NO. 24, DP STREET",
+    "address2": "HADDO, LILLY PUR, SRI VIJAYA PURAM",
+    "address3": "744101"
   },
   "consignee": {
-    "name": "CDR G V SINGH",
-    "address": "AMBA 123/D NOFRA PORBANDAR",
-    "address2": "GUJARAT",
-    "address3": "360579"
+    "name": "NIKESH KUMAR LCOM (TEL)",
+    "address": "C/O MITHILESH KUMAR, A-4, 63-4-50, PAVANPUTHRA",
+    "address2": "NAGAR, SRI HARI PURAM, VISAKHAPATNAM",
+    "address3": "530011"
   },
   "riskDetails": {
     "notInsured": true,
@@ -23,23 +23,23 @@
     }
   },
   "goodsDetails": {
-    "gcNumber": "1971",
+    "gcNumber": "1943",
     "gcDate": "15-03-2025",
     "origin": "SRI VIJAYA PURAM ",
-    "destination": "PORBANDAR (GUJARAT)",
-    "contact": "8008452285"
+    "destination": "VISAKHAPATNAM",
+    "contact": "8709668488"
   },
   "freightDetails": {
     "locations": [
       {
         "from": "SRI VIJAYA PURAM ",
         "to": "CHENNAI",
-        "amount": "242000"
+        "amount": "27000"
       },
       {
         "from": "CHENNAI",
-        "to": "PORBANDAR (GUJARAT)",
-        "amount": "37400"
+        "to": "VISAKHAPATNAM",
+        "amount": "15300"
       },
       {
         "from": "",
@@ -51,11 +51,11 @@
   "additionalCharges": {
     "loadingCharges": "INCLUDED",
     "insuranceCharges": "NO",
-    "gstCharges": "13970.00",
+    "gstCharges": "2115.00",
     "gcCharges": "",
     "gstPercentage": "5"
   },
-  "grandTotal": "293370.00",
+  "grandTotal": "44415.00",
   "gstPaidBy": {
     "consignor": false,
     "consignee": false,
@@ -63,14 +63,14 @@
     "transporter": true
   },
   "description": {
-    "noOfPackages": "",
-    "twoWheelerNo": "NO",
-    "carNo": "HP638785",
-    "actualWeight": "",
-    "chargedWeight": "",
-    "cbm": "",
-    "goodsValue": "",
+    "noOfPackages": "22",
+    "twoWheelerNo": "NO ",
+    "carNo": "NO ",
+    "actualWeight": "1500",
+    "chargedWeight": "1499",
+    "cbm": "9",
+    "goodsValue": "95000",
     "truckNo": "DD01U9794"
   },
-  "created_at": "2025-04-11T11:21:09.356Z"
+  "created_at": "2025-03-24T07:31:10.548Z"
 }

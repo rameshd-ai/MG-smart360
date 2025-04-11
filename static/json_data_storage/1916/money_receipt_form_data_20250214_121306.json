@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1916",
+  "invoiceNumber": "826",
+  "customerName": "DUNDE DHAMMASHEEL ARMY NO. 16118044X",
+  "amountNumber": "67935",
+  "amountText": "Sixty Seven Thousand Nine Hundred Thirty Five Only",
+  "vehicleRegNumber": "45 PKGS HOUSE HOLD GOODS",
+  "fromAddress": "CHENNAI",
+  "toAddress": "DIGLIPUR",
+  "receiptDate": "21-12-2024",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "14T12:13:07.136Z-02-2025"
+}

@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1898",
+  "invoiceNumber": "808",
+  "customerName": "LT CDR SUSHIL KUMAR ",
+  "amountNumber": "156555",
+  "amountText": "One Lakh Fifty Six Thousand Five Hundred Fifty Five Only",
+  "vehicleRegNumber": "150 PKGS HOUSE HOLD GOODS ",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "KOCHI ",
+  "receiptDate": "28-12-2024",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "23T10:45:12.108Z-01-2025"
+}

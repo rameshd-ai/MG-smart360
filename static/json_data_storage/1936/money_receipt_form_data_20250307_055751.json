@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1936",
+  "invoiceNumber": "846",
+  "customerName": "MURALI MOHAN KUNA 14841940-X SEP (GD)",
+  "amountNumber": "16275",
+  "amountText": "Sixteen Thousand Two Hundred Seventy Five Only",
+  "vehicleRegNumber": "25 PKGS",
+  "fromAddress": "CHENNAI",
+  "toAddress": "VISAKHAPATNAM",
+  "receiptDate": "25-02-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "07T05:57:41.412Z-03-2025"
+}

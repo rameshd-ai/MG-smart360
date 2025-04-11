@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "OM PRAKASH LPM ",
+    "address": "INHS ASVINI, NEAR RC CHURCH",
+    "address2": "SOUTH COLABA, MUMBAI",
+    "address3": "400005"
+  },
+  "consignee": {
+    "name": "OM PRAKASH LPM ",
+    "address": "C/O SAJAN BHARDWAJ, DPM OFFICE ",
+    "address2": "PANIPATH ROAD, HADDO, SRI VIJAYA PURAM",
+    "address3": "744102"
+  },
+  "riskDetails": {
+    "notInsured": true,
+    "insured": false,
+    "insuredDetails": {
+      "company": "",
+      "policy": "",
+      "date": "",
+      "insuredAmount": "",
+      "risk": ""
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "1945",
+    "gcDate": "12-03-2025",
+    "origin": "COLABA (MUMBAI)",
+    "destination": "SRI VIJAYA PURAM",
+    "contact": "9930226776"
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "COLABA (MUMBAI)",
+        "to": "CHENNAI",
+        "amount": "11200"
+      },
+      {
+        "from": "CHENNAI",
+        "to": "SRI VIJAYA PURAM",
+        "amount": "8800"
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "1000.00",
+    "gcCharges": "",
+    "gstPercentage": "5"
+  },
+  "grandTotal": "21000.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": false,
+    "transporter": true
+  },
+  "description": {
+    "noOfPackages": "9",
+    "twoWheelerNo": "NO ",
+    "carNo": "NO ",
+    "actualWeight": "500",
+    "chargedWeight": "500",
+    "cbm": "1.5",
+    "goodsValue": "35000",
+    "truckNo": "DD01U9794"
+  },
+  "created_at": "2025-03-24T10:46:57.999Z"
+}

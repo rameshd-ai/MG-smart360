@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "LT CDR BASHEER KHAN",
+    "address": "P-6/1, OLD DWEEP VIHAR DELANIPUR,",
+    "address2": "SRI VIJIYA PURAM ",
+    "address3": "744102"
+  },
+  "consignee": {
+    "name": "LT CDR BASHEER KHAN",
+    "address": "108, LAKSHAY IMSC WNC O MESS, NOFRA, COLABA,",
+    "address2": "MUMBAI, MAHARASHTRA",
+    "address3": "400005"
+  },
+  "riskDetails": {
+    "notInsured": true,
+    "insured": false,
+    "insuredDetails": {
+      "company": "",
+      "policy": "",
+      "date": "",
+      "insuredAmount": "",
+      "risk": ""
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "1895",
+    "gcDate": "02-01-2025",
+    "origin": "SRI VIJAYA PURAM ",
+    "destination": "MUMBAI",
+    "contact": "9982691718"
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "SRI VAJAYA PURAM ",
+        "to": "KOLKATA",
+        "amount": "105000"
+      },
+      {
+        "from": "KOLKATA",
+        "to": "MUMBAI",
+        "amount": "119700"
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "11235.00",
+    "gcCharges": "",
+    "gstPercentage": "5"
+  },
+  "grandTotal": "235935.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": false,
+    "transporter": true
+  },
+  "description": {
+    "noOfPackages": "105",
+    "twoWheelerNo": "",
+    "carNo": "",
+    "actualWeight": "6000",
+    "chargedWeight": "6000",
+    "cbm": "26.6",
+    "goodsValue": "450000",
+    "truckNo": "DD01U9496"
+  },
+  "created_at": "2025-01-18T04:26:27.020Z"
+}

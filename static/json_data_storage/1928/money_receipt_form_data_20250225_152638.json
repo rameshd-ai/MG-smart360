@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1928",
+  "invoiceNumber": "838",
+  "customerName": "GANAPATHI RAO ",
+  "amountNumber": "33810",
+  "amountText": "Thirty Three Thousand Eight Hundred Ten Only",
+  "vehicleRegNumber": "AP27BG8854",
+  "fromAddress": "CHENNAI",
+  "toAddress": "SRI VIJAYA PURAM",
+  "receiptDate": "20-01-2025",
+  "goodsTypes": [
+    "Bike"
+  ],
+  "created_at": "25T15:26:38.695Z-02-2025"
+}

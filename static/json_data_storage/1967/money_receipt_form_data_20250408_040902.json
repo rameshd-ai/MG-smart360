@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1967",
+  "invoiceNumber": "877",
+  "customerName": "LT NISHANT ARORA",
+  "amountNumber": "30450",
+  "amountText": "Thirty Thousand Four Hundred Fifty Only",
+  "vehicleRegNumber": "AR02A8371",
+  "fromAddress": "MUMBAI",
+  "toAddress": "KOCHI",
+  "receiptDate": "16-03-2025",
+  "goodsTypes": [
+    "Car"
+  ],
+  "created_at": "08T04:08:58.445Z-04-2025"
+}

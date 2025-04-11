@@ -1,15 +1,15 @@
 {
   "consignor": {
-    "name": "CDR G V SINGH",
-    "address": "345/1 RANJIT VIHAR MILITARY STATION BRICHGUNJ",
-    "address2": "SRI VIJAYA PURAM",
+    "name": "LT COL TRIPTI SINGH",
+    "address": "P 406/1, PERIERA ENCLAVE, MINNINEBAY",
+    "address2": "SRI VIJIYA PURAM ",
     "address3": "744103"
   },
   "consignee": {
-    "name": "CDR G V SINGH",
-    "address": "AMBA 123/D NOFRA PORBANDAR",
-    "address2": "GUJARAT",
-    "address3": "360579"
+    "name": "LT COL TRIPTI SINGH",
+    "address": "NURSING OFFICERS MESS MILITARY HOSPITAL AMBALA ",
+    "address2": "CANTONMENT AMBALA",
+    "address3": "133001"
   },
   "riskDetails": {
     "notInsured": true,
@@ -23,23 +23,23 @@
     }
   },
   "goodsDetails": {
-    "gcNumber": "1971",
-    "gcDate": "15-03-2025",
+    "gcNumber": "1931",
+    "gcDate": "05-02-2025",
     "origin": "SRI VIJAYA PURAM ",
-    "destination": "PORBANDAR (GUJARAT)",
-    "contact": "8008452285"
+    "destination": "AMBALA",
+    "contact": "9454895651"
   },
   "freightDetails": {
     "locations": [
       {
         "from": "SRI VIJAYA PURAM ",
-        "to": "CHENNAI",
-        "amount": "242000"
+        "to": "KOLKATA",
+        "amount": "105000"
       },
       {
-        "from": "CHENNAI",
-        "to": "PORBANDAR (GUJARAT)",
-        "amount": "37400"
+        "from": "KOLKATA",
+        "to": "AMBALA",
+        "amount": "107100"
       },
       {
         "from": "",
@@ -51,11 +51,11 @@
   "additionalCharges": {
     "loadingCharges": "INCLUDED",
     "insuranceCharges": "NO",
-    "gstCharges": "13970.00",
+    "gstCharges": "10605.00",
     "gcCharges": "",
     "gstPercentage": "5"
   },
-  "grandTotal": "293370.00",
+  "grandTotal": "222705.00",
   "gstPaidBy": {
     "consignor": false,
     "consignee": false,
@@ -63,14 +63,14 @@
     "transporter": true
   },
   "description": {
-    "noOfPackages": "",
-    "twoWheelerNo": "NO",
-    "carNo": "HP638785",
-    "actualWeight": "",
+    "noOfPackages": "95",
+    "twoWheelerNo": "NO ",
+    "carNo": "NO ",
+    "actualWeight": "6000",
     "chargedWeight": "",
     "cbm": "",
     "goodsValue": "",
-    "truckNo": "DD01U9794"
+    "truckNo": "HR61E9575"
   },
-  "created_at": "2025-04-11T11:21:09.356Z"
+  "created_at": "2025-03-04T10:57:18.673Z"
 }

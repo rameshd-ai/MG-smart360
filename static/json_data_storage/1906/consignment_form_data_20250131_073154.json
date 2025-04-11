@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "LT HIMANSHU",
+    "address": "INS DARSHAK CHENNAI PORT ",
+    "address2": "CHENNAI",
+    "address3": "600001"
+  },
+  "consignee": {
+    "name": "LT HIMANSHU",
+    "address": "NEAR ICGS OFFICE  PANIPATH ROAD ",
+    "address2": "HADDO , SRI VIJAYA PURAM",
+    "address3": "744102"
+  },
+  "riskDetails": {
+    "notInsured": true,
+    "insured": false,
+    "insuredDetails": {
+      "company": "",
+      "policy": "",
+      "date": "",
+      "insuredAmount": "",
+      "risk": ""
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "1906  ",
+    "gcDate": "14-01-2025",
+    "origin": "CHENNAI",
+    "destination": "SRI VIJAYA PURAM",
+    "contact": "6204997514"
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "CHENNAI",
+        "to": "SRI VIJAYA PURAM ",
+        "amount": "105000"
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "5250.00",
+    "gcCharges": "NONE",
+    "gstPercentage": "5"
+  },
+  "grandTotal": "110250.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": false,
+    "transporter": true
+  },
+  "description": {
+    "noOfPackages": "89",
+    "twoWheelerNo": "NO ",
+    "carNo": "NO ",
+    "actualWeight": "6000",
+    "chargedWeight": "6000",
+    "cbm": "26.6",
+    "goodsValue": "183000",
+    "truckNo": "NO"
+  },
+  "created_at": "2025-01-31T07:31:49.502Z"
+}

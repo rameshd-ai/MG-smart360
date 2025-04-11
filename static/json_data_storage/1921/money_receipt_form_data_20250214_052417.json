@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1921",
+  "invoiceNumber": "831",
+  "customerName": "LT COL Y T MINI MOLE",
+  "amountNumber": "143325",
+  "amountText": "One Lakh Forty Three Thousand Three Hundred Twenty Five Only",
+  "vehicleRegNumber": "85 PKGS HOUSE HOLD GOODS",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "BIHAR (GAYA)",
+  "receiptDate": "02-02-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "14T05:24:17.089Z-02-2025"
+}

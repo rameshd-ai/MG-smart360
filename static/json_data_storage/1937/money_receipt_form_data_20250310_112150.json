@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1937",
+  "invoiceNumber": "847",
+  "customerName": "MAHINDER SINGH RETD. ASSST MARINE ENGINEER",
+  "amountNumber": "233541",
+  "amountText": "Two Lakh Thirty Three Thousand Five Hundred Forty One Only",
+  "vehicleRegNumber": "85 PKGS",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "HARYANA (SONIPAT)",
+  "receiptDate": "05-02-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "10T11:21:36.924Z-03-2025"
+}

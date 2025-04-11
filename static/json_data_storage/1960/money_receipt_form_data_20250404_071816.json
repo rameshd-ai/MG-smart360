@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1960",
+  "invoiceNumber": "870",
+  "customerName": "COMDT (JG) ABHISHEK TRIPATHI",
+  "amountNumber": "39900",
+  "amountText": "Thirty Nine Thousand Nine Hundred Only",
+  "vehicleRegNumber": "AN01R2731",
+  "fromAddress": "DIGLIPUR N&M ANDAMAN",
+  "toAddress": " KOLKATA",
+  "receiptDate": "15-03-2025",
+  "goodsTypes": [
+    "Bike"
+  ],
+  "created_at": "04T07:18:12.822Z-04-2025"
+}

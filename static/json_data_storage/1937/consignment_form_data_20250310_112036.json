@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "MAHINDER SINGH RETD. ASSST MARINE ENGINEER",
+    "address": "H-115, HORTICULTURE ROAD, HADDO",
+    "address2": "SRI VIJAYA PURAM, A&N ISLANDS",
+    "address3": "744102"
+  },
+  "consignee": {
+    "name": "MAHINDER SINGH RETD. ASSST MARINE ENGINEER",
+    "address": "H.NO. 1864, SECTOR-23, SONIPAT",
+    "address2": "HARYANA",
+    "address3": "131001"
+  },
+  "riskDetails": {
+    "notInsured": false,
+    "insured": false,
+    "insuredDetails": {
+      "company": "",
+      "policy": "",
+      "date": "",
+      "insuredAmount": "",
+      "risk": ""
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "1937  ",
+    "gcDate": "05-02-2025",
+    "origin": "SRI VIJAYA PURAM ",
+    "destination": "HARYANA (SONIPAT)",
+    "contact": "9434285834"
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "SRI VIJAYA PURAM ",
+        "to": "KOLKATA",
+        "amount": "115320"
+      },
+      {
+        "from": "KOLKATA",
+        "to": "HARYANA (SONIPAT) ",
+        "amount": "107100"
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "11121.00",
+    "gcCharges": "NONE",
+    "gstPercentage": "5"
+  },
+  "grandTotal": "233541.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": false,
+    "transporter": true
+  },
+  "description": {
+    "noOfPackages": "85",
+    "twoWheelerNo": "NO ",
+    "carNo": "NO ",
+    "actualWeight": "6000",
+    "chargedWeight": "",
+    "cbm": "26.66",
+    "goodsValue": "",
+    "truckNo": "DD01U9496"
+  },
+  "created_at": "2025-03-10T11:20:23.314Z"
+}

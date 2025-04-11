@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1905",
+  "invoiceNumber": "815",
+  "customerName": "SHAIK MOHIDDEEN",
+  "amountNumber": "9450",
+  "amountText": "Nine Thousand Four Hundred Fifty Only",
+  "vehicleRegNumber": "14 HOUSE HOLD GOODS ",
+  "fromAddress": "CHENNAI",
+  "toAddress": "SRI VIJAYA PURAM",
+  "receiptDate": "16-01-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "29T06:50:13.857Z-01-2025"
+}

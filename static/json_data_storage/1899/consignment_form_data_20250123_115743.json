@@ -1,15 +1,15 @@
 {
   "consignor": {
-    "name": "CDR G V SINGH",
-    "address": "345/1 RANJIT VIHAR MILITARY STATION BRICHGUNJ",
-    "address2": "SRI VIJAYA PURAM",
+    "name": "LT CDR SUSHIL KUMAR ",
+    "address": "573-3, CHITNIS ENCLAVE BRICHGUNJ MILITARY ",
+    "address2": "STATION ,SRI VIJAYA PURAM ,A&N ISLANDS ",
     "address3": "744103"
   },
   "consignee": {
-    "name": "CDR G V SINGH",
-    "address": "AMBA 123/D NOFRA PORBANDAR",
-    "address2": "GUJARAT",
-    "address3": "360579"
+    "name": "LT CDR SUSHIL KUMAR ",
+    "address": "3A, WEST WATERS THEVARA, ERNAKULAM KERALA ",
+    "address2": "KOCHI ",
+    "address3": "682015"
   },
   "riskDetails": {
     "notInsured": true,
@@ -23,23 +23,23 @@
     }
   },
   "goodsDetails": {
-    "gcNumber": "1971",
-    "gcDate": "15-03-2025",
+    "gcNumber": "1899 ",
+    "gcDate": "28-12-2024",
     "origin": "SRI VIJAYA PURAM ",
-    "destination": "PORBANDAR (GUJARAT)",
-    "contact": "8008452285"
+    "destination": "KOCHI",
+    "contact": "8547783574"
   },
   "freightDetails": {
     "locations": [
       {
-        "from": "SRI VIJAYA PURAM ",
-        "to": "CHENNAI",
-        "amount": "242000"
+        "from": "SRI VAJAYA PURAM ",
+        "to": "CHENNAI ",
+        "amount": "231000"
       },
       {
-        "from": "CHENNAI",
-        "to": "PORBANDAR (GUJARAT)",
-        "amount": "37400"
+        "from": "CHENNAI ",
+        "to": "KOCHI",
+        "amount": "10500"
       },
       {
         "from": "",
@@ -51,11 +51,11 @@
   "additionalCharges": {
     "loadingCharges": "INCLUDED",
     "insuranceCharges": "NO",
-    "gstCharges": "13970.00",
-    "gcCharges": "",
+    "gstCharges": "12075.00",
+    "gcCharges": "NA",
     "gstPercentage": "5"
   },
-  "grandTotal": "293370.00",
+  "grandTotal": "253575.00",
   "gstPaidBy": {
     "consignor": false,
     "consignee": false,
@@ -64,13 +64,13 @@
   },
   "description": {
     "noOfPackages": "",
-    "twoWheelerNo": "NO",
-    "carNo": "HP638785",
+    "twoWheelerNo": "NO ",
+    "carNo": "HP52B9042",
     "actualWeight": "",
     "chargedWeight": "",
     "cbm": "",
     "goodsValue": "",
     "truckNo": "DD01U9794"
   },
-  "created_at": "2025-04-11T11:21:09.356Z"
+  "created_at": "2025-01-23T06:27:43.475Z"
 }

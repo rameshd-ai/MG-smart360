@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "P TAMIL SELVAM",
+    "address": "SENNERKUPAM POONANALEE",
+    "address2": "CHENNAI",
+    "address3": "600056"
+  },
+  "consignee": {
+    "name": "P TAMIL SELVAM",
+    "address": "NEAR ICGS OFFICE PANIPATH ROAD HADDO",
+    "address2": "SRI VIJAYA PURAM",
+    "address3": "744102"
+  },
+  "riskDetails": {
+    "notInsured": true,
+    "insured": false,
+    "insuredDetails": {
+      "company": "",
+      "policy": "",
+      "date": "",
+      "insuredAmount": "",
+      "risk": ""
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "1848",
+    "gcDate": "27-08-2024",
+    "origin": "CHENNAI",
+    "destination": "SRI VIJAYA PURAM",
+    "contact": ""
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "CHENNAI",
+        "to": "SRI VIJAYA PURAM ",
+        "amount": "9500"
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "0.00",
+    "gcCharges": "",
+    "gstPercentage": ""
+  },
+  "grandTotal": "9500.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": false,
+    "transporter": true
+  },
+  "description": {
+    "noOfPackages": "10",
+    "twoWheelerNo": "",
+    "carNo": "",
+    "actualWeight": "600",
+    "chargedWeight": "600",
+    "cbm": "3",
+    "goodsValue": "25000",
+    "truckNo": ""
+  },
+  "created_at": "2025-01-27T11:08:07.869Z"
+}

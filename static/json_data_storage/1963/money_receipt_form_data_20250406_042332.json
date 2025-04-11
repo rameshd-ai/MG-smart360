@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1963",
+  "invoiceNumber": "874",
+  "customerName": "CHANCHAL GOVINDA",
+  "amountNumber": "38535",
+  "amountText": "Thirty Eight Thousand Five Hundred Thirty Five Only",
+  "vehicleRegNumber": "DL7SPB9767",
+  "fromAddress": "SRI VIJAYA PURAM ",
+  "toAddress": "DELHI",
+  "receiptDate": "23-03-2025",
+  "goodsTypes": [
+    "Bike"
+  ],
+  "created_at": "06T04:23:32.252Z-04-2025"
+}

@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1929",
+  "invoiceNumber": "839",
+  "customerName": "CDR AYUSH KUMAR",
+  "amountNumber": "156555",
+  "amountText": "One Lakh Fifty Six Thousand Five Hundred Fifty Five Only",
+  "vehicleRegNumber": "85 PKGS ",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "KOCHI ",
+  "receiptDate": "18-02-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "04T04:34:13.303Z-03-2025"
+}

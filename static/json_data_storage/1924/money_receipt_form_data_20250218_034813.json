@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1924",
+  "invoiceNumber": "834",
+  "customerName": "P. KESAVA RAO",
+  "amountNumber": "36750",
+  "amountText": "Thirty Six Thousand Seven Hundred Fifty Only",
+  "vehicleRegNumber": "AN-01-J-0490",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "BARUVA(ADHRA PRADESH)",
+  "receiptDate": "03-01-2025",
+  "goodsTypes": [
+    "Bike"
+  ],
+  "created_at": "18T03:48:08.100Z-02-2025"
+}

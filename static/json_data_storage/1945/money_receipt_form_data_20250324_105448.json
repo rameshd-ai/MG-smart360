@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1945",
+  "invoiceNumber": "855",
+  "customerName": "OM PRAKASH LPM",
+  "amountNumber": "21000",
+  "amountText": "Twenty One Thousand Only",
+  "vehicleRegNumber": "9 PKGS",
+  "fromAddress": "COLABA (MUMBAI)",
+  "toAddress": "SRI VIJAYA PURAM",
+  "receiptDate": "12-03-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "24T10:54:45.731Z-03-2025"
+}

@@ -1,0 +1,16 @@
+{
+  "gcNumber": "1940",
+  "invoiceNumber": "850",
+  "customerName": "NAKUL RAJ AAKULA",
+  "amountNumber": "231399",
+  "amountText": "Two Lakh Thirty One Thousand Three Hundred Ninety Nine Only",
+  "vehicleRegNumber": "85 PKGS & 01 NO'S SCOOTY MH46BX5902",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "MUMBAI",
+  "receiptDate": "",
+  "goodsTypes": [
+    "Household Goods",
+    "Scooter"
+  ],
+  "created_at": "15T11:01:36.570Z-03-2025"
+}

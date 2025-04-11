@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1906",
+  "invoiceNumber": "816",
+  "customerName": "LT HIMANSHU",
+  "amountNumber": "110250",
+  "amountText": "One Lakh Ten Thousand Two Hundred Fifty Only",
+  "vehicleRegNumber": "89 PKGS HOUSE HOLD GOODS",
+  "fromAddress": "CHENNAI",
+  "toAddress": "SRI VIJAYA PURAM",
+  "receiptDate": "14-01-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "31T05:08:51.792Z-01-2025"
+}

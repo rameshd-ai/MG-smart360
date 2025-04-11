@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1959",
+  "invoiceNumber": "869",
+  "customerName": "COMDT (JG) ABHISHEK TRIPATHI",
+  "amountNumber": "51240",
+  "amountText": "Fifty One Thousand Two Hundred Forty Only",
+  "vehicleRegNumber": "15 PKGS HOUSEHOLD GOODS",
+  "fromAddress": "DIGLIPUR N&M ANDAMAN",
+  "toAddress": " KOLKATA",
+  "receiptDate": "15-03-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "04T07:14:10.303Z-04-2025"
+}

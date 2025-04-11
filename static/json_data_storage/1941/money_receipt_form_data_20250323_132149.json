@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1941",
+  "invoiceNumber": "851",
+  "customerName": "B. BHUVANESHWARAN",
+  "amountNumber": "53340.00",
+  "amountText": "Fifty Three Thousand Three Hundred Forty Only",
+  "vehicleRegNumber": "25 PKGS HOUSE HOLD GOODS ",
+  "fromAddress": "SRI VAJAYA PURAM ",
+  "toAddress": "LONAVALA",
+  "receiptDate": "17-03-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "23T13:21:48.971Z-03-2025"
+}

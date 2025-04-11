@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1961",
+  "invoiceNumber": "871",
+  "customerName": "SIBU PRASAD JENA",
+  "amountNumber": "125475",
+  "amountText": "One Lakh Twenty Five Thousand Four Hundred Seventy Five Only",
+  "vehicleRegNumber": "75 PKGS HOUSEHOLD GOODS",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "PANAGARH",
+  "receiptDate": "20-03-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "05T05:40:22.139Z-04-2025"
+}

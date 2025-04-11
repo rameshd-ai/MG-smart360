@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1951",
+  "invoiceNumber": "861",
+  "customerName": "S K MISHRA P/ADH",
+  "amountNumber": "202860",
+  "amountText": "Two Lakh Two Thousand Eight Hundred Sixty Only",
+  "vehicleRegNumber": "78 PKGS",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "MUMBAI",
+  "receiptDate": "15-02-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "28T05:02:47.240Z-03-2025"
+}

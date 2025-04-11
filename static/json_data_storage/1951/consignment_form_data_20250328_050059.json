@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "S K MISHRA P/ADH",
+    "address": "C/O RITTU RAJ, 118/4 SIRI RAJ BUILDING ",
+    "address2": "NEAR VETERINARY OFFICE, DOLLIGUNJ",
+    "address3": "SRI VIJAYA PURAM PIN-744103"
+  },
+  "consignee": {
+    "name": "S K MISHRA P/ADH",
+    "address": "FLAT NO. 1201, B1 BLOCK, TATRAKSHAK VIHAR,  ",
+    "address2": "OPP LIC COLONY, NEAR SHANTI ASHRAM, BORIVALI",
+    "address3": "WEST, MUMBAI PIN-400103"
+  },
+  "riskDetails": {
+    "notInsured": true,
+    "insured": false,
+    "insuredDetails": {
+      "company": "",
+      "policy": "",
+      "date": "",
+      "insuredAmount": "",
+      "risk": ""
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "1951",
+    "gcDate": "15-02-2025",
+    "origin": "SRI VIJAYA PURAM ",
+    "destination": "MUMBAI",
+    "contact": "7358160061"
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "SRI VIJAYA PURAM ",
+        "to": "CHENNAI",
+        "amount": "105000"
+      },
+      {
+        "from": "CHENNAI",
+        "to": "MUMBAI",
+        "amount": "88200"
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "9660.00",
+    "gcCharges": "",
+    "gstPercentage": "5"
+  },
+  "grandTotal": "202860.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": false,
+    "transporter": true
+  },
+  "description": {
+    "noOfPackages": "78",
+    "twoWheelerNo": "NO ",
+    "carNo": "NO ",
+    "actualWeight": "6000",
+    "chargedWeight": "6000",
+    "cbm": "26.66",
+    "goodsValue": "320000",
+    "truckNo": "DD01U9720"
+  },
+  "created_at": "2025-03-28T05:00:58.815Z"
+}

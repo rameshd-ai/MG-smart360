@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1966",
+  "invoiceNumber": "876",
+  "customerName": "LT NISHANT ARORA",
+  "amountNumber": "99750",
+  "amountText": "Ninety Nine Thousand Seven Hundred Fifty Only",
+  "vehicleRegNumber": "65 PKGS HOUSEHOLD GOODS",
+  "fromAddress": "MUMBAI",
+  "toAddress": "KOCHI",
+  "receiptDate": "16-03-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "07T11:54:34.517Z-04-2025"
+}

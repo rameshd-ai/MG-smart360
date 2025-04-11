@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1909",
+  "invoiceNumber": "819",
+  "customerName": "ASST COMDT SUDHIR",
+  "amountNumber": "239242",
+  "amountText": "Two Lakh Thirty Nine Thousand Two Hundred Forty Two Only",
+  "vehicleRegNumber": "119 PKGS HOUSE HOLD GOODS",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "MUMBAI",
+  "receiptDate": "17-01-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "31T11:16:38.191Z-01-2025"
+}

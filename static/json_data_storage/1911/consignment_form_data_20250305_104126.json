@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "LT CDR ARPIT TRIVEDI",
+    "address": "E 57/5, DOLPHIN HILLS,",
+    "address2": "VISAKHAPATNAM ANDHRA PRADESH",
+    "address3": "530014"
+  },
+  "consignee": {
+    "name": "LT CDR ARPIT TRIVEDI",
+    "address": "FDN-1, NSRY C/O NAVY OFFICE",
+    "address2": "SRI VIJAYA PURAM",
+    "address3": "744102"
+  },
+  "riskDetails": {
+    "notInsured": true,
+    "insured": false,
+    "insuredDetails": {
+      "company": "",
+      "policy": "",
+      "date": "",
+      "insuredAmount": "",
+      "risk": ""
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "1911   ",
+    "gcDate": "09-01-2025",
+    "origin": "VISAKHAPATNAM",
+    "destination": "SRI VIJAYA PURAM",
+    "contact": "9496950417"
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "VISAKHAPATNAM",
+        "to": "CHENNAI ",
+        "amount": "51500"
+      },
+      {
+        "from": "CHENNAI",
+        "to": "SRI VIJAYA PURAM",
+        "amount": "105000"
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "7825.00",
+    "gcCharges": "NONE",
+    "gstPercentage": "5"
+  },
+  "grandTotal": "164325.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": false,
+    "transporter": true
+  },
+  "description": {
+    "noOfPackages": "85",
+    "twoWheelerNo": "NO ",
+    "carNo": "NO ",
+    "actualWeight": "6000",
+    "chargedWeight": "6000",
+    "cbm": "26.6",
+    "goodsValue": "210000",
+    "truckNo": "DD01U9496"
+  },
+  "created_at": "2025-03-05T10:41:17.017Z"
+}

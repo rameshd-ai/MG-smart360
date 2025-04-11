@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1962",
+  "invoiceNumber": " 872",
+  "customerName": "SIBU PRASAD JENA",
+  "amountNumber": "244230",
+  "amountText": "Two Lakh Forty Four Thousand Two Hundred Thirty Only",
+  "vehicleRegNumber": "25BH2102C",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "PANAGARH",
+  "receiptDate": "20-03-2025",
+  "goodsTypes": [
+    "Car"
+  ],
+  "created_at": "05T05:49:47.746Z-04-2025"
+}

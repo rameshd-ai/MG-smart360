@@ -1,15 +1,15 @@
 {
   "consignor": {
-    "name": "CDR G V SINGH",
-    "address": "345/1 RANJIT VIHAR MILITARY STATION BRICHGUNJ",
-    "address2": "SRI VIJAYA PURAM",
+    "name": "LT COL Y T MINI MOLE",
+    "address": "MNS NURSING OFFICERS MESS",
+    "address2": "INHS DHANVANTARI SRI VIJAYA PURAM A& N ISLANDS",
     "address3": "744103"
   },
   "consignee": {
-    "name": "CDR G V SINGH",
-    "address": "AMBA 123/D NOFRA PORBANDAR",
-    "address2": "GUJARAT",
-    "address3": "360579"
+    "name": "LT COL Y T MINI MOLE",
+    "address": "MNS OFFICERS MESS NEAR MILITARY HOSPITAL GATE ",
+    "address2": "OTA GAYA CHANDAUTI MODE BIHAR ",
+    "address3": "823005"
   },
   "riskDetails": {
     "notInsured": true,
@@ -23,23 +23,23 @@
     }
   },
   "goodsDetails": {
-    "gcNumber": "1971",
-    "gcDate": "15-03-2025",
+    "gcNumber": "1922",
+    "gcDate": "02-02-2025",
     "origin": "SRI VIJAYA PURAM ",
-    "destination": "PORBANDAR (GUJARAT)",
-    "contact": "8008452285"
+    "destination": "BIHAR",
+    "contact": "9400817200"
   },
   "freightDetails": {
     "locations": [
       {
-        "from": "SRI VIJAYA PURAM ",
-        "to": "CHENNAI",
-        "amount": "242000"
+        "from": "SRI VAJAYA PURAM ",
+        "to": "KOLKATA",
+        "amount": "231000"
       },
       {
-        "from": "CHENNAI",
-        "to": "PORBANDAR (GUJARAT)",
-        "amount": "37400"
+        "from": "KOLKATA",
+        "to": "BIHAR (GAYA)",
+        "amount": "7800"
       },
       {
         "from": "",
@@ -51,11 +51,11 @@
   "additionalCharges": {
     "loadingCharges": "INCLUDED",
     "insuranceCharges": "NO",
-    "gstCharges": "13970.00",
+    "gstCharges": "11940.00",
     "gcCharges": "",
     "gstPercentage": "5"
   },
-  "grandTotal": "293370.00",
+  "grandTotal": "250740.00",
   "gstPaidBy": {
     "consignor": false,
     "consignee": false,
@@ -63,14 +63,14 @@
     "transporter": true
   },
   "description": {
-    "noOfPackages": "",
-    "twoWheelerNo": "NO",
-    "carNo": "HP638785",
+    "noOfPackages": "01",
+    "twoWheelerNo": "NO ",
+    "carNo": "JH-01-AF-1066",
     "actualWeight": "",
     "chargedWeight": "",
     "cbm": "",
     "goodsValue": "",
     "truckNo": "DD01U9794"
   },
-  "created_at": "2025-04-11T11:21:09.356Z"
+  "created_at": "2025-02-14T05:18:16.104Z"
 }

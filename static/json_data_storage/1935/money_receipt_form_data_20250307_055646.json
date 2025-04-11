@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1935",
+  "invoiceNumber": "845",
+  "customerName": "MURALI MOHAN KUNA 14841940-X SEP (GD)",
+  "amountNumber": "27825",
+  "amountText": "Twenty Seven Thousand Eight Hundred Twenty Five Only",
+  "vehicleRegNumber": "25 PKGS",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "CHENNAI",
+  "receiptDate": "18-02-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "07T05:56:36.035Z-03-2025"
+}

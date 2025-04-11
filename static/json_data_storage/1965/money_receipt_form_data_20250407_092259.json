@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1965",
+  "invoiceNumber": "875",
+  "customerName": "HIMANSHU CHAUDHARY",
+  "amountNumber": "30240",
+  "amountText": "Thirty Thousand Two Hundred Forty Only",
+  "vehicleRegNumber": "09 PKGS HOUSEHOLD GOODS ",
+  "fromAddress": "PORBANDAR (GUJARAT)",
+  "toAddress": "SRI VIJAYA PURAM",
+  "receiptDate": "15-03-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "07T09:22:55.330Z-04-2025"
+}

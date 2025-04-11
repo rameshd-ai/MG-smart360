@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "NAKUL RAJ AAKULA",
+    "address": "SHADIPUR, OPP DUTTA RESIDENCY",
+    "address2": "SRI VIJAYA PURAM",
+    "address3": "744106"
+  },
+  "consignee": {
+    "name": "NAKUL RAJ AAKULA",
+    "address": "FLAT NO. 2402, B BLOCK, JP AVIVA, ",
+    "address2": "NORTH RARDEN CITY, VINAY NAGAR ROAD, ",
+    "address3": "MIRA BAYANDER, THANE DIST. MUMBAI PIN : 401107"
+  },
+  "riskDetails": {
+    "notInsured": false,
+    "insured": false,
+    "insuredDetails": {
+      "company": "",
+      "policy": "",
+      "date": "",
+      "insuredAmount": "",
+      "risk": ""
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "1940  ",
+    "gcDate": "05-02-2025",
+    "origin": "SRI VIJAYA PURAM",
+    "destination": "MUMBAI",
+    "contact": "8247261144"
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "SRI VIJAYA PURAM ",
+        "to": "KOLKATA",
+        "amount": "105000"
+      },
+      {
+        "from": "KOLKATA",
+        "to": "MUMBAI",
+        "amount": "115380"
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "11019.00",
+    "gcCharges": "NONE",
+    "gstPercentage": "5"
+  },
+  "grandTotal": "231399.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": false,
+    "transporter": true
+  },
+  "description": {
+    "noOfPackages": "85",
+    "twoWheelerNo": "MH46BX5902",
+    "carNo": "",
+    "actualWeight": "6000",
+    "chargedWeight": "",
+    "cbm": "",
+    "goodsValue": "",
+    "truckNo": "DD01U9496"
+  },
+  "created_at": "2025-03-20T05:23:48.611Z"
+}

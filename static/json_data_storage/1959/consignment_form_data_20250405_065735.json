@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "COMDT (JG) ABHISHEK TRIPATHI",
+    "address": "ICGS RAJKAMAL C/O HEADQUATERS NO. 9 ",
+    "address2": "COAST GUARD DIST (N&MA) AERIAL BAY, DIGLIPUR",
+    "address3": "744202"
+  },
+  "consignee": {
+    "name": "COMDT (JG) ABHISHEK TRIPATHI",
+    "address": "P1/BUILDING COAST GUARD RESIDENTIAL AREA",
+    "address2": "NEAR MANI SQUARE MALL EM BYPASS ROAD, KOLKATA",
+    "address3": "WEST BENGAL, PIN: 700054"
+  },
+  "riskDetails": {
+    "notInsured": true,
+    "insured": false,
+    "insuredDetails": {
+      "company": "",
+      "policy": "",
+      "date": "",
+      "insuredAmount": "",
+      "risk": ""
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "1959  ",
+    "gcDate": "15-03-2025",
+    "origin": "DIGLIPUR N&M ANDAMAN ",
+    "destination": "KOLKATA",
+    "contact": "7908588946"
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "DIGLIPUR (N & M A)",
+        "to": "SRI VIJAYA PURAM ",
+        "amount": "10800"
+      },
+      {
+        "from": "SRI VIJAYA PURAM ",
+        "to": "KOLKATA",
+        "amount": "38000"
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "2440.00",
+    "gcCharges": "NONE",
+    "gstPercentage": "5"
+  },
+  "grandTotal": "51240.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": false,
+    "transporter": true
+  },
+  "description": {
+    "noOfPackages": "15",
+    "twoWheelerNo": "NO ",
+    "carNo": "NO ",
+    "actualWeight": "2000",
+    "chargedWeight": "2000",
+    "cbm": "9",
+    "goodsValue": "105000",
+    "truckNo": ""
+  },
+  "created_at": "2025-04-05T06:57:35.794Z"
+}

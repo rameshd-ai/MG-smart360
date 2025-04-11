@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1910",
+  "invoiceNumber": "820",
+  "customerName": "ASST COMDT SUDHIR",
+  "amountNumber": "313162",
+  "amountText": "Three Lakh Thirteen Thousand One Hundred Sixty Two Only",
+  "vehicleRegNumber": "AN01R7316",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "MUMBAI",
+  "receiptDate": "17-01-2025",
+  "goodsTypes": [
+    "Car"
+  ],
+  "created_at": "31T11:23:06.507Z-01-2025"
+}

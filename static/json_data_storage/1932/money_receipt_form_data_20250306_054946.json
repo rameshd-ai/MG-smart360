@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1932",
+  "invoiceNumber": "842",
+  "customerName": "DY COMMANDANT ROHIT SHARMA",
+  "amountNumber": "41790",
+  "amountText": "Forty One Thousand Seven Hundred Ninety Only",
+  "vehicleRegNumber": "82 PKGS",
+  "fromAddress": "GOA",
+  "toAddress": "MUMBAI",
+  "receiptDate": "10-03-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "06T05:49:36.085Z-03-2025"
+}

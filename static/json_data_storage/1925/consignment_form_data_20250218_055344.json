@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "MD YEASIN ALI LNK 1325 DSC PLATON",
+    "address": "ATT WITH INDIAN COAST GUARD ",
+    "address2": "",
+    "address3": "744102"
+  },
+  "consignee": {
+    "name": "MD YEASIN ALI LNK 1325 DSC PLATON",
+    "address": "60, LENIN SARANI, 1st FLOOR",
+    "address2": "NEAR WELLINGTON SQUARE, KOLKATA, WEST BENGAL",
+    "address3": "700013"
+  },
+  "riskDetails": {
+    "notInsured": true,
+    "insured": false,
+    "insuredDetails": {
+      "company": "",
+      "policy": "",
+      "date": "",
+      "insuredAmount": "",
+      "risk": ""
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "1925",
+    "gcDate": "06-02-2025",
+    "origin": "SRI VIJAYA PURAM ",
+    "destination": "KOLKATA",
+    "contact": "8250814520"
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "SRI VAJAYA PURAM ",
+        "to": "KOLKATA",
+        "amount": "9000"
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "450.00",
+    "gcCharges": "",
+    "gstPercentage": "5"
+  },
+  "grandTotal": "9450.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": false,
+    "transporter": true
+  },
+  "description": {
+    "noOfPackages": "18",
+    "twoWheelerNo": "NO ",
+    "carNo": "NO ",
+    "actualWeight": "500",
+    "chargedWeight": "500",
+    "cbm": "3",
+    "goodsValue": "",
+    "truckNo": ""
+  },
+  "created_at": "2025-02-18T05:53:38.877Z"
+}

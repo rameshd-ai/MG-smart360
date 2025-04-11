@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1927",
+  "invoiceNumber": "837",
+  "customerName": "GANAPATHI RAO ",
+  "amountNumber": "2625",
+  "amountText": "Two Thousand Six Hundred Twenty Five Only",
+  "vehicleRegNumber": "AP27BG8854",
+  "fromAddress": "KANNUR (KERALA)",
+  "toAddress": "CHENNAI",
+  "receiptDate": "05-01-2025",
+  "goodsTypes": [
+    "Bike"
+  ],
+  "created_at": "25T15:22:57.323Z-02-2025"
+}

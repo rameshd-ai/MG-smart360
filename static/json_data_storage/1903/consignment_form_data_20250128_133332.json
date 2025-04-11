@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "SURG LT SHUBHAM GAUR ",
+    "address": "ICGS VIJIT C/O CGRHQ (A&N) HADDO PORT BLAIR ",
+    "address2": "SRI VIJIYA PURAM ",
+    "address3": "744102"
+  },
+  "consignee": {
+    "name": "SURG LT SHUBHAM GAUR",
+    "address": "SCHOOL OF MEDICAL ASSISTANTS C/O INHS ASVINI ",
+    "address2": "COLABA , MUMBAI",
+    "address3": "400005"
+  },
+  "riskDetails": {
+    "notInsured": false,
+    "insured": false,
+    "insuredDetails": {
+      "company": "",
+      "policy": "",
+      "date": "",
+      "insuredAmount": "",
+      "risk": ""
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "1903 ",
+    "gcDate": "18-01-2025",
+    "origin": "SRI VIJAYA PURAM ",
+    "destination": "MUMBAI",
+    "contact": "8209283571"
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "SRI VAJAYA PURAM ",
+        "to": "KOLKATA",
+        "amount": "35000"
+      },
+      {
+        "from": "KOLKATA",
+        "to": "MUMBAI",
+        "amount": "58404"
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "4670.20",
+    "gcCharges": ".80",
+    "gstPercentage": "5"
+  },
+  "grandTotal": "98075.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": false,
+    "transporter": true
+  },
+  "description": {
+    "noOfPackages": "28",
+    "twoWheelerNo": "NO ",
+    "carNo": "NO ",
+    "actualWeight": "2000",
+    "chargedWeight": "2000",
+    "cbm": "9",
+    "goodsValue": "185000",
+    "truckNo": "DD01U9794"
+  },
+  "created_at": "2025-01-28T13:33:29.995Z"
+}

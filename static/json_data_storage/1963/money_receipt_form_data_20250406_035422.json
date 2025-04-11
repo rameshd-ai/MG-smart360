@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1963",
+  "invoiceNumber": "873",
+  "customerName": "CHANCHAL GOVINDA",
+  "amountNumber": "34125",
+  "amountText": "Thirty Four Thousand One Hundred Twenty Five Only",
+  "vehicleRegNumber": "12 PKGS HOUSE HGOLD GOODS ",
+  "fromAddress": "SRI VIJAYA PURAM ",
+  "toAddress": "DELHI",
+  "receiptDate": "23-03-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "06T03:54:22.806Z-04-2025"
+}

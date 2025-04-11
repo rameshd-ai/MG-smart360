@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1908",
+  "invoiceNumber": "818",
+  "customerName": "DUNDE DHAMMASHEEL ARMY NO. 16118044X",
+  "amountNumber": "29925",
+  "amountText": "Twenty Nine Thousand Nine Hundred Twenty Five Only",
+  "vehicleRegNumber": "45 PKGS HOUSE HOLD GOODS",
+  "fromAddress": "TELANGANA ADILABAD ",
+  "toAddress": "CHENNAI",
+  "receiptDate": "21-12-2024",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "14T12:05:17.014Z-02-2025"
+}

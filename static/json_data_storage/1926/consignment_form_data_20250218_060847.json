@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "MD YEASIN ALI LNK 1325 DSC PLATON",
+    "address": "60, LENIN SARANI 1st FLOOR ",
+    "address2": "NEAR WELLINGTON SQUARE, KOLKATA, WEST BENGAL",
+    "address3": "700013"
+  },
+  "consignee": {
+    "name": "MD YEASIN ALI LNK 1325 DSC PLATON",
+    "address": "739 DSC PL. ATT WITH 29 WING ",
+    "address2": "AIR FORCE STATION, PRAYAGRAJ",
+    "address3": "211001"
+  },
+  "riskDetails": {
+    "notInsured": true,
+    "insured": false,
+    "insuredDetails": {
+      "company": "",
+      "policy": "",
+      "date": "",
+      "insuredAmount": "",
+      "risk": ""
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "1926",
+    "gcDate": "15-02-2025",
+    "origin": "KOLKATA",
+    "destination": "PRAYAGRAJ",
+    "contact": "8250814520"
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "KOLKATA",
+        "to": "PRAYAGRAJ",
+        "amount": "7200"
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "360.00",
+    "gcCharges": "",
+    "gstPercentage": "5"
+  },
+  "grandTotal": "7560.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": false,
+    "transporter": true
+  },
+  "description": {
+    "noOfPackages": "18",
+    "twoWheelerNo": "NO ",
+    "carNo": "NO ",
+    "actualWeight": "500",
+    "chargedWeight": "500",
+    "cbm": "3",
+    "goodsValue": "",
+    "truckNo": "DD01U9496"
+  },
+  "created_at": "2025-02-18T06:08:41.665Z"
+}

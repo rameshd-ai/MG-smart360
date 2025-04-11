@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1914",
+  "invoiceNumber": "824",
+  "customerName": "PRINCE KUMAR",
+  "amountNumber": "52185",
+  "amountText": "Fifty Two Thousand One Hundred Eighty Five Only",
+  "vehicleRegNumber": "35 PKGS HOUSE HOLD GOODS",
+  "fromAddress": "KOCHI",
+  "toAddress": "SRI VIJAYA PURAM",
+  "receiptDate": "25-12-2024",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "14T10:49:55.794Z-02-2025"
+}
