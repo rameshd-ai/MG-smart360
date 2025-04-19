@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1973",
+  "invoiceNumber": "883",
+  "customerName": "RAKESH KUMAR YADAV",
+  "amountNumber": "268800",
+  "amountText": "Two Lakh Sixty Eight Thousand Eight Hundred Only",
+  "vehicleRegNumber": "AN01H8750",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "CHICOLNA, VASCO DA GAMA NEAR CGDHQ, GOA",
+  "receiptDate": "01-04-2025",
+  "goodsTypes": [
+    "Car"
+  ],
+  "created_at": "12T09:32:57.961Z-04-2025"
+}

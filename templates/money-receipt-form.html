@@ -120,7 +120,10 @@
               <div class="d-flex align-items-center mb-sm-0 mb-4">
                   <div class="w-50"></div>
                   <div class="w-50 text-end">
-                      <button class="btn bg-gradient-danger mb-0 ms-2" type="submit" name="button">Submit</button>
+                    <button id="submitBtn" class="btn bg-gradient-danger mb-0 ms-2" type="submit" name="button">
+                        Submit
+                    </button>
+                    
                   </div>
               </div>
           </div>
@@ -129,7 +132,29 @@
     </form>
 
 </div>
-
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.querySelector('form');
+        const submitBtn = document.getElementById('submitBtn');
+    
+        if (form && submitBtn) {
+            form.addEventListener('submit', function (e) {
+                // Disable the button to prevent multiple submissions
+                submitBtn.disabled = true;
+                submitBtn.innerText = 'Processing...';
+            });
+    
+            // Optional: Also handle pressing Enter in input fields
+            form.addEventListener('keydown', function (e) {
+                if (e.key === 'Enter') {
+                    submitBtn.disabled = true;
+                    submitBtn.innerText = 'Processing...';
+                }
+            });
+        }
+    });
+    </script>
+    
 <script>
     function convertAmountToWords() {
           const amount = document.getElementById("amountNumber").value;

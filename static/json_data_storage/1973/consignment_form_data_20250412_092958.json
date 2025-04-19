@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "RAKESH KUMAR YADAV",
+    "address": "QTR NO.B-10/2 TATRAKSHAK VIHAR PANIPAT",
+    "address2": "ROAD HADDO, SRI VIJAYA PURAM",
+    "address3": "744102"
+  },
+  "consignee": {
+    "name": "RAKESH KUMAR YADAV",
+    "address": "C/O D P SINGH U/ADHIKARI TATRAKSHAK VIHAR",
+    "address2": "CHICOLNA, VASCO DA GAMA NEAR CGDHQ, GOA",
+    "address3": "403806"
+  },
+  "riskDetails": {
+    "notInsured": true,
+    "insured": false,
+    "insuredDetails": {
+      "company": "",
+      "policy": "",
+      "date": "",
+      "insuredAmount": "",
+      "risk": ""
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "1973",
+    "gcDate": "01-04-2025",
+    "origin": "SRI VIJAYA PURAM",
+    "destination": "GOA",
+    "contact": "9486953961"
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "SRI VIJAYA PURAM ",
+        "to": "CHENNAI",
+        "amount": "242500"
+      },
+      {
+        "from": "CHENNAI",
+        "to": "GOA",
+        "amount": "13500"
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "12800.00",
+    "gcCharges": "",
+    "gstPercentage": "5"
+  },
+  "grandTotal": "268800.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": false,
+    "transporter": true
+  },
+  "description": {
+    "noOfPackages": "",
+    "twoWheelerNo": "",
+    "carNo": "AN01H8750",
+    "actualWeight": "",
+    "chargedWeight": "",
+    "cbm": "",
+    "goodsValue": "",
+    "truckNo": "DD01U9794"
+  },
+  "created_at": "2025-04-12T09:29:55.750Z"
+}

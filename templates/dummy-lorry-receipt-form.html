@@ -1,0 +1,625 @@
+{% extends 'base-template.html' %}
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+
+<div class="row">
+    <div class="row">
+        <div class="ms-3">
+            <h3 class="mb-0 h4 font-weight-bolder">Dummy Lorry Receipt Form</h3>
+        </div>
+
+        <form id="consignmentForm">
+
+            <div class="card mt-4" id="basic-info">
+                <div class="card-header">
+                    <div class="icon icon-lg icon-shape bg-gradient-dark shadow text-center border-radius-xl mt-n4 me-3 float-start">
+                        <i class="material-symbols-rounded opacity-10">event</i>
+                      </div>
+                    <h5>Basic Info</h5>
+                </div>
+                <div class="card-body pt-0">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-box">
+                                <h5>Consignor's Details</h5>
+                                <div class="input-group input-group-static">
+                                    <label for="consignorName">Name</label>
+                                    <input type="text" class="form-control" id="consignorName"
+                                        placeholder="" onfocus="focused(this)"
+                                        onfocusout="defocused(this)">
+                                </div>
+                                <div class="input-group input-group-static">
+                                    <label for="consignorAddress">Address</label>
+                                    <input type="text" class="form-control" id="consignorAddress"
+                                        placeholder="" maxlength="48" onfocus="focused(this)"
+                                        onfocusout="defocused(this)">
+                                </div>
+                                <div class="input-group input-group-static">
+                                    <label for="consignorAddress2">Address</label>
+                                    <input type="text" class="form-control" id="consignorAddress2"
+                                        placeholder="" maxlength="48" onfocus="focused(this)"
+                                        onfocusout="defocused(this)">
+                                </div>
+                                <div class="input-group input-group-static">
+                                    <label for="consignorAddress3">Pincode</label>
+                                    <input type="text" class="form-control" id="consignorAddress3" placeholder=""
+                                        maxlength="48" onfocus="focused(this)" onfocusout="defocused(this)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-box">
+                                <h5>Consignee's Details</h5>
+                                <div class="input-group input-group-static">
+                                    <label for="consigneeName">Name</label>
+                                    <input type="text" class="form-control" id="consigneeName"
+                                        placeholder="" onfocus="focused(this)"
+                                        onfocusout="defocused(this)">
+                                </div>
+                                <div class="input-group input-group-static">
+                                    <label for="consigneeAddress">Address</label>
+                                    <input type="text" class="form-control" id="consigneeAddress"
+                                        placeholder="" maxlength="48" onfocus="focused(this)"
+                                        onfocusout="defocused(this)">
+                                </div>
+                                <div class="input-group input-group-static">
+                                    <label for="consigneeAddress2">Address</label>
+                                    <input type="text" class="form-control" id="consigneeAddress2"
+                                        placeholder="" maxlength="48" onfocus="focused(this)"
+                                        onfocusout="defocused(this)">
+                                </div>
+                                <div class="input-group input-group-static">
+                                    <label for="consigneeAddress3">Pincode</label>
+                                    <input type="text" class="form-control" id="consigneeAddress3" placeholder=""
+                                        maxlength="48" onfocus="focused(this)" onfocusout="defocused(this)">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card mt-4" id="basic-info">
+                <div class="card-header">
+                    <h5>Risk Options</h5>
+                </div>
+                <div class="card-body pt-0">
+                    <div class="form-box">
+    
+                        <div class="form-group">
+                            <label><input type="checkbox" id="notInsured"> Not Insured</label><br>
+                            <label><input type="checkbox" id="insured"> Insured</label>
+                        </div>
+                        <div id="insuredDetails" style="display:none;">
+                            <div class="input-group input-group-static">
+                                <label for="company">Company</label>
+                                <input type="text" class="form-control" id="company" placeholder=""
+                                    onfocus="focused(this)" onfocusout="defocused(this)">
+                            </div>
+                            <div class="input-group input-group-static">
+                                <label for="policy">Policy</label>
+                                <input type="text" class="form-control" id="policy" placeholder=""
+                                    onfocus="focused(this)" onfocusout="defocused(this)">
+                            </div>
+                            <div class="input-group input-group-static">
+                                <label for="date">Date</label>
+                                <input type="date" class="form-control" id="date" onfocus="focused(this)"
+                                    onfocusout="defocused(this)">
+                            </div>
+                            <div class="input-group input-group-static">
+                                <label for="insuredAmount">Amount</label>
+                                <input type="number" class="form-control" id="insuredAmount" placeholder=""
+                                    step="any" onfocus="focused(this)" onfocusout="defocused(this)">
+                            </div>
+                            <div class="input-group input-group-static">
+                                <label for="risk">Risk</label>
+                                <input type="text" class="form-control" id="risk" placeholder=""
+                                    onfocus="focused(this)" onfocusout="defocused(this)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-4" id="basic-info">
+                <div class="card-header">
+                    <h5>Goods Details</h5>
+                </div>
+                <div class="card-body pt-0">
+                    <div class="form-box">
+        
+                        <div class="input-group input-group-static">
+                            <label for="gcNumber">GC No.</label>
+                            <input type="text" class="form-control" id="gcNumber" placeholder=""
+                                onfocus="focused(this)" onfocusout="defocused(this)">
+                        </div>
+                        <div class="input-group input-group-static">
+                            <label for="gcDate">Date</label>
+                            <input type="date" class="form-control" id="gcDate" onfocus="focused(this)"
+                                onfocusout="defocused(this)">
+                        </div>
+                        <div class="input-group input-group-static">
+                            <label for="origin">Origin</label>
+                            <input type="text" class="form-control" id="origin" placeholder="" maxlength="21"
+                                onfocus="focused(this)" onfocusout="defocused(this)">
+                        </div>
+                        <div class="input-group input-group-static">
+                            <label for="destination">Destination</label>
+                            <input type="text" class="form-control" id="destination" placeholder="" maxlength="21"
+                                onfocus="focused(this)" onfocusout="defocused(this)">
+                        </div>
+                        <div class="input-group input-group-static">
+                            <label for="contact">Contact No.</label>
+                            <input type="number" class="form-control" id="contact" placeholder=""
+                                onfocus="focused(this)" onfocusout="defocused(this)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-4" id="basic-info">
+                <div class="card-header">
+                    <h5>Freight Details</h5>
+                </div>
+                <div class="card-body pt-0">
+                    <div class="form-box">
+                   
+
+                        <div class="row">
+                            <!-- From Location 1 -->
+                            <div class="col-md-4">
+                                <div class="input-group input-group-static">
+                                    <label for="location1">From Location 1</label>
+                                    <input type="text" class="form-control" id="location1"
+                                        placeholder="" maxlength="21" onfocus="focused(this)"
+                                        onfocusout="defocused(this)">
+                                </div>
+                            </div>
+                            <!-- To Location 2 -->
+                            <div class="col-md-4">
+                                <div class="input-group input-group-static">
+                                    <label for="location2">To Location 2</label>
+                                    <input type="text" class="form-control" id="location2"
+                                        placeholder="" maxlength="21" onfocus="focused(this)"
+                                        onfocusout="defocused(this)">
+                                </div>
+                            </div>
+                            <!-- Amount for Location 1 to 2 -->
+                            <div class="col-md-4">
+                                <div class="input-group input-group-static">
+                                    <label for="amount1">Amount for Location 1 to 2</label>
+                                    <input type="number" class="form-control" id="amount1" placeholder=""
+                                        step="any" onfocus="focused(this)" onfocusout="defocused(this)">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <!-- From Location 3 -->
+                            <div class="col-md-4">
+                                <div class="input-group input-group-static">
+                                    <label for="location3">From Location 3</label>
+                                    <input type="text" class="form-control" id="location3"
+                                        placeholder="" maxlength="21" onfocus="focused(this)"
+                                        onfocusout="defocused(this)">
+                                </div>
+                            </div>
+                            <!-- To Location 4 -->
+                            <div class="col-md-4">
+                                <div class="input-group input-group-static">
+                                    <label for="location4">To Location 4</label>
+                                    <input type="text" class="form-control" id="location4"
+                                        placeholder="" maxlength="21" onfocus="focused(this)"
+                                        onfocusout="defocused(this)">
+                                </div>
+                            </div>
+                            <!-- Amount for Location 3 to 4 -->
+                            <div class="col-md-4">
+                                <div class="input-group input-group-static">
+                                    <label for="amount2">Amount for Location 3 to 4</label>
+                                    <input type="number" class="form-control" id="amount2" placeholder=""
+                                        step="any" onfocus="focused(this)" onfocusout="defocused(this)">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <!-- From Location 5 -->
+                            <div class="col-md-4">
+                                <div class="input-group input-group-static">
+                                    <label for="location5">From Location 5</label>
+                                    <input type="text" class="form-control" id="location5"
+                                        placeholder="" maxlength="21" onfocus="focused(this)"
+                                        onfocusout="defocused(this)">
+                                </div>
+                            </div>
+                            <!-- To Location 6 -->
+                            <div class="col-md-4">
+                                <div class="input-group input-group-static">
+                                    <label for="location6">To Location 6</label>
+                                    <input type="text" class="form-control" id="location6"
+                                        placeholder="" maxlength="21" onfocus="focused(this)"
+                                        onfocusout="defocused(this)">
+                                </div>
+                            </div>
+                            <!-- Amount for Location 5 to 6 -->
+                            <div class="col-md-4">
+                                <div class="input-group input-group-static">
+                                    <label for="amount3">Amount for Location 5 to 6</label>
+                                    <input type="number" class="form-control" id="amount3" placeholder=""
+                                        step="any" onfocus="focused(this)" onfocusout="defocused(this)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-4" id="basic-info">
+                <div class="card-header">
+                    <!-- <h5>Basic Info</h5> -->
+                </div>
+                <div class="card-body pt-0">
+                    <!-- Loading and Unloading & Insurance Charges -->
+                    <div class="form-box">
+                        <div class="row additional-charges-row">
+                            <!-- Loading and Unloading Charges -->
+                            <div class="col-md-6">
+                                <div class="input-group input-group-static">
+                                    <label for="loadingCharges">Loading and Unloading Charges</label>
+                                    <input type="text" class="form-control" id="loadingCharges"
+                                        placeholder="" value="INCLUDED" onfocus="focused(this)"
+                                        onfocusout="defocused(this)">
+                                </div>
+                            </div>
+                            <!-- Insurance By Party -->
+                            <div class="col-md-6">
+                                <div class="input-group input-group-static">
+                                    <label for="insuranceCharges">Insurance By Party</label>
+                                    <input type="text" class="form-control" id="insuranceCharges"
+                                        placeholder="" value="NO" onfocus="focused(this)"
+                                        onfocusout="defocused(this)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- GST Charges & GC Charges -->
+                    <div class="form-box">
+                        <div class="row additional-charges-row">
+                            <!-- GST Charges (disabled) -->
+                            <div class="col-md-6">
+                                <div class="input-group input-group-static">
+                                    <label for="gstCharges">GST Charges</label>
+                                    <input type="text" class="form-control-plaintext" id="gstCharges"
+                                        placeholder="" value="" disabled>
+                                </div>
+                            </div>
+                            <!-- GC Charges -->
+                            <div class="col-md-6">
+                                <div class="input-group input-group-static">
+                                    <label for="gcCharges">GC Charges</label>
+                                    <input type="text" class="form-control" id="gcCharges" placeholder="NONE"
+                                        step="any" onfocus="focused(this)" onfocusout="defocused(this)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- GST Percentage & Grand Total -->
+                    <div class="form-box">
+                        <div class="row additional-charges-row">
+                            <!-- GST Percentage -->
+                            <div class="col-md-6">
+                                <div class="input-group input-group-static">
+                                    <label for="gstPercentage">GST %</label>
+                                    <input type="number" class="form-control" id="gstPercentage" placeholder=""
+                                        step="any" value="5" onfocus="focused(this)" onfocusout="defocused(this)">
+                                </div>
+                            </div>
+
+                            <!-- Grand Total -->
+                            <div class="col-md-6">
+                                <div class="input-group input-group-static">
+                                    <label for="grandTotal">Grand Total</label>
+                                    <input type="number" class="form-control" id="grandTotal" placeholder=""
+                                        readonly step="any">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card mt-4" id="basic-info">
+                <div class="card-header">
+                    <h5>Goods and Service Tax Paid By</h5>
+                </div>
+                <div class="card-body pt-0">
+                    <!-- GST Paid By Section -->
+                    <div class="form-box">
+                     
+                        <div class="form-group">
+                            <label><input type="checkbox" id="gstConsignor"> Consignor</label><br>
+                            <label><input type="checkbox" id="gstConsignee"> Consignee</label><br>
+                            <label><input type="checkbox" id="gstExempted"> Exempted</label><br>
+                            <label><input type="checkbox" id="gstTransporter"> Transporter</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-4" id="basic-info">
+                <div class="card-header">
+                    <h5>Description</h5>
+                </div>
+                <div class="card-body pt-0">
+
+                    <!-- Description Section -->
+                    <div class="form-box">
+                  
+
+                        <!-- Packages and Vehicle Numbers -->
+                        <div class="form-box">
+                            <div class="row">
+                                <!-- No. of Packages -->
+                                <div class="col-md-4">
+                                    <div class="input-group input-group-static">
+                                        <label for="noOfPackages">No. of Packages</label>
+                                        <input type="number" class="form-control" id="noOfPackages"
+                                            placeholder="">
+                                    </div>
+                                </div>
+                                <!-- Two Wheeler No. -->
+                                <div class="col-md-4">
+                                    <div class="input-group input-group-static">
+                                        <label for="twoWheelerNo">Two Wheeler No.</label>
+                                        <input type="text" class="form-control" id="twoWheelerNo"
+                                            placeholder="">
+                                    </div>
+                                </div>
+                                <!-- Car No. -->
+                                <div class="col-md-4">
+                                    <div class="input-group input-group-static">
+                                        <label for="carNo">Car No.</label>
+                                        <input type="text" class="form-control" id="carNo" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Weight and CBM -->
+                        <div class="form-box">
+                            <div class="row">
+                                <!-- Actual Weight -->
+                                <div class="col-md-4">
+                                    <div class="input-group input-group-static">
+                                        <label for="actualWeight">Actual Weight</label>
+                                        <input type="number" class="form-control" id="actualWeight"
+                                            placeholder="" step="any">
+                                    </div>
+                                </div>
+                                <!-- Charged Weight -->
+                                <div class="col-md-4">
+                                    <div class="input-group input-group-static">
+                                        <label for="chargedWeight">Charged Weight</label>
+                                        <input type="number" class="form-control" id="chargedWeight"
+                                            placeholder="" step="any">
+                                    </div>
+                                </div>
+                                <!-- CBM -->
+                                <div class="col-md-4">
+                                    <div class="input-group input-group-static">
+                                        <label for="cbm">CBM</label>
+                                        <input type="number" class="form-control" id="cbm" placeholder="" step="any">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Goods Value and Truck Number -->
+                        <div class="form-box">
+                            <div class="row">
+                                <!-- Goods Value -->
+                                <div class="col-md-4">
+                                    <div class="input-group input-group-static">
+                                        <label for="goodsValue">Goods Value</label>
+                                        <input type="number" class="form-control" id="goodsValue"
+                                            placeholder="" step="any">
+                                    </div>
+                                </div>
+                                <!-- Truck No. -->
+                                <div class="col-md-4">
+                                    <div class="input-group input-group-static">
+                                        <label for="truckNo">Truck No.</label>
+                                        <input type="text" class="form-control" id="truckNo" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-sm-0 mb-4">
+                            <div class="w-50">
+                                <!-- <h5>Delete Account</h5> -->
+                                <!-- <p class="text-sm mb-0">Once you delete your account, there is no going back. Please be certain.</p> -->
+                            </div>
+                            <div class="w-50 text-end">
+                                <button id="submitBtn" class="btn bg-gradient-danger mb-0 ms-2" type="submit" name="button">
+                                    Submit
+                                </button>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.querySelector('form');
+            const submitBtn = document.getElementById('submitBtn');
+        
+            if (form && submitBtn) {
+                form.addEventListener('submit', function (e) {
+                    // Disable the button to prevent multiple submissions
+                    submitBtn.disabled = true;
+                    submitBtn.innerText = 'Processing...';
+                });
+        
+                // Optional: Also handle pressing Enter in input fields
+                form.addEventListener('keydown', function (e) {
+                    if (e.key === 'Enter') {
+                        submitBtn.disabled = true;
+                        submitBtn.innerText = 'Processing...';
+                    }
+                });
+            }
+        });
+        </script>
+        
+    <script>
+        function calculateGST() {
+            // Get the values from the inputs
+            var amount1 = parseFloat(document.getElementById('amount1').value) || 0;
+            var amount2 = parseFloat(document.getElementById('amount2').value) || 0;
+            var amount3 = parseFloat(document.getElementById('amount3').value) || 0;
+            var gcCharges = parseFloat(document.getElementById('gcCharges').value) || 0;
+            var gstPercentage = parseFloat(document.getElementById('gstPercentage').value) || 0;
+            // Calculate total amount
+            var totalAmount = amount1 + amount2 + amount3;
+            // Calculate GST charges
+            var gstCharges = (gstPercentage / 100) * totalAmount;
+            // Calculate Grand Total (Total amount + GST charges)
+            var grandTotal = totalAmount + gstCharges+gcCharges;
+            // Update the GST Charges field
+            document.getElementById('gstCharges').value = gstCharges.toFixed(2);
+            // Update the Grand Total field
+            document.getElementById('grandTotal').value = grandTotal.toFixed(2);
+        }
+        // Add event listeners to trigger calculation on input changes
+        document.getElementById('amount1').addEventListener('input', calculateGST);
+        document.getElementById('amount2').addEventListener('input', calculateGST);
+        document.getElementById('amount3').addEventListener('input', calculateGST);
+        document.getElementById('gcCharges').addEventListener('input', calculateGST);
+        document.getElementById('gstPercentage').addEventListener('input', calculateGST);
+        // Function to format the date to dd-mm-yyyy
+        function formatDate(date) {
+            if (!date) return ''; // If no date, return an empty string
+            var parts = date.split("-");
+            var formattedDate = `${parts[2]}-${parts[1]}-${parts[0]}`;
+            return formattedDate; // Return the formatted date
+        }
+        // Toggle insured details visibility
+        document.getElementById('insured').addEventListener('change', function() {
+            document.getElementById('insuredDetails').style.display = this.checked ? 'block' : 'none';
+        });
+        // Function to save form data
+        function saveFormData() {
+            const formData = {
+                consignor: {
+                    name: document.getElementById('consignorName').value,
+                    address: document.getElementById('consignorAddress').value,
+                    address2: document.getElementById('consignorAddress2').value,
+                    address3: document.getElementById('consignorAddress3').value
+                },
+                consignee: {
+                    name: document.getElementById('consigneeName').value,
+                    address: document.getElementById('consigneeAddress').value,
+                    address2: document.getElementById('consigneeAddress2').value,
+                    address3: document.getElementById('consigneeAddress3').value
+                },
+                riskDetails: {
+                    notInsured: document.getElementById('notInsured').checked,
+                    insured: document.getElementById('insured').checked,
+                    insuredDetails: {
+                        company: document.getElementById('company').value,
+                        policy: document.getElementById('policy').value,
+                        date: formatDate(document.getElementById("date").value),
+                        insuredAmount: document.getElementById('insuredAmount').value,
+                        risk: document.getElementById('risk').value
+                    }
+                },
+                goodsDetails: {
+                    gcNumber: document.getElementById('gcNumber').value,
+                    gcDate: formatDate(document.getElementById("gcDate").value),
+                    origin: document.getElementById('origin').value,
+                    destination: document.getElementById('destination').value,
+                    contact: document.getElementById('contact').value
+                },
+                freightDetails: {
+                    locations: [{
+                            from: document.getElementById('location1').value,
+                            to: document.getElementById('location2').value,
+                            amount: document.getElementById('amount1').value
+                        },
+                        {
+                            from: document.getElementById('location3').value,
+                            to: document.getElementById('location4').value,
+                            amount: document.getElementById('amount2').value
+                        },
+                        {
+                            from: document.getElementById('location5').value,
+                            to: document.getElementById('location6').value,
+                            amount: document.getElementById('amount3').value
+                        }
+                    ]
+                },
+                additionalCharges: {
+                    loadingCharges: document.getElementById('loadingCharges').value,
+                    insuranceCharges: document.getElementById('insuranceCharges').value,
+                    gstCharges: document.getElementById('gstCharges').value,
+                    gcCharges: document.getElementById('gcCharges').value,
+                    gstPercentage: document.getElementById('gstPercentage').value
+                },
+                grandTotal: document.getElementById('grandTotal').value,
+                gstPaidBy: {
+                    consignor: document.getElementById('gstConsignor').checked,
+                    consignee: document.getElementById('gstConsignee').checked,
+                    exempted: document.getElementById('gstExempted').checked,
+                    transporter: document.getElementById('gstTransporter').checked
+                },
+                description: {
+                    noOfPackages: document.getElementById('noOfPackages').value,
+                    twoWheelerNo: document.getElementById('twoWheelerNo').value,
+                    carNo: document.getElementById('carNo').value,
+                    actualWeight: document.getElementById('actualWeight').value,
+                    chargedWeight: document.getElementById('chargedWeight').value,
+                    cbm: document.getElementById('cbm').value,
+                    goodsValue: document.getElementById('goodsValue').value,
+                    truckNo: document.getElementById('truckNo').value
+                },
+                created_at: new Date().toISOString()
+            };
+            fetch('/save_lrjson_dummy', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            }).then(response => response.json()).then(data => {
+                alert('Data saved successfully');
+                window.location.href = '/dummy-lorry-receipt';
+            }).catch(error => {
+                console.error('Error saving form data:', error);
+            });
+        }
+        // Submit handler to save the form data
+        document.getElementById('consignmentForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            saveFormData();
+        });
+    </script>
+
+    {% endblock %}

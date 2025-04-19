@@ -418,26 +418,26 @@
               <!-- Company and Policy -->
               <div class="column" style="flex: 1;">
                 <b style="display: inline;">Company:</b>
-                <span class="border-line"  style="display: inline;">{{ data.riskDetails.insuredDetails.company }}</span>
+                <span class="border-line"  style="display: inline;color: black;">{{ data.riskDetails.insuredDetails.company }}</span>
               </div>
               <div class="column" style="flex: 1;">
                 <b style="display: inline;">Policy:</b>
-                <span class="border-line"  style="display: inline;">{{ data.riskDetails.insuredDetails.policy }}</span>
+                <span class="border-line"  style="display: inline;color: black;">{{ data.riskDetails.insuredDetails.policy }}</span>
               </div>
             </div>
             <div class="d-flex justify-content-between" style="gap: 20px;">
               <!-- Risk, Date, and Amount -->
               <div class="column" style="flex: 1;">
                 <b style="display: inline;">Risk:</b>
-                <span class="border-line"  style="display: inline;">{{ data.riskDetails.insuredDetails.risk }}</span>
+                <span class="border-line"  style="display: inline;color: black;">{{ data.riskDetails.insuredDetails.risk }}</span>
               </div>
               <div class="column" style="flex: 1;">
                 <b style="display: inline;">Date:</b>
-                <span class="border-line"  style="display: inline; width: 100%;">{{ data.riskDetails.insuredDetails.date }}</span>
+                <span class="border-line"  style="display: inline; width: 100%;color: black;">{{ data.riskDetails.insuredDetails.date }}</span>
               </div>
               <div class="column" style="flex: 1;">
                 <b style="display: inline;">Amount:</b>
-                <span class="border-line"  style="display: inline;width: 100%;">{{ data.riskDetails.insuredDetails.amount }}</span>
+                <span class="border-line"  style="display: inline;width: 100%;color: black;">{{ data.riskDetails.insuredDetails.amount }}</span>
               </div>
             </div>
           </div>
@@ -451,16 +451,16 @@
             <!-- First Row: GC No. and Date -->
             <div class="d-flex" style="padding: 5px; border-top: none;">
               <div style="flex: 1;"><b>GC No.:</b> <span  style="color: #F3653A; font-size: 18px;"><b>{{ data.goodsDetails.gcNumber }}   </b></span></div>
-              <div style="flex: 1;"><b>Date:</b> <span >{{ data.goodsDetails.gcDate }}</span></div>
+              <div style="flex: 1;"><b>Date:</b> <span style="color: black;">{{ data.goodsDetails.gcDate }}</span></div>
             </div>
             <!-- Second Row: Origin and Contact -->
             <div class="d-flex" style="padding: 5px;">
-              <div style="flex: 1;"><b>Origin:</b> <span >{{ data.goodsDetails.origin }}</span></div>
-              <div style="flex: 1;"><b>Contact No.:</b> <span >{{ data.goodsDetails.contact }}</span></div>
+              <div style="flex: 1;"><b>Origin:</b> <span style="color: black;">{{ data.goodsDetails.origin }}</span></div>
+              <div style="flex: 1;"><b>Contact No.:</b> <span style="color: black;">{{ data.goodsDetails.contact }}</span></div>
             </div>
             <!-- Third Row: Destination -->
             <div class="d-flex" style="padding: 5px;">
-              <div style="flex: 1;"><b>Destination:</b> <span >{{ data.goodsDetails.destination }}</span></div>
+              <div style="flex: 1;"><b>Destination:</b> <span style="color: black;">{{ data.goodsDetails.destination }}</span></div>
             </div>
           </div>
         </div>
@@ -470,18 +470,18 @@
         <!-- Consignor Section -->
         <div class="consigner w-50 mr-1px no-bl no-bt box-border p-1 left" style="line-height: 2; font-size: 12px; box-sizing: border-box;">
           <span><b>Consignor's Name & Address: </b></span><br>
-          <span id="consigner-name" class="dotted-line" ><i>{{ data.consignor.name }}</i></span><br />
-          <span id="consigner-name-address" class="dotted-line" >{{ data.consignor.address }}</span><br />
-          <span class="dotted-line" >{{ data.consignor.address2 }}</span><br />
-          <span style="margin-bottom: 0; margin-left: 5px;" >{{ data.consignor.address3 }}</span>
+          <span id="consigner-name" class="dotted-line" style="color: black;"><i>{{ data.consignor.name }}</i></span><br />
+          <span id="consigner-name-address" class="dotted-line" style="color: black;">{{ data.consignor.address }}</span><br />
+          <span class="dotted-line" style="color: black;">{{ data.consignor.address2 }}</span><br />
+          <span style="margin-bottom: 0; margin-left: 5px;color: black;">{{ data.consignor.address3 }}</span>
         </div>
         <!-- Consignee Section -->
         <div class="consignee w-50 box-border no-br no-bt p-1 right" style="line-height: 2; font-size: 12px; box-sizing: border-box;">
           <span><b>Consignee's Name & Address: </b></span><br>
-          <span id="consignee-name" class="dotted-line" ><i>{{ data.consignee.name }}</i></span><br />
-          <span id="consignee-name-address" class="dotted-line" >{{ data.consignee.address }}</span><br />
-          <span class="dotted-line" >{{ data.consignee.address2 }}</span><br />
-          <span style="margin-bottom: 0;margin-left: 5px;" >{{ data.consignee.address3 }}</span>
+          <span id="consignee-name" class="dotted-line" style="color: black;"><i>{{ data.consignee.name }}</i></span><br />
+          <span id="consignee-name-address" class="dotted-line" style="color: black;">{{ data.consignee.address }}</span><br />
+          <span class="dotted-line" style="color: black;">{{ data.consignee.address2 }}</span><br />
+          <span style="margin-bottom: 0;margin-left: 5px;color: black;" >{{ data.consignee.address3 }}</span>
         </div>
       </div>
       
@@ -504,18 +504,18 @@
               </div>
               <!-- Flex container for the first two elements -->
               <div class="d-flex justify-content-start py-0 px-1 align-items-center">
-                <div class="px-1"><b>No. Of Packages:</b> <span contenteditable="true">{{ data.description.noOfPackages if data.description.noOfPackages else '' }}{{ ' pkgs. (H.H./Comm. Goods)' if data.description.noOfPackages else '' }}
+                <div class="px-1"><b>No. Of Packages:</b> <span contenteditable="true" style="color: black;">{{ data.description.noOfPackages if data.description.noOfPackages else '' }}{{ ' pkgs. (H.H./Comm. Goods)' if data.description.noOfPackages else '' }}
                 </span></div>
                 <!-- <div class="" style="padding-left: 5rem !important;"><b>Two Wheeler No.:</b> <span >{{ data.description.twoWheelerNo }}</span></div> -->
               </div>
               <!-- Separate line for the third element -->
               <div class="py-1 px-2">
-                <b>Two Wheeler No.:</b><span  style="padding-right: 2rem !important;"> {{ data.description.twoWheelerNo }}</span>
+                <b>Two Wheeler No.:</b><span  style="padding-right: 2rem !important;color: black;"> {{ data.description.twoWheelerNo }}</span>
                
               </div>
               <div class="py-0 px-2">
               
-                <b>Car No.:</b><span > &nbsp{{ data.description.carNo }}</span>
+                <b>Car No.:</b><span style="color: black;"> &nbsp{{ data.description.carNo }}</span>
               </div>
             </div>
           </div>
@@ -526,27 +526,27 @@
             <table border="0" style="width: 100%; border-collapse: collapse;" >
               <tr>
                 <td class="px-2 py-1 box-border no-bl no-br" style="text-align: left;"><b>Actual Weight</b></td>
-                <td class="px-3 py-1 box-border  no-br" style="text-align: left;" >{{ data.description.actualWeight if data.description.actualWeight else 'FIXED' }}{{ ' kg' if data.description.actualWeight else '' }}
+                <td class="px-3 py-1 box-border  no-br" style="text-align: left;color: black;">{{ data.description.actualWeight if data.description.actualWeight else 'FIXED' }}{{ ' kg' if data.description.actualWeight else '' }}
                 </td>
               </tr>
               <tr>
                 <td class="px-2 py-1 box-border no-bl no-br" style="text-align: left;"><b>Charged Weight</b></td>
-                <td class="px-3 py-1 box-border no-br" style="text-align: left;" >{{ data.description.chargedWeight if data.description.chargedWeight else 'FIXED' }}{{ ' kg' if data.description.chargedWeight else '' }}
+                <td class="px-3 py-1 box-border no-br" style="text-align: left;color: black;">{{ data.description.chargedWeight if data.description.chargedWeight else 'FIXED' }}{{ ' kg' if data.description.chargedWeight else '' }}
                 </td>
               </tr>
               <tr>
                 <td class="px-2 py-1 box-border no-bl no-br" style="text-align: left;"><b>CBM</b></td>
-                <td class="px-3 py-1 box-border no-br" style="text-align: left;" >{{ data.description.cbm if data.description.cbm else '' }}{{ ' CBM' if data.description.cbm else '' }}</td>
+                <td class="px-3 py-1 box-border no-br" style="text-align: left;color: black;">{{ data.description.cbm if data.description.cbm else '' }}{{ ' CBM' if data.description.cbm else '' }}</td>
               </tr>
               <tr>
                 <td class="px-2 py-1 box-border no-bl no-br" style="text-align: left;"><b>Goods Value</b></td>
-                <td class="px-3 py-1 box-border no-br" style="text-align: left;" >{{ '₹' if data.description.goodsValue else '' }}{{ data.description.goodsValue if data.description.goodsValue else 'AS PER INSURANCE' }}
+                <td class="px-3 py-1 box-border no-br" style="text-align: left;color: black;">{{ '₹' if data.description.goodsValue else '' }}{{ data.description.goodsValue if data.description.goodsValue else 'AS PER INSURANCE' }}
 
                 </td>
               </tr>
               <tr>
                 <td class="px-2 py-1 box-border no-bl no-br no-bb" style="text-align: left;"><b>Truck No.</b></td>
-                <td class="px-3 py-1 box-border  no-bb" style="text-align: left;" >{{ data.description.truckNo }}</td>
+                <td class="px-3 py-1 box-border  no-bb" style="text-align: left;color: black;">{{ data.description.truckNo }}</td>
               </tr>
             </table>
           </div>
@@ -574,60 +574,60 @@
             <tr>
               <td class="px-3 py-1 box-border text-center">
                 <div style="display: flex; align-items: center; justify-content: center;">
-                  <span  style="flex: 1; text-align: left; margin-right: 5px;">{{data.freightDetails.locations[0].from}}</span>
+                  <span  style="flex: 1; text-align: left; margin-right: 5px;color: black;">{{data.freightDetails.locations[0].from}}</span>
                   <b style="flex-shrink: 0; margin: 0 10px;">To</b>
-                  <span  style="flex: 1; text-align: left; margin-left: 5px;">{{data.freightDetails.locations[0].to}}</span>
+                  <span  style="flex: 1; text-align: left; margin-left: 5px;color: black;">{{data.freightDetails.locations[0].to}}</span>
                 </div>
               </td>
-              <td class="px-3 box-border no-br text-center" >
+              <td class="px-3 box-border no-br text-center" style="color: black;">
                 <b>₹</b>{{data.freightDetails.locations[0].amount}}
               </td>
             </tr>
             <tr>
               <td class="px-3 py-1 box-border text-center">
                 <div style="display: flex; align-items: center; justify-content: center;">
-                  <span  style="flex: 1; text-align: left; margin-right: 5px;">{{data.freightDetails.locations[1].from}}</span>
+                  <span  style="flex: 1; text-align: left; margin-right: 5px;color: black;">{{data.freightDetails.locations[1].from}}</span>
                   <b style="flex-shrink: 0; margin: 0 10px;">To</b>
-                  <span  style="flex: 1; text-align: left; margin-left: 5px;">{{data.freightDetails.locations[1].to}}</span>
+                  <span  style="flex: 1; text-align: left; margin-left: 5px;color: black;">{{data.freightDetails.locations[1].to}}</span>
                 </div>
               </td>
-              <td class="px-3 box-border no-br text-center" >
+              <td class="px-3 box-border no-br text-center" style="color: black;">
                 <b>₹</b>{{data.freightDetails.locations[1].amount}}
               </td>
             </tr>
             <tr>
               <td class="px-3 py-1 box-border text-center">
                 <div style="display: flex; align-items: center; justify-content: center;">
-                  <span  style="flex: 1; text-align: left; margin-right: 5px;">{{data.freightDetails.locations[2].from}}</span>
+                  <span  style="flex: 1; text-align: left; margin-right: 5px;color: black;">{{data.freightDetails.locations[2].from}}</span>
                   <b style="flex-shrink: 0; margin: 0 10px;">To</b>
-                  <span  style="flex: 1; text-align: left; margin-left: 5px;">{{data.freightDetails.locations[2].to}}</span>
+                  <span  style="flex: 1; text-align: left; margin-left: 5px;color: black;">{{data.freightDetails.locations[2].to}}</span>
                 </div>
               </td>
-              <td class="px-3 box-border no-br text-center" >
+              <td class="px-3 box-border no-br text-center" style="color: black;">
                 <b>₹</b>{{data.freightDetails.locations[2].amount}}
               </td>
             </tr>
             <tr>
               <td class="px-3 py-1 box-border">Loading and Unloading Charges</td>
-              <td class="px-3 box-border no-br text-center" >{{data.additionalCharges.loadingCharges}}</td>
+              <td class="px-3 box-border no-br text-center" style="color: black;">{{data.additionalCharges.loadingCharges}}</td>
             </tr>
             <tr>
               <td class="px-3 py-1 box-border">Insurance By Party</td>
-              <td class="px-3 box-border no-br text-center" >{{data.additionalCharges.insuranceCharges}}</td>
+              <td class="px-3 box-border no-br text-center" style="color: black;">{{data.additionalCharges.insuranceCharges}}</td>
             </tr>
             <tr>
               <td class="px-3 py-1 box-border">GST Charges ({{data.additionalCharges.gstPercentage}}%)</td>
-              <td class="px-3 box-border no-br text-center" ><b>₹</b>{{data.additionalCharges.gstCharges}}</td>
+              <td class="px-3 box-border no-br text-center" style="color: black;"><b>₹</b>{{data.additionalCharges.gstCharges}}</td>
             </tr>
             <tr>
               <td class="px-3 py-1 box-border">GC Charges</td>  
               <td class="px-3 py-1 box-border no-br text-center">
-                <span  id="gcCharges">{{ data.additionalCharges.gcCharges | default('NONE', true) }}</span>
+                <span  id="gcCharges"style="color: black;">{{ data.additionalCharges.gcCharges | default('NONE', true) }}</span>
               </td>
             </tr>
             <tr>
               <td class="px-3 py-1 box-border">Total</td>
-              <td class="px-3 box-border no-br text-center" ><b>₹</b>{{data.grandTotal}}</td>
+              <td class="px-3 box-border no-br text-center" style="color: black;"><b>₹</b>{{data.grandTotal}}</td>
             </tr>
           </table>
           <div class="py-0 text-center no-bt no-br no-bb box-border no-bl" style="font-size: 12px; font-weight: 500;">

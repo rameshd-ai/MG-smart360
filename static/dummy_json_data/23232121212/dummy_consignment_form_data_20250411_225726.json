@@ -1,0 +1,76 @@
+{
+  "consignor": {
+    "name": "Ramesh D",
+    "address": "#77, GD4, Heritage Pride Apartment, B.Chanasandr",
+    "address2": "744101",
+    "address3": "744101"
+  },
+  "consignee": {
+    "name": "Ramesh D",
+    "address": "#77, GD4, Heritage Pride Apartment, B.Chanasandr",
+    "address2": "400001",
+    "address3": "400001"
+  },
+  "riskDetails": {
+    "notInsured": false,
+    "insured": false,
+    "insuredDetails": {
+      "company": "",
+      "policy": "",
+      "date": "",
+      "insuredAmount": "",
+      "risk": ""
+    }
+  },
+  "goodsDetails": {
+    "gcNumber": "23232121212 ",
+    "gcDate": "12-04-2025",
+    "origin": "Sri Vijaya Puram",
+    "destination": "Mumbai",
+    "contact": "8971329526"
+  },
+  "freightDetails": {
+    "locations": [
+      {
+        "from": "Sri Vijaya Puram",
+        "to": "Mumbai",
+        "amount": "200"
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      },
+      {
+        "from": "",
+        "to": "",
+        "amount": ""
+      }
+    ]
+  },
+  "additionalCharges": {
+    "loadingCharges": "INCLUDED",
+    "insuranceCharges": "NO",
+    "gstCharges": "10.00",
+    "gcCharges": "NONE",
+    "gstPercentage": "5"
+  },
+  "grandTotal": "210.00",
+  "gstPaidBy": {
+    "consignor": false,
+    "consignee": false,
+    "exempted": false,
+    "transporter": false
+  },
+  "description": {
+    "noOfPackages": "12",
+    "twoWheelerNo": "132fdfd",
+    "carNo": "3232efef",
+    "actualWeight": "2121",
+    "chargedWeight": "121",
+    "cbm": "12",
+    "goodsValue": "12123",
+    "truckNo": "232dfdf"
+  },
+  "created_at": "2025-04-11T17:27:26.098Z"
+}

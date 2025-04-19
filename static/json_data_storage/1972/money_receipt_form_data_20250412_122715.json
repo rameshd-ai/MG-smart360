@@ -1,0 +1,15 @@
+{
+  "gcNumber": "1972",
+  "invoiceNumber": "882",
+  "customerName": "RAKESH KUMAR YADAV",
+  "amountNumber": "62265",
+  "amountText": "Sixty Two Thousand Two Hundred Sixty Five Only",
+  "vehicleRegNumber": "33 PKGS HOUSEHOLD GOODS",
+  "fromAddress": "SRI VIJAYA PURAM",
+  "toAddress": "CHICOLNA, VASCO DA GAMA NEAR CGDHQ, GOA",
+  "receiptDate": "01-04-2025",
+  "goodsTypes": [
+    "Household Goods"
+  ],
+  "created_at": "12T12:27:13.193Z-04-2025"
+}

@@ -23,3 +23,20 @@ date in mr
 red color no
 water mark
 highliter
+
+
+
+Perfect — this shows your app is running using Gunicorn from your virtual environment:
+/home/dramesh2610/MG-smart360/venv/bin/gunicorn -w 4 -b 127.0.0.1:5000 app:app
+So your code updates won’t reflect until you restart Gunicorn.
+
+
+ 1. Kill existing Gunicorn processes:
+
+pkill -f gunicorn
+
+2. Start Gunicorn again: 
+
+cd ~/MG-smart360
+source venv/bin/activate
+nohup gunicorn -w 4 -b 127.0.0.1:5000 app:app > gunicorn.log 2>&1 &
